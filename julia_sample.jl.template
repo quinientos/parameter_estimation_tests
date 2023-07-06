@@ -1,0 +1,32 @@
+using ModelingToolkit, DifferentialEquations#, Plots
+using ParameterEstimation
+solver = Tsit5()
+
+@parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
+@variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
+D = Differential(t)
+# TODO
+states = [{{#states}}{{varname}}{{comma}}{{/states}}]
+parameters = [{{#parameters}}{{varname}}{{comma}}{{/parameters}}]
+@named model = ODESystem([
+                            {{#components}}
+                             D({{state_var}}) ~ {{state_expr}},
+                            {{/components}}
+                         ], t, states, parameters)
+measured_quantities = [
+    {{#measured_quantities}}
+        {{measurement}} ~ {{measurement_expression}},
+    {{/measured_quantities}}
+]
+ic = [{{#initial_conditions}}{{value}}{{comma}}{{/initial_conditions}}]
+p_true = [{{#parameters}}{{true}}{{comma}}{{/parameters}}]
+time_interval = [{{time_start}}, {{time_end}}]
+datasize = {{time_count}}
+
+data_sample = ParameterEstimation.sample_data(model, measured_quantities, time_interval,
+                                              p_true, ic,
+                                              datasize; solver = solver)
+
+for i=1:20
+                 print(data_sample["t"][i], {{#states}}", ", data_sample[{{varname}}][i],{{/states}} "\n");
+end

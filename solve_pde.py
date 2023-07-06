@@ -18,14 +18,12 @@ def to_function(pde, state_vars, param_vars, param_setting):
         assert varname in pde
     for varname in pde:
         assert varname in state_vars
-
     pde_set = {}
     for k in pde:
         expr = pde[k]
         for param, val in param_setting.items():
             expr = expr.replace(param, "(%f)" % val)
         pde_set[k] = expr
-
     def func(t, state):
         assert len(state) == len(state_vars)
         result = []
@@ -35,9 +33,7 @@ def to_function(pde, state_vars, param_vars, param_setting):
                 expr = expr.replace(varname, "(%f)" % value)
             result.append(eval(expr))
         result = np.array(result,dtype="float")
-        print(result)
         return result
-
     return func
 
 
@@ -70,6 +66,5 @@ for instance in instances["instances"]:
         t_eval=time_evaluated
         )
     if result.status == 0:
-        print(time_evaluated)
         for t, y in zip(result.t, result.y.transpose()):
             print(t, y)
