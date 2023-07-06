@@ -1,0 +1,22 @@
+{
+	"names": [
+		"lotka-volterra",
+		"harmonic"
+	],
+	"systems": [
+		{
+			"name": "harmonic",
+			"state-variables": ["x1", "x2"],
+			"parameter-variables": ["a", "b"],
+			"pde-system": {"x1": "-a*x2", "x2": "+x1/b"},
+			"measurements": {"y1": "x1", "y2": "x2"}
+		},
+		{
+			"name": "lotka-volterra",
+			"state-variables": ["r", "w"],
+			"parameter-variables": ["k1", "k2", "k3"],
+			"pde-system": {"r": "k1*r - k2*w", "w": "k2*r*w - k3*w"},
+			"measurements": { "y1": "r" }
+		}
+	]
+}
