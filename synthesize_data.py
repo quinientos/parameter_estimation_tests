@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
-import chevron
+import os
+import sys
+import re
 import json
 import numpy as np
-
+import shlex
+import subprocess
+import chevron
+from scipy.integrate import solve_ivp
 from pprint import pprint
 
 def load_systems():
@@ -63,6 +68,7 @@ def generate_julia(system, instance):
             "comma": ", " if i < len(state_variables)-1 else "",
         })
     settings = {
+        "name": re.sub(".jl$", "" , instance_name),
         "states": states,
         "measurements": measurements,
         "parameters": parameters,
@@ -126,9 +132,22 @@ instances = load_instances()
 systems_by_name = {}
 for system in systems["systems"]:
     systems_by_name[system["name"]] = system
+
+os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
+os.makedirs(os.path.dirname('./dat_files/'), exist_ok=True)
 for instance in instances["instances"]:
     system = systems_by_name[instance["system-name"]]
-    with open('julia_files/' + instance_name, 'w') as output_file:
+    with open('julia_files/' + instance["name"], 'w') as output_file:
         output_file.write(generate_julia(system, instance))
-    # run julia code here! store data
-    values = solve_ode(systems, instance)
+        ## run julia code here
+        ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
+        cmd_str = 'julia julia_files/' + instance["name"]
+        print(cmd_str)
+        cmd = shlex.split(cmd_str)
+
+        print(cmd)
+        ##subprocess.run(cmd, stderr=subprocess.STDOUT)#.strip().split(b'\n')
+        output = subprocess.check_output(cmd)#.strip().split(b'\n')
+        print(output)
+        ##store data
+    values = solve_ode(system, instance)

@@ -1,4 +1,4 @@
-using ModelingToolkit, DifferentialEquations#, Plots
+using ModelingToolkit, DifferentialEquations, Plots
 using ParameterEstimation
 solver = Tsit5()
 
@@ -27,6 +27,13 @@ data_sample = ParameterEstimation.sample_data(model, measured_quantities, time_i
                                               p_true, ic,
                                               datasize; solver = solver)
 
-for i=1:20
-                 print(data_sample["t"][i], {{#states}}", ", data_sample[{{varname}}][i],{{/states}} "\n");
+ks = data_sample.keys
+dat_str = ""
+for i=1:{{time_count}}
+  global dat_str = dat_str * string(data_sample["t"][i]) * ", " * join(collect(data_sample[ks[j]][i] for j=1:(length(ks)-1)), ", ") * "\n"
+end
+write("dat_files/{{name}}.out", dat_str)
+
+for i=1:{{time_count}}
+    print(data_sample["t"][i], {{#measured_quantities}}", ", data_sample[{{measurement_expression}}][i],{{/measured_quantities}} "\n");
 end
