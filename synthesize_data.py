@@ -10,6 +10,7 @@ import subprocess
 import chevron
 from scipy.integrate import solve_ivp
 from pprint import pprint
+from julia.api import Julia
 
 def load_systems():
     with open('systems.json') as systems_json:
@@ -139,15 +140,12 @@ for instance in instances["instances"]:
     system = systems_by_name[instance["system-name"]]
     with open('julia_files/' + instance["name"], 'w') as output_file:
         output_file.write(generate_julia(system, instance))
-        ## run julia code here
-        ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
-        cmd_str = 'julia julia_files/' + instance["name"]
-        print(cmd_str)
-        cmd = shlex.split(cmd_str)
 
-        print(cmd)
-        ##subprocess.run(cmd, stderr=subprocess.STDOUT)#.strip().split(b'\n')
-        output = subprocess.check_output(cmd)#.strip().split(b'\n')
-        print(output)
-        ##store data
+    ## run julia code here
+    ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
+    cmd_str = 'julia julia_files/' + instance["name"]
+    cmd = shlex.split(cmd_str)
+    output = subprocess.check_output(cmd)
+
+    ##store data
     values = solve_ode(system, instance)
