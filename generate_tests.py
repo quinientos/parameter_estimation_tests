@@ -10,7 +10,10 @@ import subprocess
 import chevron
 from scipy.integrate import solve_ivp
 from pprint import pprint
-from julia.api import Julia
+#from julia.api import Julia
+#import csv
+import pandas as pd
+pd.set_option("display.precision",16)
 
 def load_systems():
     with open('systems.json') as systems_json:
@@ -21,7 +24,7 @@ def load_instances():
         return json.load(instances_json)
 
 
-def generate_julia(system, instance):
+def get_settings(system, instance):
     instance_name = instance["name"]
     time = instance["time"]
     state_variables = system["state-variables"]
@@ -50,16 +53,19 @@ def generate_julia(system, instance):
             "true": instance['parameters'][varname],
         })
     components = []
-    for state_var in state_variables:
+    for i, state_var in enumerate(state_variables):
         components.append({
             "state_var": state_var,
             "state_expr": system["pde-system"][state_var],
+            "comma": ", " if i < len(state_variables)-1 else "",
         })
     measured_quantities = []
-    for measure_var in system['measurement-variables']:
+    for i, measure_var in enumerate(system['measurement-variables']):
         measured_quantities.append({
             "measurement": measure_var,
             "measurement_expression": system['measurements'][measure_var],
+            "index": i+1,
+            "comma": ", " if i < len(measurement_variables)-1 else "",
         })
 
     initial_conditions = []
@@ -68,19 +74,25 @@ def generate_julia(system, instance):
             "value": instance['initial'][state_var],
             "comma": ", " if i < len(state_variables)-1 else "",
         })
+
     settings = {
         "name": instance_name, #re.sub(".jl$", "" , instance_name),
         "states": states,
+        "num_states": len(states),
         "measurements": measurements,
+        "num_measurements": len(measurements),
         "parameters": parameters,
+        "num_parameters": len(parameters),
         "components": components,
         "measured_quantities": measured_quantities,
         "initial_conditions": initial_conditions,
         "time_start": instance["time"]["start"],
         "time_end": instance["time"]["end"],
         "time_count": instance["time"]["count"],
+        "lower_bound": instance["bounds"]["lower"],
+        "upper_bound": instance["bounds"]["upper"]
     }
-    return chevron.render(open('templates/julia_sample.jl.template'), settings)
+    return settings
 
 
 def to_function(pde, state_vars, param_vars, param_setting):
@@ -106,47 +118,51 @@ def to_function(pde, state_vars, param_vars, param_setting):
         return result
     return func
 
-def solve_ode(system, instance):
-    time = instance["time"]
-    time_evaluated = np.linspace(time["start"], time["end"], num=time["count"])
-    f = to_function(
-        system["pde-system"],
-        system["state-variables"],
-        system["parameter-variables"],
-        instance["parameters"]
-    )
-    init_value = np.array([instance["initial"][varname] for varname in system["state-variables"]])
-    result = solve_ivp(
-        fun=f,
-        t_span=(time["start"], time["end"]),
-        y0=init_value,
-        t_eval=time_evaluated
-        )
-    assert result.status == 0
-    result_list = []
-    for t, y in zip(result.t, result.y.transpose()):
-        result_list.append((t, y))
-    return result_list
-
 systems = load_systems()
 instances = load_instances()
 systems_by_name = {}
 for system in systems["systems"]:
     systems_by_name[system["name"]] = system
 
-os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
-os.makedirs(os.path.dirname('./data/csv/'), exist_ok=True)
-os.makedirs(os.path.dirname('./data/julia/'), exist_ok=True)
+#os.makedirs(os.path.dirname('./test_files/'), exist_ok=True)
+os.makedirs(os.path.dirname('./test_files/pe/'), exist_ok=True)
+os.makedirs(os.path.dirname('./test_files/amigo2/'), exist_ok=True)
+os.makedirs(os.path.dirname('./test_files/iqm/'), exist_ok=True)
+os.makedirs(os.path.dirname('./test_files/sciml/'), exist_ok=True)
+
 for instance in instances["instances"]:
     system = systems_by_name[instance["system-name"]]
-    with open('julia_files/' + instance["name"] + ".jl", 'w') as output_file:
-        output_file.write(generate_julia(system, instance))
+    settings = get_settings(system, instance)
+    df = pd.read_csv('./data/csv/' + instance["name"] + '.csv', header=None, index_col=False)
+    with open('test_files/pe/' + instance["name"] + '.jl', 'w') as output_file:
+        testfile = chevron.render(open('templates/pe.jl.template'), settings)
+        output_file.write(testfile)
 
-    ## run julia code here
-    ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
-    cmd_str = 'julia julia_files/' + instance["name"] + '.jl'
-    cmd = shlex.split(cmd_str)
-    output = subprocess.check_output(cmd)
+    settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)#.replace("  ", ", ")
+    with open('test_files/amigo2/' + instance["name"] + '.m', 'w') as output_file:
+        testfile = chevron.render(open('templates/amigo2.m.template'), settings)
+        output_file.write(testfile)
+    #settings.pop("data")
 
-    ##store data
-    values = solve_ode(system, instance)
+    #os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"]), exist_ok=True)
+    #os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + '/' + instance["name"]), exist_ok=True)
+    os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + '/project/experiments/'), exist_ok=True)
+    os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + '/project/models/'), exist_ok=True)
+    settings["data"] = df.to_csv(index=False, header=False)
+    with open('test_files/iqm/' + instance["name"] + '/' + instance["name"] + '.m', 'w') as output_file:
+       testfile = chevron.render(open('templates/iqm.m.template'), settings)
+       output_file.write(testfile)
+    with open('test_files/iqm/' + instance["name"] + '/project/experiments/experiment.csv', 'w') as output_file:
+       testfile = chevron.render(open('templates/iqm_experiment.csv.template'), settings)
+       output_file.write(testfile)
+    with open('test_files/iqm/' + instance["name"] + '/project/experiments/experiment.exp', 'w') as output_file:
+       testfile = chevron.render(open('templates/iqm_experiment.exp.template'), settings)
+       output_file.write(testfile)
+    with open('test_files/iqm/' + instance["name"] + '/project/models/models.txt', 'w') as output_file:
+       testfile = chevron.render(open('templates/iqm_model.txt.template'), settings)
+       output_file.write(testfile)
+    #settings.pop("data")
+
+    with open('test_files/sciml/' + instance["name"] + '.jl', 'w') as output_file:
+        testfile = chevron.render(open('templates/sciml.jl.template'), settings)
+        output_file.write(testfile)
