@@ -9,7 +9,7 @@
 			"state-variables": ["x1", "x2"],
 			"parameter-variables": ["a", "b"],
             "measurement-variables": ["y1", "y2"],
-			"pde-system": {"x1": "-a*x2", "x2": "+x1/b"},
+			"ode-system": {"x1": "-a*x2", "x2": "+x1/b"},
 			"measurements": {"y1": "x1", "y2": "x2"}
 		},
 		{
@@ -17,7 +17,7 @@
 			"state-variables": ["r", "w"],
 			"parameter-variables": ["k1", "k2", "k3"],
             "measurement-variables": ["y1"],
-			"pde-system": {"r": "k1*r - k2*w", "w": "k2*r*w - k3*w"},
+			"ode-system": {"r": "k1*r - k2*w", "w": "k2*r*w - k3*w"},
 			"measurements": { "y1": "r" }
 		}
 	]

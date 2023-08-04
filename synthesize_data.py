@@ -53,7 +53,7 @@ def generate_julia(system, instance):
     for state_var in state_variables:
         components.append({
             "state_var": state_var,
-            "state_expr": system["pde-system"][state_var],
+            "state_expr": system["ode-system"][state_var],
         })
     measured_quantities = []
     for measure_var in system['measurement-variables']:
@@ -83,22 +83,22 @@ def generate_julia(system, instance):
     return chevron.render(open('templates/julia_sample.jl.template'), settings)
 
 
-def to_function(pde, state_vars, param_vars, param_setting):
+def to_function(ode, state_vars, param_vars, param_setting):
     for varname in state_vars:
-        assert varname in pde
-    for varname in pde:
+        assert varname in ode
+    for varname in ode:
         assert varname in state_vars
-    pde_set = {}
-    for k in pde:
-        expr = pde[k]
+    ode_set = {}
+    for k in ode:
+        expr = ode[k]
         for param, val in param_setting.items():
             expr = expr.replace(param, "(%f)" % val)
-        pde_set[k] = expr
+        ode_set[k] = expr
     def func(t, state):
         assert len(state) == len(state_vars)
         result = []
         for state_var in state_vars:
-            expr = pde_set[state_var]
+            expr = ode_set[state_var]
             for varname, value in zip(state_vars, state):
                 expr = expr.replace(varname, "(%f)" % value)
             result.append(eval(expr))
@@ -110,7 +110,7 @@ def solve_ode(system, instance):
     time = instance["time"]
     time_evaluated = np.linspace(time["start"], time["end"], num=time["count"])
     f = to_function(
-        system["pde-system"],
+        system["ode-system"],
         system["state-variables"],
         system["parameter-variables"],
         instance["parameters"]

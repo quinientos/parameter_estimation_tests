@@ -56,7 +56,7 @@ def get_settings(system, instance):
     for i, state_var in enumerate(state_variables):
         components.append({
             "state_var": state_var,
-            "state_expr": system["pde-system"][state_var],
+            "state_expr": system["ode-system"][state_var],
             "comma": ", " if i < len(state_variables)-1 else "",
         })
     measured_quantities = []
@@ -95,22 +95,22 @@ def get_settings(system, instance):
     return settings
 
 
-def to_function(pde, state_vars, param_vars, param_setting):
+def to_function(ode, state_vars, param_vars, param_setting):
     for varname in state_vars:
-        assert varname in pde
-    for varname in pde:
+        assert varname in ode
+    for varname in ode:
         assert varname in state_vars
-    pde_set = {}
-    for k in pde:
-        expr = pde[k]
+    ode_set = {}
+    for k in ode:
+        expr = ode[k]
         for param, val in param_setting.items():
             expr = expr.replace(param, "(%f)" % val)
-        pde_set[k] = expr
+        ode_set[k] = expr
     def func(t, state):
         assert len(state) == len(state_vars)
         result = []
         for state_var in state_vars:
-            expr = pde_set[state_var]
+            expr = ode_set[state_var]
             for varname, value in zip(state_vars, state):
                 expr = expr.replace(varname, "(%f)" % value)
             result.append(eval(expr))
