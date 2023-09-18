@@ -1,27 +1,24 @@
 using Distributions, Random, StaticArrays
 solver = Vern9()
 
-@parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
-@variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
+@parameters k1 k2 k3
+@variables t r(t) w(t) y1(t)
 D = Differential(t)
 # TODO
-states = [{{#states}}{{varname}}{{comma}}{{/states}}]
-parameters = [{{#parameters}}{{varname}}{{comma}}{{/parameters}}]
+states = [r, w]
+parameters = [k1, k2, k3]
 @named model = ODESystem([
-                            {{#components}}
-                             D({{state_var}}) ~ {{state_expr}},
-                            {{/components}}
+                             D(r) ~ k1*r - k2*w,
+                             D(w) ~ k2*r*w - k3*w,
                          ], t, states, parameters)
 measured_quantities = [
-    {{#measured_quantities}}
-        {{measurement}} ~ {{measurement_expression}},
-    {{/measured_quantities}}
+        y1 ~ r,
 ]
 
-ic = [{{#initial_conditions}}{{value}}{{comma}}{{/initial_conditions}}]
-p_true = [{{#parameters}}{{true}}{{comma}}{{/parameters}}]
-time_interval = [{{time_start}}, {{time_end}}]
-datasize = {{time_count}}
+ic = [0.333, 0.667]
+p_true = [0.25, 0.5, 0.75]
+time_interval = [-1.0, 1.0]
+datasize = 20
 
 sampling_times = range(time_interval[1], time_interval[2], length = datasize)
 
@@ -30,9 +27,9 @@ solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
                       abstol = 1e-12, reltol = 1e-12)
 
 data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
-#data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
+#data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/lk1.jld2", "data")
 
-p_rand = rand(Uniform({{lower_bound}}, {{upper_bound}}), length(ic) + length(p_true)) # Random Parameters
+p_rand = rand(Uniform(0.0, 1.0), length(ic) + length(p_true)) # Random Parameters
 prob = ODEProblem{false}(model, ic, time_interval, p_rand)
 sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver,
             p = p_rand[(length(ic) + 1):end],
@@ -40,7 +37,7 @@ sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver,
             abstol = 1e-12, reltol = 1e-12)
 
 function loss(p)
-    sol = solve(remake(prob; u0 = SVector{ {{num_states}} }(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
+    sol = solve(remake(prob; u0 = SVector{ 2 }(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times;
                 abstol = 1e-12, reltol = 1e-12)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
@@ -59,7 +56,7 @@ end
 
 adtype = Optimization.AutoForwardDiff()
 optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
-optprob = Optimization.OptimizationProblem(optf, p_rand, lb = {{lower_bound}}*ones({{num_states}}+{{num_parameters}}), ub = {{upper_bound}}*ones({{num_states}}+{{num_parameters}}))
+optprob = Optimization.OptimizationProblem(optf, p_rand, lb = 0.0*ones(2+3), ub = 1.0*ones(2+3))
 
 @time result_ode = Optimization.solve(optprob, BFGS(), callback = callback, maxiters = 100000)
 

@@ -5,9 +5,9 @@
 % Once enabled, you can execute the yellow cells in this script (assuming you
 % opened it in the MATLAB editor) by selecting them and pressing "Ctrl-Enter".
 clc; clear all;close all
-run ../src/'IQMtools V1.2.2.2'/IQMlite/installIQMlite.m;
-run ../src/'IQMtools V1.2.2.2'/IQMpro/installIQMpro.m;
-run ../src/'IQMtools V1.2.2.2'/installIQMtools.m;
+run ../../src/'IQMtools V1.2.2.2'/IQMlite/installIQMlite.m;
+run ../../src/'IQMtools V1.2.2.2'/IQMpro/installIQMpro.m;
+run ../../src/'IQMtools V1.2.2.2'/installIQMtools.m;
 
 %% LOAD THE PROJECT
 lv = IQMprojectSB('project');
@@ -25,9 +25,8 @@ IQMcomparemeasurements(lv);
 % Global parameters
 % Names         Lower bounds  Upper bounds
 paramdata = {
-{{#parameters}}
-'{{varname}}' {{lower_bound}} {{upper_bound}}
-{{/parameters}}
+'a' 0.0 1.0
+'b' 0.0 1.0
 };
 
 % Local (experiment dependend) parameters
@@ -38,9 +37,8 @@ paramdatalocal = {
 % Initial conditions (always experiment dependend)
 % Names         Lower bounds  Upper bounds
 icdata = {
-{{#states}}
-'{{varname}}' {{lower_bound}} {{upper_bound}}
-{{/states}}
+'x1' 0.0 1.0
+'x2' 0.0 1.0
 };
 
 
@@ -53,7 +51,7 @@ estimation.experiments.indices = [1];
 estimation.experiments.weight = [1];
 
 % Optimization settings
-estimation.optimization.method = '{{name}}IQM';
+estimation.optimization.method = 'h1IQM';
 estimation.optimization.options.maxfunevals = 100000;
 
 % Integrator settings

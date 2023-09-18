@@ -1,0 +1,16 @@
+[?1h=
+                                                                                                              < M A T L A B (R) >
+                                                                                                    Copyright 1984-2023 The MathWorks, Inc.
+                                                                                               R2023a Update 2 (9.14.0.2254940) 64-bit (glnxa64)
+                                                                                                                April 17, 2023
+
+Warning: X does not support locale en_US.UTF-8
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+{Error using run
+dm4_results.csv not found.
+} 
+>> 
+>> 

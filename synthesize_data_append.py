@@ -13,12 +13,12 @@ from pprint import pprint
 from julia.api import Julia
 import argparse
 
-def load_systems():
-    with open('systems.json') as systems_json:
+def load_systems(sys_file):
+    with open(sys_file) as systems_json:
         return json.load(systems_json)
 
-def load_instances():
-    with open('instances.json') as instances_json:
+def load_instances(inst_file):
+    with open(inst_file) as instances_json:
         return json.load(instances_json)
 
 
@@ -81,7 +81,7 @@ def generate_julia(system, instance):
         "time_end": instance["time"]["end"],
         "time_count": instance["time"]["count"],
     }
-    return chevron.render(open('templates/julia_sample.jl.template'), settings)
+    return chevron.render(open('templates/julia_sample_noheader.jl.template'), settings)
 
 
 def to_function(ode, state_vars, param_vars, param_setting):
@@ -131,41 +131,48 @@ def solve_ode(system, instance):
 
 
 def main(args):
-    sargs = getArgs(sysargs)
-    systems = load_systems(sargs["systems-file"])
-    instances = load_instances(sargs["instances-file"])
+    sysargs = getArgs(args)
+    systems = load_systems(sysargs["systems-file"])
+    instances = load_instances(sysargs["instances-file"])
+    outfile_name = sysargs["output-file"]
+
     systems_by_name = {}
     for system in systems["systems"]:
         systems_by_name[system["name"]] = system
     
     os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
-    os.makedirs(os.path.dirname(sargs["datadir"]+'/csv/'), exist_ok=True)
-    os.makedirs(os.path.dirname(sargs["datadir"]+'/julia/'), exist_ok=True)
-    for instance in instances["instances"]:
-        system = systems_by_name[instance["system-name"]]
-        with open('julia_files/' + instance["name"] + ".jl", 'w') as output_file:
-            output_file.write(generate_julia(system, instance))
+    os.makedirs(os.path.dirname(sysargs["datadir"]+'/csv/'), exist_ok=True)
+    os.makedirs(os.path.dirname(sysargs["datadir"]+'/julia/'), exist_ok=True)
+
+    header = 'push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")\n using ModelingToolkit, DifferentialEquations, Plots\n using ParameterEstimation\n using JLD2, FileIO\n solver = Tsit5()\n\n'
+    with open('julia_files/' + outfile_name, 'w') as output_file:
+        output_file.write(header)
+
+    with open('julia_files/' + outfile_name, 'a') as output_file:
+        for instance in instances["instances"]:
+            system = systems_by_name[instance["system-name"]]
+            output_file.write(generate_julia(system, instance)+"\n")
     
-        ## run julia code here
-        ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
-        cmd_str = 'julia julia_files/' + instance["name"] + '.jl'
-        cmd = shlex.split(cmd_str)
-        output = subprocess.check_output(cmd)
-    
-        ##store data
-        values = solve_ode(system, instance)
+    ## run julia code here
+    ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
+    cmd_str = 'julia julia_files/' + outfile_name 
+    cmd = shlex.split(cmd_str)
+    output = subprocess.check_output(cmd)
+
     
 
 def getArgs(args):
     datadir = os.path.abspath(args.data)
-    if not os.path.exists( datadir ): throwError("invalid directory path")
+    #if not os.path.exists( datadir ): throwError("invalid directory path")
 
     instances_file = args.instances
     systems_file = args.systems
+    output_file = args.outfile if args.outfile!=None else instances_file.split("/")[-1].replace(".json", ".jl")
     sys_args = {
         "datadir": datadir,
         "instances-file": instances_file,
-        "systems-file": systems_file
+        "systems-file": systems_file,
+        "output-file": output_file
     }
 
     return sys_args
@@ -175,6 +182,9 @@ if __name__=='__main__':
     parser.add_argument('-d', '--data', default="./data")
     parser.add_argument('-i', '--instances', default="./instances.json")
     parser.add_argument('-s', '--systems', default="./systems.json")
+    parser.add_argument('-o', '--outfile', default=None)
+    parser.add_argument('-pf', '--prefix', default=None)
+    parser.add_argument('-sf', '--suffix', default=None)
     #add other options as they come up
     args = parser.parse_args()
     main(args)
