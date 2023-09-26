@@ -1,0 +1,814 @@
+{
+	"instances": [
+		{
+			"name": "bh_orig_0",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.143,  
+        "k6": 0.286,  
+        "k7": 0.429,  
+        "k8": 0.571,  
+        "k9": 0.714,  
+        "k10": 0.857 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.2,  
+        "x5": 0.4,  
+        "x6": 0.6,  
+        "x7": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_1",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.714,  
+        "k6": 0.143,  
+        "k7": 0.286,  
+        "k8": 0.429,  
+        "k9": 0.571,  
+        "k10": 0.857 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.8,  
+        "x5": 0.2,  
+        "x6": 0.6,  
+        "x7": 0.4 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_2",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.571,  
+        "k6": 0.143,  
+        "k7": 0.857,  
+        "k8": 0.286,  
+        "k9": 0.714,  
+        "k10": 0.429 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.8,  
+        "x5": 0.4,  
+        "x6": 0.6,  
+        "x7": 0.2 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_3",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.286,  
+        "k6": 0.571,  
+        "k7": 0.143,  
+        "k8": 0.714,  
+        "k9": 0.429,  
+        "k10": 0.857 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.8,  
+        "x5": 0.2,  
+        "x6": 0.6,  
+        "x7": 0.4 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_4",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.714,  
+        "k6": 0.429,  
+        "k7": 0.857,  
+        "k8": 0.286,  
+        "k9": 0.143,  
+        "k10": 0.571 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.4,  
+        "x5": 0.8,  
+        "x6": 0.2,  
+        "x7": 0.6 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_5",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.857,  
+        "k6": 0.714,  
+        "k7": 0.571,  
+        "k8": 0.143,  
+        "k9": 0.286,  
+        "k10": 0.429 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.2,  
+        "x5": 0.4,  
+        "x6": 0.6,  
+        "x7": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_6",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.571,  
+        "k6": 0.857,  
+        "k7": 0.143,  
+        "k8": 0.286,  
+        "k9": 0.714,  
+        "k10": 0.429 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.4,  
+        "x5": 0.8,  
+        "x6": 0.6,  
+        "x7": 0.2 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_7",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.429,  
+        "k6": 0.286,  
+        "k7": 0.714,  
+        "k8": 0.143,  
+        "k9": 0.857,  
+        "k10": 0.571 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.6,  
+        "x5": 0.2,  
+        "x6": 0.4,  
+        "x7": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_8",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.857,  
+        "k6": 0.143,  
+        "k7": 0.714,  
+        "k8": 0.429,  
+        "k9": 0.571,  
+        "k10": 0.286 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.8,  
+        "x5": 0.2,  
+        "x6": 0.6,  
+        "x7": 0.4 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_orig_9",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.571,  
+        "k6": 0.857,  
+        "k7": 0.714,  
+        "k8": 0.429,  
+        "k9": 0.143,  
+        "k10": 0.286 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.8,  
+        "x5": 0.2,  
+        "x6": 0.6,  
+        "x7": 0.4 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_0",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.091,  
+        "k6": 0.182,  
+        "k7": 0.273,  
+        "k8": 0.364,  
+        "k9": 0.455,  
+        "k10": 0.545 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.636,  
+        "x5": 0.727,  
+        "x6": 0.818,  
+        "x7": 0.909 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_1",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.909,  
+        "k6": 0.727,  
+        "k7": 0.091,  
+        "k8": 0.364,  
+        "k9": 0.636,  
+        "k10": 0.273 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.455,  
+        "x5": 0.545,  
+        "x6": 0.182,  
+        "x7": 0.818 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_2",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.364,  
+        "k6": 0.091,  
+        "k7": 0.727,  
+        "k8": 0.818,  
+        "k9": 0.182,  
+        "k10": 0.545 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.455,  
+        "x5": 0.636,  
+        "x6": 0.273,  
+        "x7": 0.909 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_3",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.091,  
+        "k6": 0.455,  
+        "k7": 0.636,  
+        "k8": 0.182,  
+        "k9": 0.727,  
+        "k10": 0.364 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.909,  
+        "x5": 0.273,  
+        "x6": 0.818,  
+        "x7": 0.545 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_4",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.455,  
+        "k6": 0.182,  
+        "k7": 0.091,  
+        "k8": 0.273,  
+        "k9": 0.909,  
+        "k10": 0.364 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.636,  
+        "x5": 0.727,  
+        "x6": 0.818,  
+        "x7": 0.545 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_5",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.455,  
+        "k6": 0.182,  
+        "k7": 0.273,  
+        "k8": 0.818,  
+        "k9": 0.636,  
+        "k10": 0.545 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.091,  
+        "x5": 0.727,  
+        "x6": 0.909,  
+        "x7": 0.364 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_6",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.727,  
+        "k6": 0.091,  
+        "k7": 0.364,  
+        "k8": 0.273,  
+        "k9": 0.636,  
+        "k10": 0.455 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.909,  
+        "x5": 0.545,  
+        "x6": 0.182,  
+        "x7": 0.818 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_7",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.727,  
+        "k6": 0.818,  
+        "k7": 0.455,  
+        "k8": 0.909,  
+        "k9": 0.545,  
+        "k10": 0.091 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.273,  
+        "x5": 0.182,  
+        "x6": 0.364,  
+        "x7": 0.636 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_8",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.545,  
+        "k6": 0.636,  
+        "k7": 0.182,  
+        "k8": 0.455,  
+        "k9": 0.909,  
+        "k10": 0.727 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.273,  
+        "x5": 0.364,  
+        "x6": 0.091,  
+        "x7": 0.818 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_even_9",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.545,  
+        "k6": 0.091,  
+        "k7": 0.273,  
+        "k8": 0.727,  
+        "k9": 0.455,  
+        "k10": 0.636 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.364,  
+        "x5": 0.909,  
+        "x6": 0.818,  
+        "x7": 0.182 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_0",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.203,  
+        "k6": 0.922,  
+        "k7": 0.894,  
+        "k8": 0.868,  
+        "k9": 0.439,  
+        "k10": 0.277 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.108,  
+        "x5": 0.587,  
+        "x6": 0.737,  
+        "x7": 0.377 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_1",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.473,  
+        "k6": 0.695,  
+        "k7": 0.334,  
+        "k8": 0.467,  
+        "k9": 0.99,  
+        "k10": 0.224 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.282,  
+        "x5": 0.565,  
+        "x6": 0.333,  
+        "x7": 0.011 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_2",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.73,  
+        "k6": 0.354,  
+        "k7": 0.118,  
+        "k8": 0.798,  
+        "k9": 0.438,  
+        "k10": 0.835 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.467,  
+        "x5": 0.495,  
+        "x6": 0.176,  
+        "x7": 0.365 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_3",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.981,  
+        "k6": 0.023,  
+        "k7": 0.564,  
+        "k8": 0.083,  
+        "k9": 0.826,  
+        "k10": 0.697 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.928,  
+        "x5": 0.486,  
+        "x6": 0.052,  
+        "x7": 0.779 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_4",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.705,  
+        "k6": 0.754,  
+        "k7": 0.725,  
+        "k8": 0.56,  
+        "k9": 0.719,  
+        "k10": 0.616 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.979,  
+        "x5": 0.913,  
+        "x6": 0.526,  
+        "x7": 0.571 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_5",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.992,  
+        "k6": 0.07,  
+        "k7": 0.697,  
+        "k8": 0.724,  
+        "k9": 0.842,  
+        "k10": 0.2 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.639,  
+        "x5": 0.415,  
+        "x6": 0.492,  
+        "x7": 0.86 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_6",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.699,  
+        "k6": 0.61,  
+        "k7": 0.364,  
+        "k8": 0.431,  
+        "k9": 0.581,  
+        "k10": 0.208 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.273,  
+        "x5": 0.958,  
+        "x6": 0.392,  
+        "x7": 0.623 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_7",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.791,  
+        "k6": 0.206,  
+        "k7": 0.619,  
+        "k8": 0.182,  
+        "k9": 0.342,  
+        "k10": 0.306 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.519,  
+        "x5": 0.795,  
+        "x6": 0.569,  
+        "x7": 0.059 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_8",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.146,  
+        "k6": 0.765,  
+        "k7": 0.19,  
+        "k8": 0.087,  
+        "k9": 0.239,  
+        "k10": 0.046 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.804,  
+        "x5": 0.825,  
+        "x6": 0.909,  
+        "x7": 0.762 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "bh_rand_9",
+			"system-name": "biohydrogenation",
+			"parameters": {
+        "k5": 0.349,  
+        "k6": 0.161,  
+        "k7": 0.776,  
+        "k8": 0.054,  
+        "k9": 0.046,  
+        "k10": 0.364 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "x4": 0.211,  
+        "x5": 0.107,  
+        "x6": 0.681,  
+        "x7": 0.508 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		}
+	]
+}

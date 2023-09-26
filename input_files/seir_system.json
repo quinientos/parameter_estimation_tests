@@ -1,0 +1,15 @@
+{
+  "names":[
+    "seir"
+  ],
+  "systems": [
+    {
+      "name": "seir",
+      "state-variables": ["S", "E", "In", "NN"],
+      "parameter-variables": ["a", "b", "nu"],
+      "measurement-variables": ["y1", "y2"],
+      "ode-system": { "S": "-b * S * In / NN", "E": "b * S * In / NN - nu * E", "In": "nu * E - a * In", "NN": "0" },
+      "measurements": { "y1": "In", "y2": "NN" }
+    }
+  ]
+}

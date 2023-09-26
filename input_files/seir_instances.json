@@ -1,0 +1,724 @@
+{
+	"instances": [
+		{
+			"name": "seir_orig_0",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.5,  
+        "nu": 0.75 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.2,  
+        "E": 0.4,  
+        "In": 0.6,  
+        "NN": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_1",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.75,  
+        "nu": 0.5 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.8,  
+        "E": 0.6,  
+        "In": 0.2,  
+        "NN": 0.4 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_2",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.5,  
+        "b": 0.75,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.4,  
+        "E": 0.2,  
+        "In": 0.8,  
+        "NN": 0.6 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_3",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.5,  
+        "nu": 0.75 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.6,  
+        "E": 0.4,  
+        "In": 0.2,  
+        "NN": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_4",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.5,  
+        "b": 0.75,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.2,  
+        "E": 0.8,  
+        "In": 0.4,  
+        "NN": 0.6 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_5",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.5,  
+        "b": 0.75,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.6,  
+        "E": 0.4,  
+        "In": 0.2,  
+        "NN": 0.8 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_6",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.5,  
+        "b": 0.25,  
+        "nu": 0.75 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.4,  
+        "E": 0.8,  
+        "In": 0.6,  
+        "NN": 0.2 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_7",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.5,  
+        "b": 0.25,  
+        "nu": 0.75 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.8,  
+        "E": 0.4,  
+        "In": 0.2,  
+        "NN": 0.6 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_8",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.75,  
+        "b": 0.5,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.6,  
+        "E": 0.4,  
+        "In": 0.8,  
+        "NN": 0.2 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_orig_9",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.75,  
+        "nu": 0.5 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.8,  
+        "E": 0.4,  
+        "In": 0.6,  
+        "NN": 0.2 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_0",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.125,  
+        "b": 0.25,  
+        "nu": 0.375 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.5,  
+        "E": 0.625,  
+        "In": 0.75,  
+        "NN": 0.875 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_1",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.875,  
+        "b": 0.375,  
+        "nu": 0.75 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.5,  
+        "E": 0.125,  
+        "In": 0.625,  
+        "NN": 0.25 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_2",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.125,  
+        "b": 0.375,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.5,  
+        "E": 0.875,  
+        "In": 0.75,  
+        "NN": 0.625 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_3",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.375,  
+        "b": 0.25,  
+        "nu": 0.5 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.125,  
+        "E": 0.75,  
+        "In": 0.625,  
+        "NN": 0.875 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_4",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.5,  
+        "nu": 0.625 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.375,  
+        "E": 0.75,  
+        "In": 0.875,  
+        "NN": 0.125 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_5",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.875,  
+        "nu": 0.125 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.75,  
+        "E": 0.5,  
+        "In": 0.625,  
+        "NN": 0.375 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_6",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.875,  
+        "b": 0.75,  
+        "nu": 0.25 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.5,  
+        "E": 0.625,  
+        "In": 0.375,  
+        "NN": 0.125 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_7",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.375,  
+        "b": 0.125,  
+        "nu": 0.875 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.625,  
+        "E": 0.75,  
+        "In": 0.5,  
+        "NN": 0.25 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_8",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.875,  
+        "b": 0.5,  
+        "nu": 0.125 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.625,  
+        "E": 0.375,  
+        "In": 0.75,  
+        "NN": 0.25 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_even_9",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.25,  
+        "b": 0.5,  
+        "nu": 0.875 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.625,  
+        "E": 0.75,  
+        "In": 0.125,  
+        "NN": 0.375 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_0",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.149,  
+        "b": 0.575,  
+        "nu": 0.13 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.758,  
+        "E": 0.286,  
+        "In": 0.821,  
+        "NN": 0.216 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_1",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.092,  
+        "b": 0.56,  
+        "nu": 0.424 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.331,  
+        "E": 0.983,  
+        "In": 0.527,  
+        "NN": 0.04 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_2",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.371,  
+        "b": 1.0,  
+        "nu": 0.257 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.327,  
+        "E": 0.002,  
+        "In": 0.655,  
+        "NN": 0.104 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_3",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.475,  
+        "b": 0.098,  
+        "nu": 0.55 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.595,  
+        "E": 0.842,  
+        "In": 0.639,  
+        "NN": 0.882 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_4",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.488,  
+        "b": 0.147,  
+        "nu": 0.232 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.376,  
+        "E": 0.059,  
+        "In": 0.91,  
+        "NN": 0.446 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_5",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.879,  
+        "b": 0.488,  
+        "nu": 0.909 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.203,  
+        "E": 0.383,  
+        "In": 0.299,  
+        "NN": 0.955 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_6",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.26,  
+        "b": 0.505,  
+        "nu": 0.716 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.843,  
+        "E": 0.993,  
+        "In": 0.593,  
+        "NN": 0.338 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_7",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.54,  
+        "b": 0.718,  
+        "nu": 0.085 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.286,  
+        "E": 0.079,  
+        "In": 0.058,  
+        "NN": 0.592 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_8",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.977,  
+        "b": 0.671,  
+        "nu": 0.819 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.548,  
+        "E": 0.617,  
+        "In": 0.529,  
+        "NN": 0.9 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		},
+		{
+			"name": "seir_rand_9",
+			"system-name": "seir",
+			"parameters": {
+        "a": 0.773,  
+        "b": 0.038,  
+        "nu": 0.403 
+			},
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+			},
+			"initial": {
+        "S": 0.999,  
+        "E": 0.895,  
+        "In": 0.116,  
+        "NN": 0.665 
+			},
+      "bounds": {
+        "lower": 0.0,
+        "upper": 1.0
+      }
+		}
+	]
+}
