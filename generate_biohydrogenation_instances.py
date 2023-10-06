@@ -59,34 +59,34 @@ for system in systems["systems"]:
 system = systems_by_name["biohydrogenation"]    
 
 instances = {"instances":[]}
-instance_basename = "bh_orig_"
-param_values = [0.143, 0.286, 0.429, 0.571, 0.714, 0.857]
-state_values = [0.2, 0.4, 0.6, 0.8]
-instance_name = instance_basename + "0"
-instance = generate_instance(system, instance_name,\
-                      param_values,\
-                      state_values)
-instances["instances"].append(instance)
-
-for i in range(1,10):
-    instance_name = instance_basename + str(i)
-    #permute param_values and state_values
-    instance = generate_instance(system, instance_name,\
-                          np.random.permutation(param_values),\
-                          np.random.permutation(state_values))
-    instances["instances"].append(instance)
-    
-
-instance_basename = "bh_even_"
-true_values = [0.091, 0.182, 0.273, 0.364, 0.455, 0.545, 0.636, 0.727, 0.818, 0.909]
-for i in range(10):
-    tmp_vals = np.random.permutation(true_values) if i>0 else true_values
-    param_values = tmp_vals[:6]
-    state_values = tmp_vals[6:]
-    instance_name = instance_basename + str(i)
-    instance = generate_instance(system, instance_name, param_values, state_values)
-    instances["instances"].append(instance)
-
+#instance_basename = "bh_orig_"
+#param_values = [0.143, 0.286, 0.429, 0.571, 0.714, 0.857]
+#state_values = [0.2, 0.4, 0.6, 0.8]
+#instance_name = instance_basename + "0"
+#instance = generate_instance(system, instance_name,\
+#                      param_values,\
+#                      state_values)
+#instances["instances"].append(instance)
+#
+#for i in range(1,10):
+#    instance_name = instance_basename + str(i)
+#    #permute param_values and state_values
+#    instance = generate_instance(system, instance_name,\
+#                          np.random.permutation(param_values),\
+#                          np.random.permutation(state_values))
+#    instances["instances"].append(instance)
+#    
+#
+#instance_basename = "bh_even_"
+#true_values = [0.091, 0.182, 0.273, 0.364, 0.455, 0.545, 0.636, 0.727, 0.818, 0.909]
+#for i in range(10):
+#    tmp_vals = np.random.permutation(true_values) if i>0 else true_values
+#    param_values = tmp_vals[:6]
+#    state_values = tmp_vals[6:]
+#    instance_name = instance_basename + str(i)
+#    instance = generate_instance(system, instance_name, param_values, state_values)
+#    instances["instances"].append(instance)
+#
 
 instance_basename = "bh_rand_"
 for i in range(10):
