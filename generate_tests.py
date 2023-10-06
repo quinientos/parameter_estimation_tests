@@ -47,6 +47,10 @@ def main(args):
         with open('test_files/amigo2/' + instance["name"] + '.m', 'w') as output_file:
             if system["name"] == "daisy-mamil4":
                 testfile = chevron.render(open('templates/amigo2_daisy_mamil4.m.template'), settings)
+            elif system["name"] == "biohydrogenation":
+                testfile = chevron.render(open('templates/amigo2_biohydrogenation.m.template'), settings)
+            elif system["name"] == "seir":
+                testfile = chevron.render(open('templates/amigo2_seir.m.template'), settings)
             else:
                 testfile = chevron.render(open('templates/amigo2.m.template'), settings)
             output_file.write(testfile)

@@ -13,12 +13,12 @@ from pprint import pprint
 from julia.api import Julia
 import argparse
 
-def load_systems():
-    with open('systems.json') as systems_json:
+def load_systems(sys_file):
+    with open(sys_file) as systems_json:
         return json.load(systems_json)
 
-def load_instances():
-    with open('instances.json') as instances_json:
+def load_instances(inst_file):
+    with open(inst_file) as instances_json:
         return json.load(instances_json)
 
 
@@ -131,7 +131,7 @@ def solve_ode(system, instance):
 
 
 def main(args):
-    sargs = getArgs(sysargs)
+    sargs = getArgs(args)
     systems = load_systems(sargs["systems-file"])
     instances = load_instances(sargs["instances-file"])
     systems_by_name = {}
@@ -148,6 +148,7 @@ def main(args):
     
         ## run julia code here
         ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
+        print(instance["name"])
         cmd_str = 'julia julia_files/' + instance["name"] + '.jl'
         cmd = shlex.split(cmd_str)
         output = subprocess.check_output(cmd)
