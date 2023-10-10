@@ -74,7 +74,6 @@ def convert_instance(system, instance_name, param_vals, initial_vals):
 
 
 def main(args):
-    np.random.seed(0)
     sargs = getArgs(args)
     systems = load_systems(sargs["systems-file"])
     #instances = load_instances(sargs["instances-file"])
@@ -95,6 +94,7 @@ def main(args):
         os.makedirs(os.path.dirname('./test_files/sciml/'), exist_ok=True)
         
         i = 0
+        np.random.seed(0)
         while i < 10:
             instance_name = instance_basename + str(i)
             param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0]
