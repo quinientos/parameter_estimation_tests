@@ -83,9 +83,9 @@ def main(args):
         systems_by_name[system["name"]] = system
     
     instances = {"instances":[]}
-    for system in systems:
-        instance_basename = system["name"] + "_"
+    for system in systems["systems"]:
         print(system["name"])
+        instance_basename = system["name"] + "_"
         #instance_basename = "bh_rand_"
         
         os.makedirs(os.path.dirname('./test_files/'), exist_ok=True)
@@ -99,7 +99,6 @@ def main(args):
             instance_name = instance_basename + str(i)
             param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0]
             state_values = np.random.rand(1,len(system["state-variables"])).round(3).tolist()[0]
-            instance_name = instance_basename + str(i) + "_" + int(bounds[1])
             instance = generate_instance(system, instance_name, param_values, state_values)
 
             os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
