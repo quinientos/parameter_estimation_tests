@@ -1,13 +1,13 @@
 push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
-using ModelingToolkit, DifferentialEquations, Plots
+using ModelingToolkit, DifferentialEquations
 using ParameterEstimation
 using JLD2, FileIO
-solver = Tsit5()
+#solver = Tsit5()
+solver = AutoVern8(Rodas4())
 
 @parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
 @variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
 D = Differential(t)
-# TODO
 states = [{{#states}}{{varname}}{{comma}}{{/states}}]
 parameters = [{{#parameters}}{{varname}}{{comma}}{{/parameters}}]
 @named model = ODESystem([
@@ -26,8 +26,7 @@ time_interval = [{{time_start}}, {{time_end}}]
 datasize = {{time_count}}
 
 data_sample = ParameterEstimation.sample_data(model, measured_quantities, convert(Array{Float64},time_interval),
-                                              p_true, ic,
-                                              datasize; solver = solver)
+                                              p_true, ic, datasize; solver = solver)
 
 ks = data_sample.keys
 dat_str = ""

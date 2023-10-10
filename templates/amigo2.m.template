@@ -77,13 +77,3 @@ AMIGO_Prep(inputs);
 [PEresults] = AMIGO_PE(inputs);
 PEresults.fit.global_theta_estimated
 PEresults.fit.global_theta_y0_estimated
-
-%val names
-inputs.model.par_names
-inputs.model.st_names
-%true vals:
-inputs.model.par
-inputs.exps.exp_y0{1}
-
-
-

@@ -1,13 +1,14 @@
 push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
-using ModelingToolkit, DifferentialEquations, Plots
 using ParameterEstimation
-using JLD2, FileIO
-solver = Tsit5()
+using ModelingToolkit, DifferentialEquations
+using BenchmarkTools
 
+solver = AutoVern8(Rodas4()) #Tsit5()
+
+name = "{{system-name}}"
 @parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
 @variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
 D = Differential(t)
-# TODO
 states = [{{#states}}{{varname}}{{comma}}{{/states}}]
 parameters = [{{#parameters}}{{varname}}{{comma}}{{/parameters}}]
 @named model = ODESystem([
@@ -26,11 +27,12 @@ time_interval = [{{time_start}}, {{time_end}}]
 datasize = {{time_count}}
 
 data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
-res = ParameterEstimation.estimate(model, measured_quantities, data_sample; solver = solver)
-all_params = vcat(ic, p_true)
 
-#put in selection for which answer in case of multiples
+@time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
+                all_params = vcat(ic, p_true)
 for each in res
-    estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
+  estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
+  println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
 end
-
+~       

@@ -17,7 +17,7 @@ pd.set_option("display.precision",16)
 import argparse
 from utils import *
 
-def generate_instance(system, instance_name, param_vals, initial_vals, bounds=[0.0, 1.0]):
+def generate_instance(system, instance_name, param_vals, initial_vals):
     state_variables = system["state-variables"]
     states = {}
     for i, varname in enumerate(state_variables):
@@ -37,12 +37,11 @@ def generate_instance(system, instance_name, param_vals, initial_vals, bounds=[0
         "parameters": parameters,
         "time": {"start": -0.5, "end": 0.5, "count": 21},
         "count": 21,
-        "bounds": {"lower": bounds[0], "upper": bounds[1]}
     }
     return instance
 
 #this really really needs to be cleaned up
-def convert_instance(system, instance_name, param_vals, initial_vals, bounds=[0.0, 1.0]):
+def convert_instance(system, instance_name, param_vals, initial_vals):
     state_variables = system["state-variables"]
     states = []
     for i, varname in enumerate(state_variables):
@@ -69,8 +68,6 @@ def convert_instance(system, instance_name, param_vals, initial_vals, bounds=[0.
         "time_start": "-0.5",
         "time_end": "0.5",
         "count": "21",
-        "lower_bound": bounds[0],
-        "upper_bound": bounds[1]
     }
     return instance
     
@@ -85,30 +82,31 @@ def main(args):
     for system in systems["systems"]:
         systems_by_name[system["name"]] = system
     
+    instances = {"instances":[]}
     for system in systems:
         instance_basename = system["name"] + "_"
+        print(system["name"])
         #instance_basename = "bh_rand_"
         
-        instances = {"instances":[]}
         os.makedirs(os.path.dirname('./test_files/'), exist_ok=True)
         os.makedirs(os.path.dirname('./test_files/pe/'), exist_ok=True)
         os.makedirs(os.path.dirname('./test_files/amigo2/'), exist_ok=True)
         os.makedirs(os.path.dirname('./test_files/iqm/'), exist_ok=True)
         os.makedirs(os.path.dirname('./test_files/sciml/'), exist_ok=True)
         
-        tmp_instances = {"instances":[]}
         i = 0
         while i < 10:
             instance_name = instance_basename + str(i)
-            param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0] #len(parameters)
-            state_values = np.random.rand(1,len(system["state-variables"])).round(3).tolist()[0] #len(states)
-            instance_name = instance_basename + str(i)
+            param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0]
+            state_values = np.random.rand(1,len(system["state-variables"])).round(3).tolist()[0]
+            instance_name = instance_basename + str(i) + "_" + int(bounds[1])
             instance = generate_instance(system, instance_name, param_values, state_values)
-            instances["instances"].append(instance)
+
             os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
             os.makedirs(os.path.dirname(sargs["datadir"]+'/csv/'), exist_ok=True)
             os.makedirs(os.path.dirname(sargs["datadir"]+'/julia/'), exist_ok=True)
             system = systems_by_name[instance["system-name"]]
+
             settings = get_settings(system, instance)
             settings.update(sargs)
             julia_file = chevron.render(open('templates/julia_sample.jl.template'), settings)
@@ -132,25 +130,58 @@ def main(args):
                 print("init conds = {}".format(instance["initial"]))
                 print("params = {}".format(instance["parameters"]))
                 continue
-    
+        
             df = pd.read_csv(settings["datadir"] + '/csv/' + instance["name"] + '.csv', header=None, index_col=False)
             settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)#.replace("  ", ", ")
-            with open('test_files/amigo2/' + instance["name"] + '.m', 'w') as output_file:
-                if system["name"] == "daisy-mamil4":
-                    testfile = chevron.render(open('templates/amigo2_daisy_mamil4.m.template'), settings)
-                elif system["name"] == "biohydrogenation":
-                    testfile = chevron.render(open('templates/amigo2_biohydrogenation.m.template'), settings)
-                elif system["name"] == "seir":
-                    testfile = chevron.render(open('templates/amigo2_seir.m.template'), settings)
-                else:
-                    testfile = chevron.render(open('templates/amigo2.m.template'), settings)
+
+            with open('test_files/pe/' + instance["name"] + '.jl', 'w') as output_file:
+                testfile = chevron.render(open('templates/pe.jl.template'), settings)
                 output_file.write(testfile)
-    
-            tmp_instances["instances"].append(convert_instance(system, instance_name, param_values, state_values))
+
+            for bounds in [[0.0, 1.0], [0.0, 2.0], [0.0, 3.0]]:
+                file_suffix = "_" + str(int(bounds[1]))
+                settings["lower_bound"] = bounds[0]
+                settings["upper_bound"] = bounds[1]
+
+                with open('test_files/amigo2/' + instance["name"] + file_suffix + '.m', 'w') as output_file:
+                    if system["name"] == "daisy-mamil4":
+                        testfile = chevron.render(open('templates/amigo2_daisy_mamil4.m.template'), settings)
+                    elif system["name"] == "biohydrogenation":
+                        testfile = chevron.render(open('templates/amigo2_biohydrogenation.m.template'), settings)
+                    elif system["name"] == "seir":
+                        testfile = chevron.render(open('templates/amigo2_seir.m.template'), settings)
+                    else:
+                        testfile = chevron.render(open('templates/amigo2.m.template'), settings)
+                    output_file.write(testfile)
         
+        
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix), exist_ok=True)
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/' + instance["name"]), exist_ok=True)
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/'), exist_ok=True)
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/project/models/'), exist_ok=True)
+                settings["data"] = df.to_csv(index=False, header=False)
+                with open('test_files/iqm/' + instance["name"]  + file_suffix + '/' + instance["name"] + '.m', 'w') as output_file:
+                   testfile = chevron.render(open('templates/iqm.m.template'), settings)
+                   output_file.write(testfile)
+                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/experiment.csv', 'w') as output_file:
+                   testfile = chevron.render(open('templates/iqm_experiment.csv.template'), settings)
+                   output_file.write(testfile)
+                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/experiment.exp', 'w') as output_file:
+                   testfile = chevron.render(open('templates/iqm_experiment.exp.template'), settings)
+                   output_file.write(testfile)
+                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/models/models.txt', 'w') as output_file:
+                   testfile = chevron.render(open('templates/iqm_model.txt.template'), settings)
+                   output_file.write(testfile)
+                #settings.pop("data")
+            
+                with open('test_files/sciml/' + instance["name"] + file_suffix + '.jl', 'w') as output_file:
+                    testfile = chevron.render(open('templates/sciml.jl.template'), settings)
+                    output_file.write(testfile)
+            
+                instances["instances"].append(convert_instance(system, instance_name, param_values, state_values))
     
         with open('input_files/'+sargs["instance-file"], 'w') as outfile:
-            outfile.write(chevron.render(open('templates/instances.json.template'), tmp_instances))
+            outfile.write(chevron.render(open('templates/instances.json.template'), instances))
 
 
 def getArgs(args):
