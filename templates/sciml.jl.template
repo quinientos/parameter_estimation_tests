@@ -1,5 +1,5 @@
 using Distributions, Random, StaticArrays
-solver = Vern9()
+solver = Tsit5()
 
 @parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
 @variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}

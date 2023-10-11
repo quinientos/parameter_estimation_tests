@@ -5,24 +5,20 @@
 			"name": "{{name}}",
 			"system-name": "{{sys_name}}",
 			"parameters": {
-        {{#parameters}}
-        "{{varname}}": {{true}}{{comma}} 
-        {{/parameters}}
-			},
+            {{#parameters}}
+            "{{varname}}": {{true}}{{comma}} 
+            {{/parameters}}
+        },
 			"time": {
 				"start": {{time_start}},
 				"end": {{time_end}},
 				"count": {{count}}
-			},
+        },
 			"initial": {
-        {{#states}}
-        "{{varname}}": {{value}}{{comma}} 
-        {{/states}}
-			},
-      "bounds": {
-        "lower": {{lower_bound}},
-        "upper": {{upper_bound}}
-      }
+            {{#states}}
+                "{{varname}}": {{value}}{{comma}} 
+            {{/states}}
+        }
 		},
     {{/instances}}
 	]

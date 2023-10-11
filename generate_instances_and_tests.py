@@ -17,6 +17,8 @@ pd.set_option("display.precision",16)
 import argparse
 from utils import *
 
+NUM_TESTS = 10
+
 def generate_instance(system, instance_name, param_vals, initial_vals):
     state_variables = system["state-variables"]
     states = {}
@@ -95,7 +97,7 @@ def main(args):
         
         i = 0
         np.random.seed(0)
-        while i < 10:
+        while i < NUM_TESTS:
             instance_name = instance_basename + str(i)
             param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0]
             state_values = np.random.rand(1,len(system["state-variables"])).round(3).tolist()[0]
@@ -155,17 +157,24 @@ def main(args):
         
         
                 os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix), exist_ok=True)
-                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/' + instance["name"]), exist_ok=True)
-                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/'), exist_ok=True)
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/' + instance["name"] + file_suffix), exist_ok=True)
+                os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/data/'), exist_ok=True)
                 os.makedirs(os.path.dirname('./test_files/iqm/' + instance["name"] + file_suffix + '/project/models/'), exist_ok=True)
                 settings["data"] = df.to_csv(index=False, header=False)
-                with open('test_files/iqm/' + instance["name"]  + file_suffix + '/' + instance["name"] + '.m', 'w') as output_file:
-                   testfile = chevron.render(open('templates/iqm.m.template'), settings)
-                   output_file.write(testfile)
-                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/experiment.csv', 'w') as output_file:
+                with open('test_files/iqm/' + instance["name"]  + file_suffix + '/' + instance["name"] + file_suffix + '.m', 'w') as output_file:
+                    if system["name"] == "daisy-mamil4":
+                        testfile = chevron.render(open('templates/iqm_daisy_mamil4.m.template'), settings)
+                    elif system["name"] == "biohydrogenation":
+                        testfile = chevron.render(open('templates/iqm_biohydrogenation.m.template'), settings)
+                    elif system["name"] == "seir":
+                        testfile = chevron.render(open('templates/iqm_seir.m.template'), settings)
+                    else:
+                        testfile = chevron.render(open('templates/iqm.m.template'), settings)
+                    output_file.write(testfile)
+                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/data/experiment.csv', 'w') as output_file:
                    testfile = chevron.render(open('templates/iqm_experiment.csv.template'), settings)
                    output_file.write(testfile)
-                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/experiment.exp', 'w') as output_file:
+                with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/experiments/data/experiment.exp', 'w') as output_file:
                    testfile = chevron.render(open('templates/iqm_experiment.exp.template'), settings)
                    output_file.write(testfile)
                 with open('test_files/iqm/' + instance["name"] + file_suffix + '/project/models/models.txt', 'w') as output_file:
@@ -179,8 +188,8 @@ def main(args):
             
                 instances["instances"].append(convert_instance(system, instance_name, param_values, state_values))
     
-        with open('input_files/'+sargs["instance-file"], 'w') as outfile:
-            outfile.write(chevron.render(open('templates/instances.json.template'), instances))
+    with open(sargs["instances-file"], 'w') as outfile:
+        outfile.write(chevron.render(open('templates/instances.json.template'), instances))
 
 
 def getArgs(args):
