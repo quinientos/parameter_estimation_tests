@@ -1,0 +1,33 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k1, k2, k3, w, r]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k3, w, r, k1, k2]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  3[K[K[AComputing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  3[K
+[ Info: Best estimate found
+6 Froissart doublets. Number of residues = 10
+Parameter(s)        :	 k1 = 0.087,  k2 = 0.020,  k3 = 0.833
+Initial Condition(s):	r(t) = 0.778, w(t) = 0.875
+Error: 1.6964e-04
+Time: -5.0000e-01
+
+137.950818 seconds (159.35 M allocations: 9.611 GiB, 4.33% gc time, 99.77% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 0.005342397435041716
+
+
+CPU time: 14.99+202.20 sec	Max. resident set size: 3333752 KB	 Elapsed: 202.84 sec.

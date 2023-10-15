@@ -1,0 +1,73 @@
+using Distributions, Random, StaticArrays
+solver = Tsit5()
+
+@parameters lm d beta a k uu c q b h
+@variables t x(t) yy(t) vv(t) w(t) z(t) y1(t) y2(t) y3(t) y4(t)
+D = Differential(t)
+# TODO
+states = [x, yy, vv, w, z]
+parameters = [lm, d, beta, a, k, uu, c, q, b, h]
+@named model = ODESystem([
+                             D(x) ~ lm - d * x - beta * x * vv,
+                             D(yy) ~ beta * x * vv - a * yy,
+                             D(vv) ~ k * yy - uu * vv,
+                             D(w) ~ c * x * yy * w - c * q * yy * w - b * w,
+                             D(z) ~ c * q * yy * w - h * z,
+                         ], t, states, parameters)
+measured_quantities = [
+        y1 ~ x,
+        y2 ~ z,
+        y3 ~ w,
+        y4 ~ yy+vv,
+]
+
+ic = [0.678, 0.27, 0.735, 0.962, 0.249]
+p_true = [0.319, 0.667, 0.132, 0.716, 0.289, 0.183, 0.587, 0.02, 0.829, 0.005]
+time_interval = [-0.5, 0.5]
+datasize = 21
+
+sampling_times = range(time_interval[1], time_interval[2], length = datasize)
+
+prob_true = ODEProblem{false}(model, ic, time_interval, p_true)
+solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
+                      abstol = 1e-12, reltol = 1e-12)
+
+data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
+#data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/hiv_6.jld2", "data")
+
+p_rand = rand(Uniform(0.0, 1.0), length(ic) + length(p_true)) # Random Parameters
+prob = ODEProblem{false}(model, ic, time_interval, p_rand)
+sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver,
+            p = p_rand[(length(ic) + 1):end],
+            saveat = sampling_times;
+            abstol = 1e-12, reltol = 1e-12)
+
+function loss(p)
+    sol = solve(remake(prob; u0 = SVector{ 5 }(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
+                saveat = sampling_times;
+                abstol = 1e-12, reltol = 1e-12)
+    data_true = [data_sample[v.rhs] for v in measured_quantities]
+    data = [TOBEFILLEDOUT] # [(sol[2, :]), (p[5] / p[6] .+ sol[4, :])]
+    if sol.retcode == ReturnCode.Success
+        loss = sum(sum((data[i] .- data_true[i]) .^ 2) for i in eachindex(data))
+        return loss, sol
+    else
+        return Inf, sol
+    end
+end
+
+callback = function (p, l, pred)
+    return false
+end
+
+adtype = Optimization.AutoForwardDiff()
+optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
+optprob = Optimization.OptimizationProblem(optf, p_rand, lb = 0.0*ones(5+10), ub = 1.0*ones(5+10))
+
+@time result_ode = Optimization.solve(optprob, BFGS(), callback = callback, maxiters = 100000)
+
+println(result_ode.u)
+
+ all_params = vcat(ic, p_true)
+ println("Max. relative abs. error between true and estimated parameters:",
+         maximum(abs.((result_ode.u .- all_params) ./ (all_params))))

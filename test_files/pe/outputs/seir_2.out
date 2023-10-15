@@ -1,0 +1,51 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 6 	 Time: 0:00:00[K
+  mixed_volume:  6[K
+[ Info: Best estimate found
+6 Froissart doublets. Number of residues = 10
+Parameter(s)        :	  a = 0.020,   b = 0.086,  nu = 0.070
+Initial Condition(s):	S(t) = 0.242, E(t) = -0.406, In(t) = 0.870, NN(t) = 0.979
+Error: 3.2462e-05
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.070,   b = 0.086,  nu = 0.020
+Initial Condition(s):	S(t) = 0.844, E(t) = 0.745, In(t) = 0.870, NN(t) = 0.979
+Error: 3.2462e-05
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.441,   b = -0.004,  nu = -0.791
+Initial Condition(s):	S(t) = -113.258, E(t) = -0.427, In(t) = 0.870, NN(t) = 0.979
+Error: 3.2462e-05
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = -0.791,   b = -0.004,  nu = 0.441
+Initial Condition(s):	S(t) = 203.204, E(t) = -1.666, In(t) = 0.870, NN(t) = 0.979
+Error: 3.2462e-05
+Time: -5.0000e-01
+
+145.799185 seconds (169.40 M allocations: 10.230 GiB, 4.44% gc time, 98.92% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 2.5217628028176007
+For model : Max abs rel. err: 0.041822172386974
+For model : Max abs rel. err: 136.96379274807947
+For model : Max abs rel. err: 242.94212506912234
+
+
+CPU time: 15.49+210.60 sec	Max. resident set size: 3437728 KB	 Elapsed: 210.95 sec.
