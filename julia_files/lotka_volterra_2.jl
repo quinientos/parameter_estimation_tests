@@ -5,24 +5,20 @@ using JLD2, FileIO
 #solver = Tsit5()
 solver = AutoVern8(Rodas4())
 
-@parameters k01 k12 k13 k14 k21 k31 k41
-@variables t x1(t) x2(t) x3(t) x4(t) y1(t) y2(t) y3(t)
+@parameters k1 k2 k3
+@variables t r(t) w(t) y1(t)
 D = Differential(t)
-states = [x1, x2, x3, x4]
-parameters = [k01, k12, k13, k14, k21, k31, k41]
+states = [r, w]
+parameters = [k1, k2, k3]
 @named model = ODESystem([
-                             D(x1) ~ -k01 * x1 + k12 * x2 + k13 * x3 + k14 * x4 - k21 * x1 - k31 * x1 - k41 * x1,
-                             D(x2) ~ -k12 * x2 + k21 * x1,
-                             D(x3) ~ -k13 * x3 + k31 * x1,
-                             D(x4) ~ -k14 * x4 + k41 * x1,
+                             D(r) ~ k1*r - k2*w,
+                             D(w) ~ k2*r*w - k3*w,
                          ], t, states, parameters)
 measured_quantities = [
-        y1 ~ x1,
-        y2 ~ x2,
-        y3 ~ x3 + x4,
+        y1 ~ r,
 ]
-ic = [0.778, 0.87, 0.979, 0.799]
-p_true = [0.529, 0.568, 0.926, 0.071, 0.087, 0.02, 0.833]
+ic = [0.926, 0.071]
+p_true = [0.792, 0.529, 0.568]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
@@ -34,6 +30,6 @@ dat_str = ""
 for i=1:21
   global dat_str = dat_str * string(data_sample["t"][i]) * ", " * join(collect(data_sample[ks[j]][i] for j=1:(length(ks)-1)), ", ") * "\n"
 end
-write("data/csv/daisy-mamil4_1.csv", dat_str)
-save("data/julia/daisy-mamil4_1.jld2", "data", data_sample)
+write("data/csv/lotka_volterra_2.csv", dat_str)
+save("data/julia/lotka_volterra_2.jld2", "data", data_sample)
 

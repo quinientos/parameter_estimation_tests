@@ -17,8 +17,8 @@ parameters = [k1, k2, k3]
 measured_quantities = [
         y1 ~ r,
 ]
-ic = [0.315, 0.364]
-p_true = [0.671, 0.21, 0.129]
+ic = [0.964, 0.383]
+p_true = [0.646, 0.438, 0.892]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
@@ -30,6 +30,6 @@ dat_str = ""
 for i=1:21
   global dat_str = dat_str * string(data_sample["t"][i]) * ", " * join(collect(data_sample[ks[j]][i] for j=1:(length(ks)-1)), ", ") * "\n"
 end
-write("data/csv/lotka-volterra_9.csv", dat_str)
-save("data/julia/lotka-volterra_9.jld2", "data", data_sample)
+write("data/csv/lotka_volterra_1.csv", dat_str)
+save("data/julia/lotka_volterra_1.jld2", "data", data_sample)
 

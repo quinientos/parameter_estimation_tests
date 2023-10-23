@@ -21,8 +21,8 @@ measured_quantities = [
         y2 ~ x2,
         y3 ~ x3 + x4,
 ]
-ic = [0.567, 0.265, 0.523, 0.094]
-p_true = [0.12, 0.296, 0.119, 0.318, 0.414, 0.064, 0.692]
+ic = [0.892, 0.964, 0.383, 0.792]
+p_true = [0.549, 0.715, 0.603, 0.545, 0.424, 0.646, 0.438]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
@@ -34,6 +34,6 @@ dat_str = ""
 for i=1:21
   global dat_str = dat_str * string(data_sample["t"][i]) * ", " * join(collect(data_sample[ks[j]][i] for j=1:(length(ks)-1)), ", ") * "\n"
 end
-write("data/csv/daisy-mamil4_7.csv", dat_str)
-save("data/julia/daisy-mamil4_7.jld2", "data", data_sample)
+write("data/csv/daisy_mamil4_0.csv", dat_str)
+save("data/julia/daisy_mamil4_0.jld2", "data", data_sample)
 

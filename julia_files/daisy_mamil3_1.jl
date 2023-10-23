@@ -5,24 +5,22 @@ using JLD2, FileIO
 #solver = Tsit5()
 solver = AutoVern8(Rodas4())
 
-@parameters k01 k12 k13 k14 k21 k31 k41
-@variables t x1(t) x2(t) x3(t) x4(t) y1(t) y2(t) y3(t)
+@parameters a12 a13 a21 a31 a01
+@variables t x1(t) x2(t) x3(t) y1(t) y2(t)
 D = Differential(t)
-states = [x1, x2, x3, x4]
-parameters = [k01, k12, k13, k14, k21, k31, k41]
+states = [x1, x2, x3]
+parameters = [a12, a13, a21, a31, a01]
 @named model = ODESystem([
-                             D(x1) ~ -k01 * x1 + k12 * x2 + k13 * x3 + k14 * x4 - k21 * x1 - k31 * x1 - k41 * x1,
-                             D(x2) ~ -k12 * x2 + k21 * x1,
-                             D(x3) ~ -k13 * x3 + k31 * x1,
-                             D(x4) ~ -k14 * x4 + k41 * x1,
+                             D(x1) ~ -(a21 + a31 + a01) * x1 + a12 * x2 + a13 * x3,
+                             D(x2) ~ a21 * x1 - a12 * x2,
+                             D(x3) ~ a31 * x1 - a13 * x3,
                          ], t, states, parameters)
 measured_quantities = [
         y1 ~ x1,
         y2 ~ x2,
-        y3 ~ x3 + x4,
 ]
-ic = [0.892, 0.964, 0.383, 0.792]
-p_true = [0.549, 0.715, 0.603, 0.545, 0.424, 0.646, 0.438]
+ic = [0.926, 0.071, 0.087]
+p_true = [0.964, 0.383, 0.792, 0.529, 0.568]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
@@ -34,6 +32,6 @@ dat_str = ""
 for i=1:21
   global dat_str = dat_str * string(data_sample["t"][i]) * ", " * join(collect(data_sample[ks[j]][i] for j=1:(length(ks)-1)), ", ") * "\n"
 end
-write("data/csv/daisy-mamil4_0.csv", dat_str)
-save("data/julia/daisy-mamil4_0.jld2", "data", data_sample)
+write("data/csv/daisy_mamil3_1.csv", dat_str)
+save("data/julia/daisy_mamil3_1.jld2", "data", data_sample)
 
