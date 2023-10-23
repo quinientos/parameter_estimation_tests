@@ -541,8 +541,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_0",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_0",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.549,  
             "a13": 0.715,  
@@ -562,8 +562,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_1",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_1",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.964,  
             "a13": 0.383,  
@@ -583,8 +583,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_2",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_2",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.02,  
             "a13": 0.833,  
@@ -604,8 +604,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_3",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_3",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.118,  
             "a13": 0.64,  
@@ -625,8 +625,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_4",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_4",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.456,  
             "a13": 0.568,  
@@ -646,8 +646,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_5",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_5",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.36,  
             "a13": 0.437,  
@@ -667,8 +667,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_6",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_6",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.315,  
             "a13": 0.364,  
@@ -688,8 +688,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_7",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_7",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.653,  
             "a13": 0.253,  
@@ -709,8 +709,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_8",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_8",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.197,  
             "a13": 0.369,  
@@ -730,8 +730,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_9",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_9",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.977,  
             "a13": 0.605,  
@@ -751,8 +751,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_0",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_0",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.549,  
             "k12": 0.715,  
@@ -775,8 +775,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_1",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_1",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.529,  
             "k12": 0.568,  
@@ -799,8 +799,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_2",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_2",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.461,  
             "k12": 0.781,  
@@ -823,8 +823,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_3",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_3",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.568,  
             "k12": 0.019,  
@@ -847,8 +847,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_4",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_4",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.667,  
             "k12": 0.671,  
@@ -871,8 +871,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_5",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_5",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.161,  
             "k12": 0.653,  
@@ -895,8 +895,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_6",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_6",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.821,  
             "k12": 0.097,  
@@ -919,8 +919,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_7",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_7",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.12,  
             "k12": 0.296,  
@@ -943,8 +943,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_8",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_8",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.576,  
             "k12": 0.929,  
@@ -967,8 +967,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_9",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_9",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.005,  
             "k12": 0.678,  
@@ -1441,8 +1441,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_0",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_0",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.549,  
             "k2": 0.715,  
@@ -1459,8 +1459,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_1",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_1",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.646,  
             "k2": 0.438,  
@@ -1477,8 +1477,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_2",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_2",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.792,  
             "k2": 0.529,  
@@ -1495,8 +1495,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_3",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_3",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.087,  
             "k2": 0.02,  
@@ -1513,8 +1513,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_4",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_4",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.979,  
             "k2": 0.799,  
@@ -1531,8 +1531,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_5",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_5",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.64,  
             "k2": 0.143,  
@@ -1549,8 +1549,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_6",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_6",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.265,  
             "k2": 0.774,  
@@ -1567,8 +1567,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_7",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_7",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.618,  
             "k2": 0.612,  
@@ -1585,8 +1585,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_8",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_8",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.36,  
             "k2": 0.437,  
@@ -1603,8 +1603,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_9",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_9",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.671,  
             "k2": 0.21,  
@@ -1989,6 +1989,6 @@
                 "x1": 0.944,  
                 "x2": 0.682 
         }
-		}
+		},
 	]
 }
