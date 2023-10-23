@@ -2,11 +2,11 @@
 	"names": [
     "biohydrogenation",
     "crauste",
-    "daisy-mamil3",
-    "daisy-mamil4",
+    "daisy_mamil3",
+    "daisy_mamil4",
 		"harmonic",
     "hiv",
-		"lotka-volterra",
+		"lotka_volterra",
     "seir",
     "vanderpol"
 	],
@@ -28,15 +28,15 @@
 			"measurements": {"y1": "e", "y2": "n", "y3": "s+m", "y4": "p"}
     }, 
     {
-      "name": "daisy-mamil3",
+      "name": "daisy_mamil3",
       "state-variables": ["x1", "x2", "x3"],
 			"parameter-variables": ["a12", "a13", "a21", "a31", "a01"],
       "measurement-variables": ["y1", "y2"],
 			"ode-system": {"x1": "-(a21 + a31 + a01) * x1 + a12 * x2 + a13 * x3", "x2": "a21 * x1 - a12 * x2", "x3": "a31 * x1 - a13 * x3"},
-			"measurements": {"y1": "x2", "y2": "x1"}
+			"measurements": {"y1": "x1", "y2": "x2"}
     }, 
     {
-      "name": "daisy-mamil4",
+      "name": "daisy_mamil4",
       "state-variables": ["x1", "x2", "x3", "x4"],
       "parameter-variables": ["k01", "k12", "k13", "k14", "k21", "k31", "k41"],
       "measurement-variables": ["y1", "y2", "y3"],
@@ -60,7 +60,7 @@
 			"measurements": {"y1": "x", "y2": "z", "y3": "w", "y4": "yy+vv"}
     }, 
 		{
-			"name": "lotka-volterra",
+			"name": "lotka_volterra",
 			"state-variables": ["r", "w"],
 			"parameter-variables": ["k1", "k2", "k3"],
       "measurement-variables": ["y1"],
