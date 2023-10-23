@@ -20,15 +20,15 @@
   mixed_volume:  3[K[K[AComputing mixed cells... 2 	 Time: 0:00:00[K
   mixed_volume:  3[K
 [ Info: Best estimate found
-5 Froissart doublets. Number of residues = 10
-3 Froissart doublets. Number of residues = 10
-Parameter(s)        :	a12 = 0.964, a13 = 1.125, a21 = 0.792, a31 = 0.317, a01 = 0.565
-Initial Condition(s):	x1(t) = 0.926, x2(t) = 0.071, x3(t) = -0.146
-Error: 1.0422e-02
+4 Froissart doublets. Number of residues = 10
+6 Froissart doublets. Number of residues = 10
+Parameter(s)        :	a12 = 0.456, a13 = 0.568, a21 = 0.019, a31 = 0.618, a01 = 0.612
+Initial Condition(s):	x1(t) = 0.617, x2(t) = 0.944, x3(t) = 0.682
+Error: 1.8874e-03
 Time: -5.0000e-01
 
-138.687714 seconds (160.52 M allocations: 9.685 GiB, 4.38% gc time, 99.66% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 2.673328111179136
+139.749132 seconds (160.55 M allocations: 9.686 GiB, 4.33% gc time, 99.68% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 2.410574455227157e-7
 
 
-CPU time: 14.68+203.28 sec	Max. resident set size: 3391396 KB	 Elapsed: 203.26 sec.
+CPU time: 15.41+203.79 sec	Max. resident set size: 3328212 KB	 Elapsed: 204.25 sec.

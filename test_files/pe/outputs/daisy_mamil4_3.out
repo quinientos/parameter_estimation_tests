@@ -17,7 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  4[K[K[AComputing mixed cells... 23 	 Time: 0:00:00[K
+  mixed_volume:  8[K[K[AComputing mixed cells... 32 	 Time: 0:00:00[K
   mixed_volume:  50[K
 ┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
 │ Consider using tuples instead.
@@ -29,8 +29,8 @@ Stacktrace:
  [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
    @ Base ./Base.jl:37
  [2] top-level scope
-   @ ~/parameter_estimation_tests/test_files/pe/daisy-mamil4_3.jl:37
-in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy-mamil4_3.jl:36
+   @ ~/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:37
+in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:36
 3 Froissart doublets. Number of residues = 10
 3 Froissart doublets. Number of residues = 10
 4 Froissart doublets. Number of residues = 10
@@ -45,8 +45,8 @@ Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.37
 Error: Not yet calculated
 Time: -5.0000e-01
 
-151.243906 seconds (173.46 M allocations: 10.508 GiB, 4.30% gc time, 94.79% compilation time: <1% of which was recompilation)
+149.536287 seconds (173.47 M allocations: 10.509 GiB, 4.31% gc time, 95.20% compilation time: <1% of which was recompilation)
 Command exited with non-zero status 1
 
 
-CPU time: 16.12+215.68 sec	Max. resident set size: 3396260 KB	 Elapsed: 217.11 sec.
+CPU time: 15.18+214.45 sec	Max. resident set size: 3409364 KB	 Elapsed: 214.96 sec.

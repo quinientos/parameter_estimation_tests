@@ -59,12 +59,22 @@ inputs.exps.exp_data{1}=[
 inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
 inputs.ivpsol.atol=1.0e-12;
 
-inputs.PEsol.id_global_theta='all';
-inputs.PEsol.global_theta_max=2.0*ones(1,7);
-inputs.PEsol.global_theta_min=0.0*ones(1,7);
-inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.global_theta_y0_max=2.0*ones(1,4);                % Maximum allowed values for the initial conditions
-inputs.PEsol.global_theta_y0_min=0.0*ones(1,4);
+inputs.PEsol.id_global_theta=char('k12', 'k21', 'k01');
+inputs.PEsol.global_theta_max=2.0*ones(1,3);
+inputs.PEsol.global_theta_min=0.0*ones(1,3);
+inputs.PEsol.id_global_theta_y0=char('x1', 'x2');               % [] 'all'|User selected| 'none' (default)
+inputs.PEsol.global_theta_y0_max=2.0*ones(1,2);                % Maximum allowed values for the initial conditions
+inputs.PEsol.global_theta_y0_min=0.0*ones(1,2)
+
+inputs.PEsol.id_local_theta{1}=char('k13', 'k41', 'k14', 'k31');                % [] 'all'|User selected| 'none' (default)
+inputs.PEsol.local_theta_max{1}=2.0*ones(1,4);              % Maximum allowed values for the paramters
+inputs.PEsol.local_theta_min{1}=0.0*ones(1,4)              % Minimum allowed values for the parameters
+inputs.PEsol.local_theta_guess{1}=[];            % [] Initial guess
+inputs.PEsol.id_local_theta_y0{1}=char('x3', 'x4');             % [] 'all'|User selected| 'none' (default)
+inputs.PEsol.local_theta_y0_max{1}=2.0*ones(1,2);           % Maximum allowed values for the initial conditions
+inputs.PEsol.local_theta_y0_min{1}=0.0*ones(1,2);           % Minimum allowed values for the initial conditions
+inputs.PEsol.local_theta_y0_guess{1}=[];         % [] Initial guess
+
 %=============================================================
 % COST FUNCTION RELATED DATA
 % SOLVING THE PROBLEM WITH WEIGHTED LEAST SQUARES FUNCTION
@@ -97,3 +107,13 @@ AMIGO_Prep(inputs);
 [PEresults] = AMIGO_PE(inputs);
 PEresults.fit.global_theta_estimated
 PEresults.fit.global_theta_y0_estimated
+
+%val names
+inputs.model.par_names
+inputs.model.st_names
+%true vals:
+inputs.model.par
+inputs.exps.exp_y0{1}
+
+
+

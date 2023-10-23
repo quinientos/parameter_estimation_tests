@@ -17,25 +17,25 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  4[K[K[AComputing mixed cells... 15 	 Time: 0:00:00[K
+  mixed_volume:  3[K[K[AComputing mixed cells... 25 	 Time: 0:00:00[K
   mixed_volume:  50[K
 [ Info: Best estimate found
-3 Froissart doublets. Number of residues = 10
-1 Froissart doublets. Number of residues = 10
 5 Froissart doublets. Number of residues = 10
-Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 1.844, k14 = 0.288, k21 = 0.132, k31 = 0.092, k41 = 0.587
-Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.164, x4(t) = 0.685
-Error: 6.0432e-03
+5 Froissart doublets. Number of residues = 10
+4 Froissart doublets. Number of residues = 10
+Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.926, k14 = 0.071, k21 = 0.087, k31 = 0.020, k41 = 0.833
+Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.979, x4(t) = 0.799
+Error: 4.7121e-03
 Time: -5.0000e-01
 
-Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 0.288, k14 = 1.844, k21 = 0.132, k31 = 0.587, k41 = 0.092
-Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.685, x4(t) = 0.164
-Error: 6.0432e-03
+Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.071, k14 = 0.926, k21 = 0.087, k31 = 0.833, k41 = 0.020
+Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.799, x4(t) = 0.979
+Error: 4.7121e-03
 Time: -5.0000e-01
 
-147.494897 seconds (169.79 M allocations: 10.283 GiB, 4.19% gc time, 96.80% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 7.204825298959119
-For model : Max abs rel. err: 33.24589043111429
+146.716188 seconds (169.77 M allocations: 10.290 GiB, 4.35% gc time, 97.53% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 0.00027521444636233183
+For model : Max abs rel. err: 40.649259423052406
 
 
-CPU time: 15.64+210.98 sec	Max. resident set size: 3398712 KB	 Elapsed: 211.69 sec.
+CPU time: 15.37+210.72 sec	Max. resident set size: 3441936 KB	 Elapsed: 211.59 sec.

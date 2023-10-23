@@ -17,7 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  8[K[K[AComputing mixed cells... 21 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 25 	 Time: 0:00:00[K
   mixed_volume:  50[K
 ┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
 │ Consider using tuples instead.
@@ -29,14 +29,14 @@ Stacktrace:
  [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
    @ Base ./Base.jl:37
  [2] top-level scope
-   @ ~/parameter_estimation_tests/test_files/pe/daisy-mamil4_5.jl:37
-in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy-mamil4_5.jl:36
+   @ ~/parameter_estimation_tests/test_files/pe/daisy_mamil4_5.jl:37
+in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy_mamil4_5.jl:36
 5 Froissart doublets. Number of residues = 10
 5 Froissart doublets. Number of residues = 10
 4 Froissart doublets. Number of residues = 9
 2-element Vector{ParameterEstimation.EstimationResult}:
  Parameter(s)        :	k01 = 0.161+0.000im, k12 = 0.653+0.000im, k13 = 0.364+-0.308im, k14 = 0.364+0.308im, k21 = 0.244+0.000im, k31 = 0.182+-0.133im, k41 = 0.182+0.133im
-Initial Condition(s):	x1(t) = 0.656+-0.000im, x2(t) = 0.138+0.000im, x3(t) = 0.283+0.126im, x4(t) = 0.283+-0.126im
+Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+0.000im, x3(t) = 0.283+0.126im, x4(t) = 0.283+-0.126im
 Error: Not yet calculated
 Time: -5.0000e-01
 
@@ -45,8 +45,8 @@ Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+0.000im, x3(t) = 0.28
 Error: Not yet calculated
 Time: -5.0000e-01
 
-148.839283 seconds (173.46 M allocations: 10.508 GiB, 4.35% gc time, 95.53% compilation time: <1% of which was recompilation)
+147.819176 seconds (173.47 M allocations: 10.508 GiB, 4.51% gc time, 96.31% compilation time: <1% of which was recompilation)
 Command exited with non-zero status 1
 
 
-CPU time: 15.25+213.72 sec	Max. resident set size: 3568212 KB	 Elapsed: 214.19 sec.
+CPU time: 15.12+213.04 sec	Max. resident set size: 3362380 KB	 Elapsed: 213.69 sec.

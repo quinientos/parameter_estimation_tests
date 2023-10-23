@@ -5,13 +5,13 @@
 [ Info: Truncating
 [ Info: Assessing local identifiability
 [ Info: Found Pivots: []
-[ Info: Locally identifiable parameters: [k1, k2, k3, w, r]
+[ Info: Locally identifiable parameters: [a12, a13, a21, a31, a01, x2, x3, x1]
 [ Info: Not identifiable parameters:     []
 [ Info: Randomizing
 [ Info: Gröbner basis computation
 [ Info: Remainder computation
 [ Info: === Summary ===
-[ Info: Globally identifiable parameters:                 [k3, w, r, k1, k2]
+[ Info: Globally identifiable parameters:                 [a01, a13, x2, x3, a31, a12, x1, a21]
 [ Info: Locally but not globally identifiable parameters: []
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
@@ -20,14 +20,15 @@
   mixed_volume:  2[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
   mixed_volume:  3[K
 [ Info: Best estimate found
-4 Froissart doublets. Number of residues = 8
-Parameter(s)        :	 k1 = 0.549,  k2 = 0.715,  k3 = 0.603
-Initial Condition(s):	r(t) = 0.545, w(t) = 0.424
-Error: 9.3568e-04
+5 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+Parameter(s)        :	a12 = 0.197, a13 = 0.369, a21 = 0.821, a31 = 0.097, a01 = 0.838
+Initial Condition(s):	x1(t) = 0.096, x2(t) = 0.976, x3(t) = 0.469
+Error: 1.4445e-03
 Time: -5.0000e-01
 
-137.885058 seconds (159.35 M allocations: 9.611 GiB, 4.27% gc time, 99.72% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 2.492654993679744e-6
+139.720703 seconds (160.55 M allocations: 9.687 GiB, 4.34% gc time, 99.68% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 7.96220460025308e-6
 
 
-CPU time: 14.93+201.40 sec	Max. resident set size: 3325500 KB	 Elapsed: 201.85 sec.
+CPU time: 15.29+202.80 sec	Max. resident set size: 3369820 KB	 Elapsed: 203.81 sec.
