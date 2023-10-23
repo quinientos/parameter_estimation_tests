@@ -17,7 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  7[K[K[AComputing mixed cells... 25 	 Time: 0:00:00[K
+  mixed_volume:  4[K[K[AComputing mixed cells... 23 	 Time: 0:00:00[K
   mixed_volume:  50[K
 ┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
 │ Consider using tuples instead.
@@ -45,8 +45,8 @@ Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.37
 Error: Not yet calculated
 Time: -5.0000e-01
 
-150.810529 seconds (173.52 M allocations: 10.509 GiB, 4.09% gc time, 94.03% compilation time: <1% of which was recompilation)
+151.243906 seconds (173.46 M allocations: 10.508 GiB, 4.30% gc time, 94.79% compilation time: <1% of which was recompilation)
 Command exited with non-zero status 1
 
 
-CPU time: 15.12+216.81 sec	Max. resident set size: 3410112 KB	 Elapsed: 217.05 sec.
+CPU time: 16.12+215.68 sec	Max. resident set size: 3396260 KB	 Elapsed: 217.11 sec.

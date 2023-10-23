@@ -17,7 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 6 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 5 	 Time: 0:00:00[K
   mixed_volume:  6[K
 [ Info: Best estimate found
 4 Froissart doublets. Number of residues = 10
@@ -26,26 +26,20 @@ Initial Condition(s):	S(t) = 0.599, E(t) = 0.530, In(t) = 0.646, NN(t) = 0.438
 Error: 1.0521e-04
 Time: -5.0000e-01
 
-Parameter(s)        :	  a = 0.549,   b = 0.715,  nu = 0.604
-Initial Condition(s):	S(t) = 0.545, E(t) = 0.423, In(t) = 0.646, NN(t) = 0.438
-Error: 1.0521e-04
-Time: -5.0000e-01
-
-Parameter(s)        :	  a = 0.820,   b = 0.620,  nu = 0.463
-Initial Condition(s):	S(t) = 0.861, E(t) = 0.931, In(t) = 0.646, NN(t) = 0.438
-Error: 1.0524e-04
-Time: -5.0000e-01
-
 Parameter(s)        :	  a = 0.463,   b = 0.620,  nu = 0.820
 Initial Condition(s):	S(t) = 0.486, E(t) = 0.244, In(t) = 0.646, NN(t) = 0.438
 Error: 1.0524e-04
 Time: -5.0000e-01
 
-144.613903 seconds (169.38 M allocations: 10.229 GiB, 4.32% gc time, 99.47% compilation time: <1% of which was recompilation)
+Parameter(s)        :	  a = 0.549,   b = 0.715,  nu = 0.604
+Initial Condition(s):	S(t) = 0.545, E(t) = 0.423, In(t) = 0.646, NN(t) = 0.438
+Error: 1.0521e-04
+Time: -5.0000e-01
+
+143.887754 seconds (169.38 M allocations: 10.229 GiB, 4.34% gc time, 99.49% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 0.2508072767958902
-For model : Max abs rel. err: 0.002070001946734421
-For model : Max abs rel. err: 1.195349714612504
-For model : Max abs rel. err: 0.42480522901263784
+For model : Max abs rel. err: 0.4248052290126316
+For model : Max abs rel. err: 0.002070001946753274
 
 
-CPU time: 15.36+209.43 sec	Max. resident set size: 3391904 KB	 Elapsed: 209.65 sec.
+CPU time: 15.58+207.32 sec	Max. resident set size: 3393872 KB	 Elapsed: 208.23 sec.

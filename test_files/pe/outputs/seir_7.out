@@ -31,9 +31,9 @@ Initial Condition(s):	S(t) = 1.191, E(t) = 0.166, In(t) = 0.209, NN(t) = 0.161
 Error: 9.3394e-04
 Time: -5.0000e-01
 
-150.090662 seconds (169.19 M allocations: 10.207 GiB, 4.23% gc time, 99.51% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.00016999851434558048
+144.399417 seconds (169.18 M allocations: 10.207 GiB, 4.21% gc time, 99.51% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 0.00016999851433755313
 For model : Max abs rel. err: 0.6279914870240273
 
 
-CPU time: 15.43+215.83 sec	Max. resident set size: 3417052 KB	 Elapsed: 216.11 sec.
+CPU time: 15.50+208.43 sec	Max. resident set size: 3449516 KB	 Elapsed: 209.20 sec.

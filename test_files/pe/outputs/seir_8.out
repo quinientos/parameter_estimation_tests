@@ -21,18 +21,8 @@
   mixed_volume:  6[K
 [ Info: Best estimate found
 6 Froissart doublets. Number of residues = 10
-Parameter(s)        :	  a = 0.466,   b = 0.252,  nu = 0.653
-Initial Condition(s):	S(t) = 0.175, E(t) = 0.082, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
-
 Parameter(s)        :	  a = 0.653,   b = 0.252,  nu = 0.466
 Initial Condition(s):	S(t) = 0.245, E(t) = 0.159, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
-
-Parameter(s)        :	  a = 0.751,   b = 8.473,  nu = 0.343
-Initial Condition(s):	S(t) = -0.001, E(t) = 0.247, In(t) = 0.110, NN(t) = 0.656
 Error: 1.2276e-04
 Time: -5.0000e-01
 
@@ -41,11 +31,21 @@ Initial Condition(s):	S(t) = -0.000, E(t) = 0.053, In(t) = 0.110, NN(t) = 0.656
 Error: 1.2276e-04
 Time: -5.0000e-01
 
-144.394277 seconds (169.40 M allocations: 10.230 GiB, 4.28% gc time, 99.08% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.48360860314541804
+Parameter(s)        :	  a = 0.751,   b = 8.473,  nu = 0.343
+Initial Condition(s):	S(t) = -0.001, E(t) = 0.247, In(t) = 0.110, NN(t) = 0.656
+Error: 1.2276e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.466,   b = 0.252,  nu = 0.653
+Initial Condition(s):	S(t) = 0.175, E(t) = 0.082, In(t) = 0.110, NN(t) = 0.656
+Error: 1.2276e-04
+Time: -5.0000e-01
+
+144.601525 seconds (169.40 M allocations: 10.230 GiB, 4.47% gc time, 99.01% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 0.003180347161036084
 For model : Max abs rel. err: 32.490582845444514
 For model : Max abs rel. err: 32.490582845444514
+For model : Max abs rel. err: 0.48360860314541804
 
 
-CPU time: 15.29+208.53 sec	Max. resident set size: 3369828 KB	 Elapsed: 209.26 sec.
+CPU time: 15.76+207.82 sec	Max. resident set size: 3426728 KB	 Elapsed: 208.86 sec.

@@ -17,7 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 17 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 26 	 Time: 0:00:00[K
   mixed_volume:  50[K
 ┌ Warning: Instability detected. Aborting
 └ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
@@ -31,19 +31,19 @@
 3 Froissart doublets. Number of residues = 10
 6 Froissart doublets. Number of residues = 10
 3 Froissart doublets. Number of residues = 10
-Parameter(s)        :	k01 = 0.461, k12 = 0.789, k13 = 0.071, k14 = -11388.507, k21 = 0.148, k31 = 0.342, k41 = 8354.143
-Initial Condition(s):	x1(t) = 0.419, x2(t) = 0.265, x3(t) = 1.534, x4(t) = -0.307
-Error: 1.0000e+10
-Time: -5.0000e-01
-
 Parameter(s)        :	k01 = 0.461, k12 = 0.789, k13 = -11388.507, k14 = 0.071, k21 = 0.148, k31 = 8354.143, k41 = 0.342
 Initial Condition(s):	x1(t) = 0.419, x2(t) = 0.265, x3(t) = -0.307, x4(t) = 1.534
 Error: 1.0000e+10
 Time: -5.0000e-01
 
-166.875193 seconds (169.57 M allocations: 10.251 GiB, 3.57% gc time, 85.39% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 17795.542184809827
+Parameter(s)        :	k01 = 0.461, k12 = 0.789, k13 = 0.071, k14 = -11388.507, k21 = 0.148, k31 = 0.342, k41 = 8354.143
+Initial Condition(s):	x1(t) = 0.419, x2(t) = 0.265, x3(t) = 1.534, x4(t) = -0.307
+Error: 1.0000e+10
+Time: -5.0000e-01
+
+150.259414 seconds (169.15 M allocations: 10.239 GiB, 4.28% gc time, 95.62% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 96513.77117184992
+For model : Max abs rel. err: 17795.542184809827
 
 
-CPU time: 15.81+231.09 sec	Max. resident set size: 3484280 KB	 Elapsed: 231.95 sec.
+CPU time: 14.87+214.39 sec	Max. resident set size: 3380184 KB	 Elapsed: 214.39 sec.

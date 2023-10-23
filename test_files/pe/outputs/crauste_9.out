@@ -17,8 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 41 	 Time: 0:00:00[K
-  mixed_volume:  50[K[K[AComputing mixed cells... 44 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 32 	 Time: 0:00:01[K
   mixed_volume:  53[K
 [ Info: Best estimate found
 6 Froissart doublets. Number of residues = 10
@@ -30,8 +29,8 @@ Initial Condition(s):	n(t) = 0.224, e(t) = 0.345, s(t) = 0.945, m(t) = 0.687, p(
 Error: 3.0570e-03
 Time: -5.0000e-01
 
-171.838855 seconds (186.23 M allocations: 11.971 GiB, 4.11% gc time, 87.31% compilation time: <1% of which was recompilation)
+168.893739 seconds (186.07 M allocations: 11.968 GiB, 4.04% gc time, 88.51% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 0.09284519966420456
 
 
-CPU time: 15.48+236.34 sec	Max. resident set size: 3500244 KB	 Elapsed: 237.11 sec.
+CPU time: 16.10+232.45 sec	Max. resident set size: 3553188 KB	 Elapsed: 234.02 sec.

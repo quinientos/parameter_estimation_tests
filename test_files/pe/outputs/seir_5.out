@@ -33,13 +33,8 @@ Stacktrace:
 in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/seir_5.jl:35
 5 Froissart doublets. Number of residues = 10
 4-element Vector{ParameterEstimation.EstimationResult}:
- Parameter(s)        :	  a = -0.052+0.472im,   b = 5.196+0.000im,  nu = -0.052+-0.472im
-Initial Condition(s):	S(t) = 0.002+-0.014im, E(t) = -0.397+0.336im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
-Error: Not yet calculated
-Time: -5.0000e-01
-
  Parameter(s)        :	  a = -0.052+-0.472im,   b = 5.196+0.000im,  nu = -0.052+0.472im
-Initial Condition(s):	S(t) = 0.002+0.014im, E(t) = -0.397+-0.336im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
+Initial Condition(s):	S(t) = 0.002+0.014im, E(t) = -0.397+-0.336im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
 Time: -5.0000e-01
 
@@ -48,13 +43,18 @@ Initial Condition(s):	S(t) = 0.943+0.008im, E(t) = 0.681+0.008im, In(t) = 0.360+
 Error: Not yet calculated
 Time: -5.0000e-01
 
+ Parameter(s)        :	  a = -0.052+0.472im,   b = 5.196+0.000im,  nu = -0.052+-0.472im
+Initial Condition(s):	S(t) = 0.002+-0.014im, E(t) = -0.397+0.336im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
+Error: Not yet calculated
+Time: -5.0000e-01
+
  Parameter(s)        :	  a = 0.617+-0.005im,   b = 0.612+0.000im,  nu = 0.617+0.005im
 Initial Condition(s):	S(t) = 0.943+-0.008im, E(t) = 0.681+-0.008im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
 Time: -5.0000e-01
 
-143.835196 seconds (172.84 M allocations: 10.444 GiB, 4.36% gc time, 99.43% compilation time: <1% of which was recompilation)
+143.916261 seconds (172.85 M allocations: 10.444 GiB, 4.45% gc time, 99.49% compilation time: <1% of which was recompilation)
 Command exited with non-zero status 1
 
 
-CPU time: 15.94+208.78 sec	Max. resident set size: 3442276 KB	 Elapsed: 210.19 sec.
+CPU time: 15.10+209.38 sec	Max. resident set size: 3441820 KB	 Elapsed: 209.70 sec.

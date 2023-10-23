@@ -17,36 +17,36 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 37 	 Time: 0:00:00[K
+  mixed_volume:  4[K[K[AComputing mixed cells... 31 	 Time: 0:00:00[K
   mixed_volume:  50[K
 [ Info: Best estimate found
 6 Froissart doublets. Number of residues = 10
 3 Froissart doublets. Number of residues = 10
 Parameter(s)        :	 k5 = 0.318,  k6 = 0.414,  k7 = 0.064,  k8 = 0.957,  k9 = -0.570, k10 = -0.266
-Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.310, x7(t) = 6855271288070.363
+Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.310, x7(t) = 4232138815096.362
 Error: 4.7498e-04
 Time: -5.0000e-01
 
-Parameter(s)        :	 k5 = 0.318,  k6 = 0.414,  k7 = -0.000,  k8 = -0.708,  k9 = 0.427, k10 = 1.897
-Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.614, x7(t) = 6855271288069.915
-Error: 4.7808e-04
-Time: -5.0000e-01
-
 Parameter(s)        :	 k5 = 0.318,  k6 = 0.414,  k7 = 0.064,  k8 = 0.691,  k9 = 0.570, k10 = 0.266
-Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.576, x7(t) = 6855271288070.362
+Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.576, x7(t) = 4232138815096.363
 Error: 4.7498e-04
 Time: -5.0000e-01
 
 Parameter(s)        :	 k5 = 0.318,  k6 = 0.414,  k7 = -0.000,  k8 = 1.190,  k9 = -0.427, k10 = -1.897
-Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = -1.284, x7(t) = 6855271288069.914
+Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = -1.284, x7(t) = 4232138815095.915
 Error: 4.7808e-04
 Time: -5.0000e-01
 
-160.822200 seconds (177.11 M allocations: 10.734 GiB, 3.92% gc time, 95.70% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 7.379194066813169e12
-For model : Max abs rel. err: 7.379194066812687e12
-For model : Max abs rel. err: 7.379194066813168e12
-For model : Max abs rel. err: 7.379194066812686e12
+Parameter(s)        :	 k5 = 0.318,  k6 = 0.414,  k7 = -0.000,  k8 = -0.708,  k9 = 0.427, k10 = 1.897
+Initial Condition(s):	x4(t) = 0.523, x5(t) = 0.094, x6(t) = 0.614, x7(t) = 4232138815095.915
+Error: 4.7808e-04
+Time: -5.0000e-01
+
+162.792504 seconds (177.09 M allocations: 10.733 GiB, 4.06% gc time, 95.51% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 4.555585376851919e12
+For model : Max abs rel. err: 4.55558537685192e12
+For model : Max abs rel. err: 4.5555853768514375e12
+For model : Max abs rel. err: 4.5555853768514375e12
 
 
-CPU time: 16.04+225.07 sec	Max. resident set size: 3547524 KB	 Elapsed: 225.98 sec.
+CPU time: 15.42+227.20 sec	Max. resident set size: 3533288 KB	 Elapsed: 227.54 sec.

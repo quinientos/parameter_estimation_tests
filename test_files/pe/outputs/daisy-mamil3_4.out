@@ -27,8 +27,8 @@ Initial Condition(s):	x1(t) = 0.617, x2(t) = 0.944, x3(t) = 0.682
 Error: 1.8874e-03
 Time: -5.0000e-01
 
-138.080197 seconds (160.52 M allocations: 9.685 GiB, 4.31% gc time, 99.69% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 2.410574443499449e-7
+139.441385 seconds (160.53 M allocations: 9.685 GiB, 4.35% gc time, 99.68% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 2.410574449363303e-7
 
 
-CPU time: 15.20+202.10 sec	Max. resident set size: 3402420 KB	 Elapsed: 202.63 sec.
+CPU time: 15.07+203.21 sec	Max. resident set size: 3379944 KB	 Elapsed: 203.80 sec.

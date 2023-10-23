@@ -24,8 +24,8 @@ Initial Condition(s):	x1(t) = 0.071, x2(t) = 0.087
 Error: 7.8021e-04
 Time: -5.0000e-01
 
-135.511695 seconds (156.13 M allocations: 9.405 GiB, 4.41% gc time, 99.81% compilation time: <1% of which was recompilation)
+136.266904 seconds (156.13 M allocations: 9.405 GiB, 4.23% gc time, 99.81% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 9.609838786797186e-9
 
 
-CPU time: 14.84+199.74 sec	Max. resident set size: 3281468 KB	 Elapsed: 200.21 sec.
+CPU time: 14.72+200.65 sec	Max. resident set size: 3364180 KB	 Elapsed: 200.62 sec.

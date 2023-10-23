@@ -17,8 +17,7 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 27 	 Time: 0:00:00[K
-  mixed_volume:  47[K[K[AComputing mixed cells... 30 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 41 	 Time: 0:00:01[K
   mixed_volume:  53[K
 ┌ Warning: dt(-5.598414588045546e-17) <= dtmin(1.1102230246251565e-16) at t=-0.07342768446997536, and step error estimate = 70.79315675049105. Aborting. There is either an error in your model specification or the true solution is unstable.
 └ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:599
@@ -36,8 +35,8 @@ Initial Condition(s):	n(t) = 0.569, e(t) = 0.407, s(t) = 0.197, m(t) = 0.569, p(
 Error: 3.4527e-03
 Time: -5.0000e-01
 
-167.891631 seconds (186.01 M allocations: 11.961 GiB, 4.05% gc time, 88.62% compilation time: <1% of which was recompilation)
+168.544795 seconds (185.97 M allocations: 11.961 GiB, 4.20% gc time, 88.98% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 25.4807746124134
 
 
-CPU time: 15.35+232.45 sec	Max. resident set size: 3535940 KB	 Elapsed: 232.76 sec.
+CPU time: 15.39+232.78 sec	Max. resident set size: 3476392 KB	 Elapsed: 233.53 sec.

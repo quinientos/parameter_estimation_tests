@@ -26,6 +26,11 @@ Initial Condition(s):	S(t) = 2.195, E(t) = 1.662, In(t) = 0.838, NN(t) = 0.096
 Error: 8.1132e-04
 Time: -5.0000e-01
 
+Parameter(s)        :	  a = 0.097,   b = 0.074,  nu = 1.450
+Initial Condition(s):	S(t) = 0.543, E(t) = 0.001, In(t) = 0.838, NN(t) = 0.096
+Error: 8.1211e-04
+Time: -5.0000e-01
+
 Parameter(s)        :	  a = 1.450,   b = 0.074,  nu = 0.097
 Initial Condition(s):	S(t) = 8.131, E(t) = 11.717, In(t) = 0.838, NN(t) = 0.096
 Error: 8.1211e-04
@@ -36,10 +41,11 @@ Initial Condition(s):	S(t) = 0.821, E(t) = 0.097, In(t) = 0.838, NN(t) = 0.096
 Error: 8.1133e-04
 Time: -5.0000e-01
 
-144.130344 seconds (169.37 M allocations: 10.229 GiB, 4.41% gc time, 99.50% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 16.134773050426613
-For model : Max abs rel. err: 119.7976257709001
-For model : Max abs rel. err: 5.0503628549524136e-5
+143.577549 seconds (169.25 M allocations: 10.211 GiB, 4.27% gc time, 99.44% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 16.134773050426535
+For model : Max abs rel. err: 2.9299467331134244
+For model : Max abs rel. err: 119.79762577090014
+For model : Max abs rel. err: 5.050362853850775e-5
 
 
-CPU time: 15.22+208.25 sec	Max. resident set size: 3407688 KB	 Elapsed: 208.76 sec.
+CPU time: 15.18+207.46 sec	Max. resident set size: 3427956 KB	 Elapsed: 208.11 sec.

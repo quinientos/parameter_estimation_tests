@@ -41,11 +41,11 @@ Initial Condition(s):	S(t) = -0.001, E(t) = 0.486, In(t) = 0.143, NN(t) = 0.945
 Error: 2.5124e-03
 Time: -5.0000e-01
 
-150.502157 seconds (169.38 M allocations: 10.229 GiB, 4.28% gc time, 99.43% compilation time: <1% of which was recompilation)
+144.016763 seconds (169.38 M allocations: 10.229 GiB, 4.21% gc time, 99.48% compilation time: <1% of which was recompilation)
 For model : Max abs rel. err: 0.039921998423385834
 For model : Max abs rel. err: 39.30037701362546
 For model : Max abs rel. err: 0.01169369576282265
 For model : Max abs rel. err: 39.30037701362546
 
 
-CPU time: 15.28+215.90 sec	Max. resident set size: 3429812 KB	 Elapsed: 216.85 sec.
+CPU time: 15.44+207.65 sec	Max. resident set size: 3421104 KB	 Elapsed: 208.64 sec.

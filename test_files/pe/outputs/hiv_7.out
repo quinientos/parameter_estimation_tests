@@ -29,8 +29,8 @@ Initial Condition(s):	x(t) = 0.397, yy(t) = 0.881, vv(t) = 0.581, w(t) = 0.882, 
 Error: 1.8309e-03
 Time: -5.0000e-01
 
-146.741706 seconds (171.46 M allocations: 10.548 GiB, 4.21% gc time, 98.52% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 4.2252305985071085e-6
+145.389055 seconds (171.45 M allocations: 10.548 GiB, 4.29% gc time, 98.68% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 4.225230595146568e-6
 
 
-CPU time: 16.00+210.69 sec	Max. resident set size: 3461248 KB	 Elapsed: 211.80 sec.
+CPU time: 15.45+209.09 sec	Max. resident set size: 3453536 KB	 Elapsed: 209.80 sec.
