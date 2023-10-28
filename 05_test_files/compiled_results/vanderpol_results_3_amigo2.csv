@@ -1,0 +1,61 @@
+,a,b,x1,x2
+vanderpol_0,,,,
+True Value,0.549,0.715,0.603,0.545
+Test Result,0.549,0.715,0.603,0.545
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_1,,,,
+True Value,0.424,0.646,0.438,0.892
+Test Result,0.424,0.646,0.438,0.892
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_2,,,,
+True Value,0.964,0.383,0.792,0.529
+Test Result,0.964,0.383,0.792,0.529
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_3,,,,
+True Value,0.568,0.926,0.071,0.087
+Test Result,0.568,0.926,0.071,0.087
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_4,,,,
+True Value,0.02,0.833,0.778,0.87
+Test Result,0.02,0.833,0.778,0.87
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_5,,,,
+True Value,0.979,0.799,0.461,0.781
+Test Result,0.979,0.799,0.461,0.781
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_6,,,,
+True Value,0.118,0.64,0.143,0.945
+Test Result,0.118,0.64,0.143,0.945
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_7,,,,
+True Value,0.522,0.415,0.265,0.774
+Test Result,0.522,0.415,0.265,0.774
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_8,,,,
+True Value,0.456,0.568,0.019,0.618
+Test Result,0.456,0.568,0.019,0.618
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,
+vanderpol_9,,,,
+True Value,0.612,0.617,0.944,0.682
+Test Result,0.612,0.617,0.944,0.682
+Abs Error,0.0,0.0,0.0,0.0
+Rel Error,0.0,0.0,0.0,0.0
+,,,,

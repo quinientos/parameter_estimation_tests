@@ -1,0 +1,42 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 41 	 Time: 0:00:01[K
+  mixed_volume:  53[K
+┌ Warning: dt(-5.598414588045546e-17) <= dtmin(1.1102230246251565e-16) at t=-0.07342768446997536, and step error estimate = 70.79315675049105. Aborting. There is either an error in your model specification or the true solution is unstable.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:599
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
+┌ Warning: dt(1.1102230246251565e-16) <= dtmin(1.1102230246251565e-16) at t=-0.4361472381434293, and step error estimate = 894.4271581008854. Aborting. There is either an error in your model specification or the true solution is unstable.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:599
+[ Info: Best estimate found
+2 Froissart doublets. Number of residues = 10
+1 Froissart doublets. Number of residues = 10
+2 Froissart doublets. Number of residues = 10
+4 Froissart doublets. Number of residues = 10
+Parameter(s)        :	muN = 0.806, muEE = 0.704, muLE = 2.648, muLL = -1.127, muM = 0.729, muP = 0.202, muPE = 3.044, muPL = 4.838, deltaNE = 0.162, deltaEL = 0.616, deltaLM = 0.233, rhoE = 0.848, rhoP = 3.613
+Initial Condition(s):	n(t) = 0.569, e(t) = 0.407, s(t) = 0.197, m(t) = 0.569, p(t) = 0.454
+Error: 3.4527e-03
+Time: -5.0000e-01
+
+168.544795 seconds (185.97 M allocations: 11.961 GiB, 4.20% gc time, 88.98% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 25.4807746124134
+
+
+CPU time: 15.39+232.78 sec	Max. resident set size: 3476392 KB	 Elapsed: 233.53 sec.

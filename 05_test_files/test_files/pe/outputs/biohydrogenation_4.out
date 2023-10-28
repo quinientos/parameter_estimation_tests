@@ -1,0 +1,64 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: [x7_0]
+[ Info: Locally identifiable parameters: [k5, k6, k7, k8, k9, k10, x6, x5, x4]
+[ Info: Not identifiable parameters:     [x7]
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k6, k7, x5, k5, x4]
+[ Info: Locally but not globally identifiable parameters: [k8, x6, k9, k10]
+[ Info: Not identifiable parameters:                      [x7]
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  3[K[K[AComputing mixed cells... 36 	 Time: 0:00:00[K
+  mixed_volume:  50[K
+[ Info: Best estimate found
+4 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = 0.147,  k8 = 0.089,  k9 = -1.538, k10 = -0.341
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = -0.112, x7(t) = 1738705622652.947
+Error: 4.7103e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = -0.644,  k8 = -0.470,  k9 = -0.383, k10 = 0.079
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = -0.124, x7(t) = 1738705622652.949
+Error: 4.7104e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = 0.147,  k8 = -0.252,  k9 = 1.538, k10 = 0.341
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = 0.229, x7(t) = 1738705622652.946
+Error: 4.7103e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = -0.644,  k8 = -0.390,  k9 = 0.383, k10 = -0.079
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = -0.204, x7(t) = 1738705622652.950
+Error: 4.7104e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = 0.698,  k8 = 0.060,  k9 = 0.667, k10 = 0.671
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = 0.315, x7(t) = 1738705622652.944
+Error: 4.7101e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.360,  k6 = 0.437,  k7 = 0.698,  k8 = 0.731,  k9 = -0.667, k10 = -0.671
+Initial Condition(s):	x4(t) = 0.210, x5(t) = 0.129, x6(t) = -0.356, x7(t) = 1738705622652.944
+Error: 4.7101e-04
+Time: -5.0000e-01
+
+161.380199 seconds (177.18 M allocations: 10.742 GiB, 3.92% gc time, 95.19% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 4.776663798496105e12
+For model : Max abs rel. err: 4.776663798496114e12
+For model : Max abs rel. err: 4.776663798496105e12
+For model : Max abs rel. err: 4.776663798496114e12
+For model : Max abs rel. err: 4.7766637984961e12
+For model : Max abs rel. err: 4.7766637984961e12
+
+
+CPU time: 15.74+225.49 sec	Max. resident set size: 3472704 KB	 Elapsed: 226.22 sec.

@@ -1,0 +1,45 @@
+********** MODEL NAME
+
+hiv_8
+
+********** MODEL NOTES
+
+
+********** MODEL STATES
+
+d/dt(x) = lm - d * x - beta * x * vv
+d/dt(yy) = beta * x * vv - a * yy
+d/dt(vv) = k * yy - uu * vv
+d/dt(w) = c * x * yy * w - c * q * yy * w - b * w
+d/dt(z) = c * q * yy * w - h * z
+
+********** MODEL PARAMETERS
+
+lm = 0.725
+d = 0.501
+beta = 0.956
+a = 0.644
+k = 0.424
+uu = 0.606
+c = 0.019
+q = 0.302
+b = 0.66
+h = 0.29
+
+********** MODEL VARIABLES
+
+OUTPUT1 = x
+OUTPUT2 = z
+OUTPUT3 = w
+OUTPUT4 = yy+vv
+
+********** MODEL REACTIONS
+
+
+********** MODEL FUNCTIONS
+
+
+********** MODEL EVENTS
+
+
+

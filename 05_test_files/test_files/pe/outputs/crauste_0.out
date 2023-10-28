@@ -1,0 +1,36 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 44 	 Time: 0:00:00[K
+  mixed_volume:  52[K[K[AComputing mixed cells... 45 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+[ Info: Best estimate found
+2 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+3 Froissart doublets. Number of residues = 10
+Parameter(s)        :	muN = 0.549, muEE = 0.715, muLE = 14.601, muLL = 133.664, muM = -2.642, muP = 0.708, muPE = 0.532, muPL = 1.337, deltaNE = 0.964, deltaEL = 0.383, deltaLM = 6.119, rhoE = 0.529, rhoP = 0.463
+Initial Condition(s):	n(t) = 0.926, e(t) = 0.071, s(t) = -0.059, m(t) = 0.165, p(t) = 0.833
+Error: 6.5698e-03
+Time: -5.0000e-01
+
+170.353613 seconds (185.94 M allocations: 11.957 GiB, 4.14% gc time, 88.16% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 244.25529533617512
+
+
+CPU time: 15.20+235.00 sec	Max. resident set size: 3523184 KB	 Elapsed: 235.33 sec.

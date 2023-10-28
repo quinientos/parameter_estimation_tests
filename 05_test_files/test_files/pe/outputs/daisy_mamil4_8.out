@@ -1,0 +1,41 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k01, k12, k13, k14, k21, k31, k41, x3, x1, x2, x4]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k12, k21, x1, k01, x2]
+[ Info: Locally but not globally identifiable parameters: [x4, k13, x3, k41, k14, k31]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  4[K[K[AComputing mixed cells... 23 	 Time: 0:00:00[K
+  mixed_volume:  50[K
+[ Info: Best estimate found
+3 Froissart doublets. Number of residues = 10
+1 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 0.288, k14 = 1.844, k21 = 0.132, k31 = 0.587, k41 = 0.092
+Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.685, x4(t) = 0.164
+Error: 6.0432e-03
+Time: -5.0000e-01
+
+Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 1.844, k14 = 0.288, k21 = 0.132, k31 = 0.092, k41 = 0.587
+Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.164, x4(t) = 0.685
+Error: 6.0432e-03
+Time: -5.0000e-01
+
+148.285035 seconds (169.89 M allocations: 10.286 GiB, 4.18% gc time, 96.06% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 33.24589043111429
+For model : Max abs rel. err: 7.204825298959119
+
+
+CPU time: 14.92+212.53 sec	Max. resident set size: 3456172 KB	 Elapsed: 212.80 sec.

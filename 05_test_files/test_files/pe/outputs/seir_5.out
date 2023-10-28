@@ -1,0 +1,60 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 6 	 Time: 0:00:00[K
+  mixed_volume:  6[K
+┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
+│ Consider using tuples instead.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
+┌ Warning: No solution found
+└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
+ERROR: LoadError: type Array has no field states
+Stacktrace:
+ [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
+   @ Base ./Base.jl:37
+ [2] top-level scope
+   @ ~/parameter_estimation_tests/test_files/pe/seir_5.jl:36
+in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/seir_5.jl:35
+5 Froissart doublets. Number of residues = 10
+4-element Vector{ParameterEstimation.EstimationResult}:
+ Parameter(s)        :	  a = -0.052+-0.472im,   b = 5.196+0.000im,  nu = -0.052+0.472im
+Initial Condition(s):	S(t) = 0.002+0.014im, E(t) = -0.397+-0.336im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ Parameter(s)        :	  a = 0.617+0.005im,   b = 0.612+0.000im,  nu = 0.617+-0.005im
+Initial Condition(s):	S(t) = 0.943+0.008im, E(t) = 0.681+0.008im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ Parameter(s)        :	  a = -0.052+0.472im,   b = 5.196+0.000im,  nu = -0.052+-0.472im
+Initial Condition(s):	S(t) = 0.002+-0.014im, E(t) = -0.397+0.336im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ Parameter(s)        :	  a = 0.617+-0.005im,   b = 0.612+0.000im,  nu = 0.617+0.005im
+Initial Condition(s):	S(t) = 0.943+-0.008im, E(t) = 0.681+-0.008im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+143.916261 seconds (172.85 M allocations: 10.444 GiB, 4.45% gc time, 99.49% compilation time: <1% of which was recompilation)
+Command exited with non-zero status 1
+
+
+CPU time: 15.10+209.38 sec	Max. resident set size: 3441820 KB	 Elapsed: 209.70 sec.

@@ -1,0 +1,52 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k01, k12, k13, k14, k21, k31, k41, x3, x1, x2, x4]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k12, k21, x1, k01, x2]
+[ Info: Locally but not globally identifiable parameters: [x4, k13, x3, k41, k14, k31]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  8[K[K[AComputing mixed cells... 32 	 Time: 0:00:00[K
+  mixed_volume:  50[K
+┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
+│ Consider using tuples instead.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
+┌ Warning: No solution found
+└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
+ERROR: LoadError: type Array has no field states
+Stacktrace:
+ [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
+   @ Base ./Base.jl:37
+ [2] top-level scope
+   @ ~/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:37
+in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:36
+3 Froissart doublets. Number of residues = 10
+3 Froissart doublets. Number of residues = 10
+4 Froissart doublets. Number of residues = 10
+2-element Vector{ParameterEstimation.EstimationResult}:
+ Parameter(s)        :	k01 = 0.568+0.000im, k12 = 0.019+0.000im, k13 = 0.644+0.052im, k14 = 0.644+-0.052im, k21 = 0.617+0.000im, k31 = 0.816+0.559im, k41 = 0.816+-0.559im
+Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.379+0.173im, x4(t) = 0.379+-0.173im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ Parameter(s)        :	k01 = 0.568+0.000im, k12 = 0.019+0.000im, k13 = 0.644+-0.052im, k14 = 0.644+0.052im, k21 = 0.617+0.000im, k31 = 0.816+-0.559im, k41 = 0.816+0.559im
+Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.379+-0.173im, x4(t) = 0.379+0.173im
+Error: Not yet calculated
+Time: -5.0000e-01
+
+149.536287 seconds (173.47 M allocations: 10.509 GiB, 4.31% gc time, 95.20% compilation time: <1% of which was recompilation)
+Command exited with non-zero status 1
+
+
+CPU time: 15.18+214.45 sec	Max. resident set size: 3409364 KB	 Elapsed: 214.96 sec.

@@ -1,0 +1,52 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: [x7_0]
+[ Info: Locally identifiable parameters: [k5, k6, k7, k8, k9, k10, x6, x5, x4]
+[ Info: Not identifiable parameters:     [x7]
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k6, k7, x5, k5, x4]
+[ Info: Locally but not globally identifiable parameters: [k8, x6, k9, k10]
+[ Info: Not identifiable parameters:                      [x7]
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 40 	 Time: 0:00:00[K
+  mixed_volume:  50[K
+[ Info: Best estimate found
+6 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 17.340,  k8 = 28.111,  k9 = -1.268, k10 = 46.790
+Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.718, x7(t) = 3518255127854.648
+Error: 6.1574e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 17.340,  k8 = 74.900,  k9 = 1.268, k10 = -46.790
+Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = -46.072, x7(t) = 3518255127854.647
+Error: 6.1574e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 0.956,  k8 = 0.644,  k9 = 0.424, k10 = 0.606
+Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.660, x7(t) = 3518255127854.026
+Error: 6.1572e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 0.956,  k8 = 1.250,  k9 = -0.424, k10 = -0.606
+Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.054, x7(t) = 3518255127854.027
+Error: 6.1572e-04
+Time: -5.0000e-01
+
+161.814645 seconds (176.99 M allocations: 10.728 GiB, 3.91% gc time, 95.41% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 1.2131914233980547e13
+For model : Max abs rel. err: 1.2131914233980543e13
+For model : Max abs rel. err: 1.2131914233978402e13
+For model : Max abs rel. err: 1.2131914233978404e13
+
+
+CPU time: 15.58+225.82 sec	Max. resident set size: 3555000 KB	 Elapsed: 226.65 sec.

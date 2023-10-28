@@ -1,0 +1,30 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, x2, x1]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [b, x2, x1, a]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+[ Info: Best estimate found
+3 Froissart doublets. Number of residues = 10
+Parameter(s)        :	  a = 0.612,   b = 0.617
+Initial Condition(s):	x1(t) = 0.944, x2(t) = 0.682
+Error: 6.0778e-03
+Time: -5.0000e-01
+
+140.282393 seconds (158.27 M allocations: 9.540 GiB, 4.65% gc time, 99.78% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 1.9459137136434598e-8
+
+
+CPU time: 16.65+202.50 sec	Max. resident set size: 3394848 KB	 Elapsed: 204.67 sec.

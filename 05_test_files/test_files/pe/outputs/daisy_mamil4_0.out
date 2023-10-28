@@ -1,0 +1,45 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k01, k12, k13, k14, k21, k31, k41, x3, x1, x2, x4]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k12, k21, x1, k01, x2]
+[ Info: Locally but not globally identifiable parameters: [x4, k13, x3, k41, k14, k31]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  9[K[K[AComputing mixed cells... 17 	 Time: 0:00:00[K
+  mixed_volume:  50[K
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
+[ Info: Best estimate found
+1 Froissart doublets. Number of residues = 10
+3 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+Parameter(s)        :	k01 = 0.549, k12 = 0.715, k13 = 0.605, k14 = 608.915, k21 = 0.424, k31 = 1.136, k41 = 21.191
+Initial Condition(s):	x1(t) = -902474413606103363065031142840019920904899264512.000, x2(t) = 607899884050322786773743975773388354556526592.000, x3(t) = 1627715212323622150128255088776648970809114624.000, x4(t) = 899452577784599846409668846944721315073221459968.000
+Error: 2.1478e+46
+Time: -5.0000e-01
+
+Parameter(s)        :	k01 = 0.549, k12 = 0.715, k13 = 608.915, k14 = 0.605, k21 = 0.424, k31 = 21.191, k41 = 1.136
+Initial Condition(s):	x1(t) = -902524726219377644059480055297230109940798980096.000, x2(t) = 607933774243013676769525469133820650869227520.000, x3(t) = 899502721931649696156665348824498645522603573248.000, x4(t) = 1627805956841986505362927386412656732516909056.000
+Error: 2.1479e+46
+Time: -5.0000e-01
+
+154.818355 seconds (169.18 M allocations: 10.240 GiB, 4.17% gc time, 96.44% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 1.135672446697727e48
+For model : Max abs rel. err: 2.3485710755395552e48
+
+
+CPU time: 15.44+219.90 sec	Max. resident set size: 3438012 KB	 Elapsed: 221.01 sec.

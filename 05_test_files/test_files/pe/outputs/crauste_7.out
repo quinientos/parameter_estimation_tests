@@ -1,0 +1,39 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  3[K[K[AComputing mixed cells... 31 	 Time: 0:00:00[K
+  mixed_volume:  47[K[K[AComputing mixed cells... 37 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+┌ Warning: dt(1.1102230246251565e-16) <= dtmin(1.1102230246251565e-16) at t=-0.22293435719473495, and step error estimate = 0.2522384534464255. Aborting. There is either an error in your model specification or the true solution is unstable.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:599
+[ Info: Best estimate found
+4 Froissart doublets. Number of residues = 10
+4 Froissart doublets. Number of residues = 10
+4 Froissart doublets. Number of residues = 10
+6 Froissart doublets. Number of residues = 10
+Parameter(s)        :	muN = 0.019, muEE = 0.302, muLE = -9.781, muLL = -764.335, muM = 0.359, muP = -0.339, muPE = 0.013, muPL = 0.518, deltaNE = 0.570, deltaEL = 0.591, deltaLM = 6.419, rhoE = 0.653, rhoP = -0.456
+Initial Condition(s):	n(t) = 0.431, e(t) = 0.897, s(t) = -0.003, m(t) = 0.807, p(t) = 0.892
+Error: 1.3238e-03
+Time: -5.0000e-01
+
+174.804945 seconds (186.20 M allocations: 11.971 GiB, 3.87% gc time, 85.85% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 2636.6380785859988
+
+
+CPU time: 15.51+239.60 sec	Max. resident set size: 3518856 KB	 Elapsed: 240.19 sec.

@@ -1,0 +1,36 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [lm, d, beta, a, k, uu, c, q, b, h, x, yy, vv, w, z]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [uu, beta, k, lm, c, w, q, d, h, vv, z, a, x, yy, b]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 2 	 Time: 0:00:00[K
+  mixed_volume:  2[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
+  mixed_volume:  4[K
+[ Info: Best estimate found
+4 Froissart doublets. Number of residues = 10
+5 Froissart doublets. Number of residues = 10
+3 Froissart doublets. Number of residues = 10
+3 Froissart doublets. Number of residues = 10
+Parameter(s)        :	 lm = 0.087,   d = 0.020, beta = 0.833,   a = 0.778,   k = 0.870,  uu = 0.979,   c = 0.799,   q = 0.461,   b = 0.781,   h = 0.118
+Initial Condition(s):	x(t) = 0.640, yy(t) = 0.143, vv(t) = 0.945, w(t) = 0.522, z(t) = 0.415
+Error: 2.8266e-03
+Time: -5.0000e-01
+
+146.711324 seconds (171.36 M allocations: 10.542 GiB, 4.26% gc time, 98.63% compilation time: <1% of which was recompilation)
+For model : Max abs rel. err: 1.8534544067930203e-6
+
+
+CPU time: 15.25+211.07 sec	Max. resident set size: 3391732 KB	 Elapsed: 211.32 sec.
