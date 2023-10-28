@@ -1,0 +1,31 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, x2, x1]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [b, x2, x1, a]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+[ Info: Best estimate found
+Starting backsolving.
+parameter values: [0.5489999998028592, 0.7150000018984963]
+midpoint initial conditions [0.603, 0.545]
+saveat: StepRangeLen(0.0, 0.0, 21)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.603, x2(t) => 0.545)
+Parameter(s)        :	  a = 0.549,   b = 0.715
+Initial Condition(s):	x1(t) = 0.603, x2(t) = 0.545
+Error: 1.4254e-09
+Time: 0.0000e+00
+
+ 26.605686 seconds (26.38 M allocations: 1.669 GiB, 2.57% gc time, 99.01% compilation time: 11% of which was recompilation)
+For model : Max abs rel. err: 2.655239664503287e-9

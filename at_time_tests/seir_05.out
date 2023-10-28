@@ -1,0 +1,52 @@
+DEBUG
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+[ Info: Best estimate found
+Starting backsolving.
+parameter values: [0.6015550204171449, 0.7152140669937688, 0.5501588473495983]
+midpoint initial conditions [0.21762503203027467, 0.5815620790824806, 0.5985263252475468, 0.438]
+saveat: 0.5:-0.05:-0.5
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5971116242075193, E(t) => 0.5264341924781827, In(t) => 0.6459998993853493, NN(t) => 0.438)
+Starting backsolving.
+parameter values: [0.45892962459798253, 0.6174432351985432, 0.8312565573949591]
+midpoint initial conditions [0.20205175342563594, 0.2822070598502036, 0.5985263252475468, 0.438]
+saveat: 0.5:-0.05:-0.5
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.4829339525724744, E(t) => 0.23751416216294802, In(t) => 0.6460106561777538, NN(t) => 0.438)
+Starting backsolving.
+parameter values: [0.5501588473495983, 0.7152140669937688, 0.6015550204171449]
+midpoint initial conditions [0.19903139814737214, 0.48073667524511904, 0.5985263252475468, 0.438]
+saveat: 0.5:-0.05:-0.5
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5460950957311616, E(t) => 0.4262627529650632, In(t) => 0.6459999076523583, NN(t) => 0.438)
+Starting backsolving.
+parameter values: [0.8312565573949584, 0.6174432351985434, 0.45892962459798275]
+midpoint initial conditions [0.3659751647441314, 0.9967409280279187, 0.5985263252475468, 0.438]
+saveat: 0.5:-0.05:-0.5
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.8747352617833842, E(t) => 0.9543129542211399, In(t) => 0.646010532259169, NN(t) => 0.438)
+Parameter(s)        :	  a = 0.550,   b = 0.715,  nu = 0.602
+Initial Condition(s):	S(t) = 0.546, E(t) = 0.426, In(t) = 0.646, NN(t) = 0.438
+Error: 1.0522e-04
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.831,   b = 0.617,  nu = 0.459
+Initial Condition(s):	S(t) = 0.875, E(t) = 0.954, In(t) = 0.646, NN(t) = 0.438
+Error: 1.0587e-04
+Time: -5.0000e-01
+
+ 35.483815 seconds (39.51 M allocations: 2.486 GiB, 2.65% gc time, 97.76% compilation time: 9% of which was recompilation)
+For model : Max abs rel. err: 0.005336681521375544
+For model : Max abs rel. err: 1.2507380995781605
