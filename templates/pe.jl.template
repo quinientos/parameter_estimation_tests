@@ -29,7 +29,7 @@ datasize = {{time_count}}
 data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time={{at_time}})
                 all_params = vcat(ic, p_true)
 for each in res
   estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))

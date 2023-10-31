@@ -1,5 +1,7 @@
+using ModelingToolkit, DifferentialEquations, Optimization, OptimizationPolyalgorithms,
+      OptimizationOptimJL, SciMLSensitivity, ForwardDiff, Plots
 using Distributions, Random, StaticArrays
-solver = Tsit5()
+solver = Vern9()
 
 @parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
 @variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
@@ -44,7 +46,7 @@ function loss(p)
                 saveat = sampling_times;
                 abstol = 1e-12, reltol = 1e-12)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
-    data = [TOBEFILLEDOUT] # [(sol[2, :]), (p[5] / p[6] .+ sol[4, :])]
+    data = {{data_expr}}
     if sol.retcode == ReturnCode.Success
         loss = sum(sum((data[i] .- data_true[i]) .^ 2) for i in eachindex(data))
         return loss, sol

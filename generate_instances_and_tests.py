@@ -18,6 +18,19 @@ import argparse
 from utils import *
 
 NUM_TESTS = 10
+TEST_INTERVAL = [0.0, 1.0]
+NUM_PTS = 21
+SCIML_DAT_STR = {
+"biohydrogenation": "(sol[1, :]), (sol[2, :])",
+"crauste":"(sol[1, :]), (sol[2, :]), (sol[3, :] .+ sol[4, :]), (sol[5, :])",
+"daisy_mamil3": "vcat(sol[1, :]), vcat(sol[2, :])",
+"daisy_mamil4": "(sol[1, :]), (sol[2, :]), (sol[3, :] + sol[4, :])]",
+"harmonic": "vcat(sol[1, :]), vcat(sol[2, :])",
+"hiv": "(sol[4, :]), (sol[5, :]), (sol[1, :]), (sol[2, :] .+ sol[3, :])",
+"lotka_volterra": "sol[1, :]",
+"seir": "(sol[3, :]), (sol[4, :])",
+"vanderpol": "(sol[1, :]), (sol[2, :])"
+}
 
 def generate_instance(system, instance_name, param_vals, initial_vals):
     state_variables = system["state-variables"]
@@ -37,8 +50,8 @@ def generate_instance(system, instance_name, param_vals, initial_vals):
         "system-name": system["name"],
         "initial": states,
         "parameters": parameters,
-        "time": {"start": -0.5, "end": 0.5, "count": 21},
-        "count": 21,
+        "time": {"start": TEST_INTERVAL[0], "end": TEST_INTERVAL[1], "count": 21},
+        "count": NUM_PTS,
     }
     return instance
 
@@ -67,9 +80,9 @@ def convert_instance(system, instance_name, param_vals, initial_vals):
         "sys_name": system["name"],
         "states": states,
         "parameters": parameters,
-        "time_start": "-0.5",
-        "time_end": "0.5",
-        "count": "21",
+        "time_start": TEST_INTERVAL[0],
+        "time_end": TEST_INTERVAL[1],
+        "count": NUM_PTS,
     }
     return instance
     
