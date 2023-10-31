@@ -107,8 +107,8 @@ def getArgs(args):
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--data', default="./data")
-    parser.add_argument('-i', '--instances', default="input_files/instances.json")
-    parser.add_argument('-s', '--systems', default="input_files/systems.json")
+    parser.add_argument('-i', '--instances', default="input_files/all_instances.json")
+    parser.add_argument('-s', '--systems', default="input_files/all_systems.json")
     parser.add_argument('-o', '--outputs', default="outputs")
     #add other options as they come up
     args = parser.parse_args()

@@ -16,17 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
-  mixed_volume:  3[K
 [ Info: Best estimate found
+Starting backsolving.
+parameter values: [0.7920003566437299, 0.528998714882862, 0.5679904788681176]
+midpoint initial conditions [1.352941144166879, 0.07197890807104469]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.9260000128079499, w(t) => 0.07100079374444652)
+Starting backsolving.
+parameter values: [0.7725012999865609, -1.013204218097495, -0.1287305706094542]
+midpoint initial conditions [1.352941144166879, -0.011543254198339658]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.9259893103007198, w(t) => -0.01914198120595699)
+Starting backsolving.
+parameter values: [-0.32900471900238276, -0.006115158203495769, -0.7879972153216237]
+midpoint initial conditions [1.352941144166879, 241.78886147999216]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.925996503261069, w(t) => 163.6135738662083)
 Parameter(s)        :	 k1 = 0.792,  k2 = 0.529,  k3 = 0.568
 Initial Condition(s):	r(t) = 0.926, w(t) = 0.071
-Error: 1.0986e-02
-Time: -5.0000e-01
+Error: 8.4447e-09
+Time: 0.0000e+00
 
-137.599217 seconds (157.99 M allocations: 9.532 GiB, 4.31% gc time, 99.72% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 8.066740163348297e-5
+ 36.812664 seconds (33.51 M allocations: 2.098 GiB, 2.05% gc time, 98.85% compilation time: 8% of which was recompilation)
 
 
-CPU time: 14.86+202.00 sec	Max. resident set size: 3360800 KB	 Elapsed: 201.91 sec.
+CPU time: 15.04+104.32 sec	Max. resident set size: 3230440 KB	 Elapsed: 104.86 sec.

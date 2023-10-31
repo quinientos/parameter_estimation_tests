@@ -16,18 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
-  mixed_volume:  3[K
 [ Info: Best estimate found
-6 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [-0.8189293284956833, 0.00018410338724831704, -0.0868189699365373]
+midpoint initial conditions [0.8052797652879115, -3899.78003899297]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.7779999991886914, w(t) => -3733.8423569765037)
+Starting backsolving.
+parameter values: [0.08700015457556493, 0.020160509619417736, 0.8331196863007554]
+midpoint initial conditions [0.8052797652879115, 0.5735949641816712]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.7780000004000637, w(t) => 0.8630795468184603)
+Starting backsolving.
+parameter values: [0.0952971626958141, 3.2322631564958186, 3.094019173776673]
+midpoint initial conditions [0.8052797652879115, 0.0056447692100913575]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.778000183724646, w(t) => 0.007380906628780248)
 Parameter(s)        :	 k1 = 0.087,  k2 = 0.020,  k3 = 0.833
-Initial Condition(s):	r(t) = 0.778, w(t) = 0.875
-Error: 1.6964e-04
-Time: -5.0000e-01
+Initial Condition(s):	r(t) = 0.778, w(t) = 0.863
+Error: 2.7202e-11
+Time: 0.0000e+00
 
-137.487638 seconds (159.35 M allocations: 9.611 GiB, 4.26% gc time, 99.77% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.005342397435041716
+ 38.217005 seconds (33.51 M allocations: 2.098 GiB, 2.13% gc time, 98.85% compilation time: 8% of which was recompilation)
 
 
-CPU time: 14.85+201.36 sec	Max. resident set size: 3360092 KB	 Elapsed: 201.41 sec.
+CPU time: 15.54+106.48 sec	Max. resident set size: 3379656 KB	 Elapsed: 107.63 sec.

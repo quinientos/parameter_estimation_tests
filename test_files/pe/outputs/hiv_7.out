@@ -16,21 +16,35 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 4 	 Time: 0:00:00[K
-  mixed_volume:  4[K
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
 [ Info: Best estimate found
-3 Froissart doublets. Number of residues = 10
-4 Froissart doublets. Number of residues = 10
-3 Froissart doublets. Number of residues = 10
-3 Froissart doublets. Number of residues = 10
-Parameter(s)        :	 lm = 0.576,   d = 0.592, beta = 0.572,   a = 0.223,   k = 0.953,  uu = 0.447,   c = 0.846,   q = 0.699,   b = 0.297,   h = 0.814
-Initial Condition(s):	x(t) = 0.397, yy(t) = 0.881, vv(t) = 0.581, w(t) = 0.882, z(t) = 0.693
-Error: 1.8309e-03
-Time: -5.0000e-01
+Starting backsolving.
+parameter values: [0.5594802236818205, 0.45797241086337076, 0.47232090016586026, 0.7168157769878459, 1.678297120187583, 0.20593606431867387, -1445.7422234687342, -0.0003611107717653204, -328.44919666951756, 0.5251994812210559]
+midpoint initial conditions [0.46596304395512905, 0.4878758859149373, 1.2229150492351228, 0.6901330933355888, 0.6254536056857584]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x(t) => 0.39694582509378074, yy(t) => 0.5632755336863812, vv(t) => 0.8972639028744538, w(t) => 0.45314509082930493, z(t) => 0.7073064310188976)
+Starting backsolving.
+parameter values: [-123.54440710888643, 26.372359163476503, -5.105660100770681, 2.617643638990613, 32.76879058593612, -31.635781916059727, 12.72790548987362, -0.0003611107717653201, -328.4491966695178, 0.5251994812210559]
+midpoint initial conditions [0.46596304395512905, -55.4170337484525, 57.12782468360257, 0.6901330933355888, 0.6254536056857584]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x(t) => 0.394338533135906, yy(t) => -65.41688535290868, vv(t) => 66.64376891183224, w(t) => 0.8276015236855387, z(t) => 0.694497790827121)
+Starting backsolving.
+parameter values: [0.6402728453316839, 0.3263297291108767, 0.39622143412448263, -1.0225124032730628, -10.862902233974141, 2.2494223428951865, 135.4950930687957, 0.8086003391246177, 24.46432989462385, -62.23866754528223]
+midpoint initial conditions [0.46596304395512905, -0.5168510289849955, 2.2276419641350556, 0.6901330933355888, 0.6254536056857584]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x(t) => 0.39728950221167975, yy(t) => -0.4492254986333951, vv(t) => 1.93114774503438, w(t) => 0.7317801321148072, z(t) => 0.5866336614109332)
+Starting backsolving.
+parameter values: [7.725533947923549, 38.78132961109239, 28.456650604452445, -4.400973324577715, 0.8652885058517149, -2.850232153240831, -28.048392163308392, 0.8086003391246177, 24.464329894623862, -62.23866754528225]
+midpoint initial conditions [0.46596304395512905, 2.496784053334644, -0.785993118184584, 0.6901330933355888, 0.6254536056857584]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x(t) => -0.26142502907855913, yy(t) => 1.5077375573416583, vv(t) => -0.6894872478705797, w(t) => 0.18899578265156688, z(t) => 0.15915775602213023)
+Parameter(s)        :	 lm = 0.559,   d = 0.458, beta = 0.472,   a = 0.717,   k = 1.678,  uu = 0.206,   c = -1445.742,   q = -0.000,   b = -328.449,   h = 0.525
+Initial Condition(s):	x(t) = 0.397, yy(t) = 0.563, vv(t) = 0.897, w(t) = 0.453, z(t) = 0.707
+Error: 1.2460e-02
+Time: 0.0000e+00
 
-145.389055 seconds (171.45 M allocations: 10.548 GiB, 4.29% gc time, 98.68% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 4.225230595146568e-6
+ 47.091786 seconds (48.01 M allocations: 3.194 GiB, 2.68% gc time, 95.86% compilation time: 6% of which was recompilation)
 
 
-CPU time: 15.45+209.09 sec	Max. resident set size: 3453536 KB	 Elapsed: 209.80 sec.
+CPU time: 14.78+115.68 sec	Max. resident set size: 3227384 KB	 Elapsed: 115.56 sec.

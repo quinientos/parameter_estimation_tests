@@ -16,26 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 25 	 Time: 0:00:00[K
-  mixed_volume:  50[K
 [ Info: Best estimate found
-5 Froissart doublets. Number of residues = 10
-5 Froissart doublets. Number of residues = 10
-4 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [0.5290000000726756, 0.5680000000332808, 0.9260153051869229, 0.07099844895242428, 0.08699999995439481, 0.020006098616460247, 0.8329836854031603]
+midpoint initial conditions [0.8020461184415458, 0.6855364124139313, 0.6226330072281134, 1.1019647439661502]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7780000405862005, x2(t) => 0.8699999965414859, x3(t) => 0.9789746306646271, x4(t) => 0.7990253459823647)
+Starting backsolving.
+parameter values: [0.5290000000726756, 0.5680000000332808, 0.07099844895242428, 0.9260153051869229, 0.08699999995439481, 0.8329836854031603, 0.020006098616460247]
+midpoint initial conditions [0.8020461184415458, 0.6855364124139313, 1.1019647439661502, 0.6226330072281134]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7780000405862009, x2(t) => 0.869999996541486, x3(t) => 0.7990253459823646, x4(t) => 0.9789746306646271)
 Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.926, k14 = 0.071, k21 = 0.087, k31 = 0.020, k41 = 0.833
 Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.979, x4(t) = 0.799
-Error: 4.7121e-03
-Time: -5.0000e-01
+Error: 8.3589e-09
+Time: 0.0000e+00
 
 Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.071, k14 = 0.926, k21 = 0.087, k31 = 0.833, k41 = 0.020
 Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.799, x4(t) = 0.979
-Error: 4.7121e-03
-Time: -5.0000e-01
+Error: 8.3588e-09
+Time: 0.0000e+00
 
-146.716188 seconds (169.77 M allocations: 10.290 GiB, 4.35% gc time, 97.53% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.00027521444636233183
-For model : Max abs rel. err: 40.649259423052406
+ 48.377413 seconds (45.94 M allocations: 2.900 GiB, 2.57% gc time, 91.00% compilation time: 6% of which was recompilation)
 
 
-CPU time: 15.37+210.72 sec	Max. resident set size: 3441936 KB	 Elapsed: 211.59 sec.
+CPU time: 15.13+117.16 sec	Max. resident set size: 3362164 KB	 Elapsed: 117.41 sec.

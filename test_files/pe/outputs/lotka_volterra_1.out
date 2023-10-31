@@ -16,18 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
-  mixed_volume:  3[K
 [ Info: Best estimate found
-4 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [0.6460352146110835, 0.4382793790796332, 0.8920637163489457]
+midpoint initial conditions [1.2420345963516575, 0.31148690579257904]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.963999946234171, w(t) => 0.3828322071545606)
+Starting backsolving.
+parameter values: [0.6161746785539467, -0.05344603625289226, 0.6109929953597977]
+midpoint initial conditions [1.2420345963516575, -1.8603899518976401]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.9639959871607113, w(t) => -2.6000329353777567)
+Starting backsolving.
+parameter values: [-0.6415428011562987, -0.0011075517514562792, -0.6199860649791903]
+midpoint initial conditions [1.2420345963516575, 1320.65896830505]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.9639964201490288, w(t) => 969.22720138561)
 Parameter(s)        :	 k1 = 0.646,  k2 = 0.438,  k3 = 0.892
 Initial Condition(s):	r(t) = 0.964, w(t) = 0.383
-Error: 6.2704e-03
-Time: -5.0000e-01
+Error: 7.5412e-09
+Time: 0.0000e+00
 
-137.243325 seconds (159.35 M allocations: 9.611 GiB, 4.39% gc time, 99.72% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 5.526879412275107e-6
+ 37.768580 seconds (33.51 M allocations: 2.098 GiB, 2.12% gc time, 98.96% compilation time: 8% of which was recompilation)
 
 
-CPU time: 15.20+201.29 sec	Max. resident set size: 3394224 KB	 Elapsed: 201.97 sec.
+CPU time: 15.79+104.95 sec	Max. resident set size: 3198916 KB	 Elapsed: 105.51 sec.

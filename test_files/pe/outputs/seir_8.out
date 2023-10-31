@@ -16,36 +16,38 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 5 	 Time: 0:00:00[K
-  mixed_volume:  6[K
 [ Info: Best estimate found
-6 Froissart doublets. Number of residues = 10
-Parameter(s)        :	  a = 0.653,   b = 0.252,  nu = 0.466
-Initial Condition(s):	S(t) = 0.245, E(t) = 0.159, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
+Starting backsolving.
+parameter values: [0.4675189171060444, 0.25126362805481084, 0.6514770793782468]
+midpoint initial conditions [0.17319213432958044, 0.06262961324483891, 0.10787244271910489, 0.656]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.1768600379827768, E(t) => 0.08241438127576327, In(t) => 0.11000000060241362, NN(t) => 0.656)
+Starting backsolving.
+parameter values: [0.750500436481116, 8.472300294281164, 0.3427113595142581]
+midpoint initial conditions [-0.0004188788775792077, 0.20812751978745547, 0.10787244271910489, 0.656]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => -0.0008491444665127157, E(t) => 0.2474937396132207, In(t) => 0.11000001071021083, NN(t) => 0.656)
+Starting backsolving.
+parameter values: [0.6514770793782468, 0.25126362805481084, 0.4675189171060444]
+midpoint initial conditions [0.24133933775930483, 0.12971833143598954, 0.10787244271910489, 0.656]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.24645047886959742, E(t) => 0.15812510611831238, In(t) => 0.11000000053891093, NN(t) => 0.656)
+Starting backsolving.
+parameter values: [0.3427113595142581, 8.472300294281164, 0.750500436481116]
+midpoint initial conditions [-0.000191278435866158, 0.03642697603253607, 0.10787244271910489, 0.656]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => -0.0003877565697459588, E(t) => 0.05324728834083348, In(t) => 0.11000001075335203, NN(t) => 0.656)
+Parameter(s)        :	  a = 0.651,   b = 0.251,  nu = 0.468
+Initial Condition(s):	S(t) = 0.246, E(t) = 0.158, In(t) = 0.110, NN(t) = 0.656
+Error: 1.1954e-10
+Time: 0.0000e+00
 
-Parameter(s)        :	  a = 0.343,   b = 8.473,  nu = 0.751
+Parameter(s)        :	  a = 0.343,   b = 8.472,  nu = 0.751
 Initial Condition(s):	S(t) = -0.000, E(t) = 0.053, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
+Error: 4.5561e-10
+Time: 0.0000e+00
 
-Parameter(s)        :	  a = 0.751,   b = 8.473,  nu = 0.343
-Initial Condition(s):	S(t) = -0.001, E(t) = 0.247, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
-
-Parameter(s)        :	  a = 0.466,   b = 0.252,  nu = 0.653
-Initial Condition(s):	S(t) = 0.175, E(t) = 0.082, In(t) = 0.110, NN(t) = 0.656
-Error: 1.2276e-04
-Time: -5.0000e-01
-
-144.601525 seconds (169.40 M allocations: 10.230 GiB, 4.47% gc time, 99.01% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.003180347161036084
-For model : Max abs rel. err: 32.490582845444514
-For model : Max abs rel. err: 32.490582845444514
-For model : Max abs rel. err: 0.48360860314541804
+ 46.523562 seconds (46.77 M allocations: 2.927 GiB, 2.73% gc time, 96.75% compilation time: 6% of which was recompilation)
 
 
-CPU time: 15.76+207.82 sec	Max. resident set size: 3426728 KB	 Elapsed: 208.86 sec.
+CPU time: 15.42+114.87 sec	Max. resident set size: 3222228 KB	 Elapsed: 115.65 sec.

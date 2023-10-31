@@ -16,45 +16,53 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 6 	 Time: 0:00:00[K
-  mixed_volume:  6[K
 ┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
 │ Consider using tuples instead.
 └ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
 ┌ Warning: No solution found
 └ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
-ERROR: LoadError: type Array has no field states
-Stacktrace:
- [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
-   @ Base ./Base.jl:37
- [2] top-level scope
-   @ ~/parameter_estimation_tests/test_files/pe/seir_5.jl:36
-in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/seir_5.jl:35
-5 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: Number[-0.05247786623128438 - 0.4718467096720651im, 5.195581182976159, -0.05247786623128437 + 0.47184670967206505im]
+midpoint initial conditions Number[0.00014294532010428014 + 0.0012852709875237995im, -0.4738127174323939 - 0.2274479541108638im, 0.44851640177363944, 0.437]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.0015973093964785946 + 0.014361963189109124im, E(t) => -0.397393856677069 - 0.33631390123781196im, In(t) => 0.3599896837558561 + 1.9186879784661577e-17im, NN(t) => 0.437 + 0.0im)
+Starting backsolving.
+parameter values: Number[0.617496396840964 - 0.0027725407261949657im, 0.6119953829426774, 0.617496396840964 + 0.0027725407261949657im]
+midpoint initial conditions Number[0.7098147503165462 - 0.0031870474279275677im, 0.7006767833199676 - 0.005159843724170484im, 0.44851640177363944, 0.437]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.9432287995700482 - 0.004235069668919017im, E(t) => 0.6811370464678365 - 0.004674675122669079im, In(t) => 0.3600000655600223 - 6.077458327917675e-19im, NN(t) => 0.437 + 0.0im)
+Starting backsolving.
+parameter values: Number[-0.052477866231284406 + 0.47184670967206505im, 5.19558118297616, -0.052477866231284344 - 0.4718467096720651im]
+midpoint initial conditions Number[0.0001429453201042803 - 0.0012852709875237989im, -0.47381271743239384 + 0.22744795411086374im, 0.44851640177363944, 0.437]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.0015973093964785998 - 0.014361963189109109im, E(t) => -0.397393856677069 + 0.3363139012378118im, In(t) => 0.3599896837558561 + 7.804302195642521e-18im, NN(t) => 0.437 + 0.0im)
+Starting backsolving.
+parameter values: Number[0.617496396840964 + 0.0027725407261949657im, 0.6119953829426774, 0.617496396840964 - 0.0027725407261949657im]
+midpoint initial conditions Number[0.7098147503165462 + 0.0031870474279275677im, 0.7006767833199676 + 0.005159843724170484im, 0.44851640177363944, 0.437]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.9432287995700482 + 0.004235069668919017im, E(t) => 0.6811370464678365 + 0.004674675122669079im, In(t) => 0.3600000655600223 + 6.077458327917675e-19im, NN(t) => 0.437 + 0.0im)
 4-element Vector{ParameterEstimation.EstimationResult}:
  Parameter(s)        :	  a = -0.052+-0.472im,   b = 5.196+0.000im,  nu = -0.052+0.472im
-Initial Condition(s):	S(t) = 0.002+0.014im, E(t) = -0.397+-0.336im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
+Initial Condition(s):	S(t) = 0.002+0.014im, E(t) = -0.397+-0.336im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
- Parameter(s)        :	  a = 0.617+0.005im,   b = 0.612+0.000im,  nu = 0.617+-0.005im
-Initial Condition(s):	S(t) = 0.943+0.008im, E(t) = 0.681+0.008im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
+ Parameter(s)        :	  a = 0.617+-0.003im,   b = 0.612+0.000im,  nu = 0.617+0.003im
+Initial Condition(s):	S(t) = 0.943+-0.004im, E(t) = 0.681+-0.005im, In(t) = 0.360+-0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
  Parameter(s)        :	  a = -0.052+0.472im,   b = 5.196+0.000im,  nu = -0.052+-0.472im
 Initial Condition(s):	S(t) = 0.002+-0.014im, E(t) = -0.397+0.336im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
- Parameter(s)        :	  a = 0.617+-0.005im,   b = 0.612+0.000im,  nu = 0.617+0.005im
-Initial Condition(s):	S(t) = 0.943+-0.008im, E(t) = 0.681+-0.008im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
+ Parameter(s)        :	  a = 0.617+0.003im,   b = 0.612+0.000im,  nu = 0.617+-0.003im
+Initial Condition(s):	S(t) = 0.943+0.004im, E(t) = 0.681+0.005im, In(t) = 0.360+0.000im, NN(t) = 0.437+0.000im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
-143.916261 seconds (172.85 M allocations: 10.444 GiB, 4.45% gc time, 99.49% compilation time: <1% of which was recompilation)
-Command exited with non-zero status 1
+ 53.982052 seconds (62.94 M allocations: 3.824 GiB, 2.85% gc time, 98.54% compilation time: 4% of which was recompilation)
 
 
-CPU time: 15.10+209.38 sec	Max. resident set size: 3441820 KB	 Elapsed: 209.70 sec.
+CPU time: 14.93+122.56 sec	Max. resident set size: 3387556 KB	 Elapsed: 122.41 sec.

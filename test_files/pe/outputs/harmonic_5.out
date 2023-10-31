@@ -17,15 +17,17 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
-1 Froissart doublets. Number of residues = 10
-3 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [0.9790000053197967, 0.7989999985461732]
+midpoint initial conditions [0.029098631548215178, 0.9383857061169877]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.4610000060059133, x2(t) => 0.7809999894384204)
 Parameter(s)        :	  a = 0.979,   b = 0.799
 Initial Condition(s):	x1(t) = 0.461, x2(t) = 0.781
-Error: 1.0132e-02
-Time: -5.0000e-01
+Error: 4.9667e-09
+Time: 0.0000e+00
 
-135.447415 seconds (156.27 M allocations: 9.415 GiB, 4.44% gc time, 99.81% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 1.3617853608169763e-8
+ 34.388115 seconds (30.51 M allocations: 1.906 GiB, 2.08% gc time, 98.84% compilation time: 8% of which was recompilation)
 
 
-CPU time: 15.17+198.83 sec	Max. resident set size: 3281868 KB	 Elapsed: 199.62 sec.
+CPU time: 15.19+101.91 sec	Max. resident set size: 3342160 KB	 Elapsed: 101.95 sec.

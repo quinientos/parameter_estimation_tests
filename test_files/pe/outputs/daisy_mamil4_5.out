@@ -16,37 +16,33 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 25 	 Time: 0:00:00[K
-  mixed_volume:  50[K
 ┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
 │ Consider using tuples instead.
 └ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
 ┌ Warning: No solution found
 └ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
-ERROR: LoadError: type Array has no field states
-Stacktrace:
- [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
-   @ Base ./Base.jl:37
- [2] top-level scope
-   @ ~/parameter_estimation_tests/test_files/pe/daisy_mamil4_5.jl:37
-in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy_mamil4_5.jl:36
-5 Froissart doublets. Number of residues = 10
-5 Froissart doublets. Number of residues = 10
-4 Froissart doublets. Number of residues = 9
+Starting backsolving.
+parameter values: Number[0.16099999964866493, 0.6529998685001966, 0.3761906785486994 - 0.5934633792323653im, 0.3761906785486996 + 0.5934633792323645im, 0.24399996405766797, 0.2963476075586655 - 0.22353083250695033im, 0.29634760755866546 + 0.2235308325069503im]
+midpoint initial conditions Number[0.6014374871426353, 0.16467923311353078, 0.2717002484161526 + 0.165590664413175im, 0.27170024841615287 - 0.165590664413175im]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6559987280839392 + 3.143611624094829e-17im, x2(t) => 0.13800003108620756 - 1.1606535359172051e-18im, x3(t) => 0.28300061168273727 + 0.186386115352475im, x4(t) => 0.28300061168273755 - 0.186386115352475im)
+Starting backsolving.
+parameter values: Number[0.16099999964866488, 0.6529998685001968, 0.37619067854870014 + 0.5934633792323626im, 0.37619067854869936 - 0.593463379232363im, 0.24399996405766802, 0.29634760755866435 + 0.22353083250694936im, 0.2963476075586642 - 0.22353083250694986im]
+midpoint initial conditions Number[0.6014374871426353, 0.16467923311353078, 0.27170024841615265 - 0.16559066441317424im, 0.27170024841615276 + 0.16559066441317424im]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6559987280839392 + 2.3942085683067343e-17im, x2(t) => 0.13800003108620756 - 2.0091233580253353e-18im, x3(t) => 0.2830006116827373 - 0.1863861153524742im, x4(t) => 0.28300061168273744 + 0.1863861153524742im)
 2-element Vector{ParameterEstimation.EstimationResult}:
- Parameter(s)        :	k01 = 0.161+0.000im, k12 = 0.653+0.000im, k13 = 0.364+-0.308im, k14 = 0.364+0.308im, k21 = 0.244+0.000im, k31 = 0.182+-0.133im, k41 = 0.182+0.133im
-Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+0.000im, x3(t) = 0.283+0.126im, x4(t) = 0.283+-0.126im
+ Parameter(s)        :	k01 = 0.161+0.000im, k12 = 0.653+0.000im, k13 = 0.376+-0.593im, k14 = 0.376+0.593im, k21 = 0.244+0.000im, k31 = 0.296+-0.224im, k41 = 0.296+0.224im
+Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+-0.000im, x3(t) = 0.283+0.186im, x4(t) = 0.283+-0.186im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
- Parameter(s)        :	k01 = 0.161+0.000im, k12 = 0.653+0.000im, k13 = 0.364+0.308im, k14 = 0.364+-0.308im, k21 = 0.244+0.000im, k31 = 0.182+0.133im, k41 = 0.182+-0.133im
-Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+0.000im, x3(t) = 0.283+-0.126im, x4(t) = 0.283+0.126im
+ Parameter(s)        :	k01 = 0.161+0.000im, k12 = 0.653+0.000im, k13 = 0.376+0.593im, k14 = 0.376+-0.593im, k21 = 0.244+0.000im, k31 = 0.296+0.224im, k41 = 0.296+-0.224im
+Initial Condition(s):	x1(t) = 0.656+0.000im, x2(t) = 0.138+-0.000im, x3(t) = 0.283+-0.186im, x4(t) = 0.283+0.186im
 Error: Not yet calculated
-Time: -5.0000e-01
+Time: 0.0000e+00
 
-147.819176 seconds (173.47 M allocations: 10.508 GiB, 4.51% gc time, 96.31% compilation time: <1% of which was recompilation)
-Command exited with non-zero status 1
+ 56.530130 seconds (62.41 M allocations: 3.814 GiB, 2.79% gc time, 90.72% compilation time: 5% of which was recompilation)
 
 
-CPU time: 15.12+213.04 sec	Max. resident set size: 3362380 KB	 Elapsed: 213.69 sec.
+CPU time: 15.03+124.78 sec	Max. resident set size: 3224108 KB	 Elapsed: 124.86 sec.

@@ -16,19 +16,18 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K
 [ Info: Best estimate found
-4 Froissart doublets. Number of residues = 10
-5 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [0.3599999708194764, 0.43703345864496834, 0.6979999734109281, 0.06001310289785883, 0.6669808790195878]
+midpoint initial conditions [0.3857228570107223, 0.33692855267715627, 0.1172701864718004]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6709999797486749, x2(t) => 0.2100000144954475, x3(t) => 0.12898083011310227)
 Parameter(s)        :	a12 = 0.360, a13 = 0.437, a21 = 0.698, a31 = 0.060, a01 = 0.667
 Initial Condition(s):	x1(t) = 0.671, x2(t) = 0.210, x3(t) = 0.129
-Error: 6.0883e-03
-Time: -5.0000e-01
+Error: 5.3290e-09
+Time: 0.0000e+00
 
-139.232357 seconds (160.54 M allocations: 9.686 GiB, 4.19% gc time, 99.49% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.0002108673134228421
+ 32.617913 seconds (29.24 M allocations: 1.824 GiB, 2.38% gc time, 98.38% compilation time: 9% of which was recompilation)
 
 
-CPU time: 14.79+203.69 sec	Max. resident set size: 3400200 KB	 Elapsed: 203.58 sec.
+CPU time: 14.55+101.09 sec	Max. resident set size: 3150864 KB	 Elapsed: 99.98 sec.

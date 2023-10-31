@@ -16,37 +16,48 @@
 [ Info: Not identifiable parameters:                      [x7]
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 32 	 Time: 0:00:00[K
-  mixed_volume:  50[K
 [ Info: Best estimate found
-7 Froissart doublets. Number of residues = 10
-7 Froissart doublets. Number of residues = 11
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.656,  k8 = 0.138,  k9 = 0.197, k10 = 0.369
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.838, x7(t) = 5654687020510.135
-Error: 1.0500e-04
-Time: -5.0000e-01
-
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.656,  k8 = 0.507,  k9 = -0.197, k10 = -0.369
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.469, x7(t) = 5654687020510.135
-Error: 1.0500e-04
-Time: -5.0000e-01
-
+Starting backsolving.
+parameter values: [0.15900000035262488, 0.11000000171656676, 0.00012198909251612108, 0.9008265469045897, -0.3157866308085201, -1.7970268210692604]
+midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, -1.034838548859448, 6122725514784]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.821000000021006, x5(t) => 0.09701475193113665, x6(t) => -0.9976423520353028, x7(t) => 6.122725514783931e12)
+Starting backsolving.
+parameter values: [0.15900000035262488, 0.11000000171656676, 0.00012198909251612108, -0.8962002741646707, 0.3157866308085201, 1.7970268210692604]
+midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.7621882722098124, 6122725514784]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.821000000021007, x5(t) => 0.09701475187878576, x6(t) => 0.799384469095367, x7(t) => 6.122725514783931e12)
+Starting backsolving.
+parameter values: [0.15900000035262488, 0.11000000171656676, 0.669649355943208, 0.4916355844014467, -0.16325798823745963, -0.3119284375807788]
+midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.6775940645003607, 6122725514784]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8210000000200401, x5(t) => 0.09699998258449812, x6(t) => 0.5066924046269737, x7(t) => 6.122725514784138e12)
+Starting backsolving.
+parameter values: [0.15900000035262488, 0.11000000171656676, 0.669649355943208, 0.17970714682066788, 0.16325798823745963, 0.3119284375807788]
+midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.9895225020811396, 6122725514784]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8210000000200889, x5(t) => 0.0969999830811888, x6(t) => 0.8186208317002951, x7(t) => 6.122725514784139e12)
 Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.000,  k8 = 0.901,  k9 = -0.316, k10 = -1.797
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = -0.998, x7(t) = 5654687020509.931
-Error: 1.0540e-04
-Time: -5.0000e-01
+Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = -0.998, x7(t) = 6122725514783.931
+Error: 7.0997e-07
+Time: 0.0000e+00
 
 Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.000,  k8 = -0.896,  k9 = 0.316, k10 = 1.797
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.799, x7(t) = 5654687020509.931
-Error: 1.0540e-04
-Time: -5.0000e-01
+Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.799, x7(t) = 6122725514783.931
+Error: 7.1022e-07
+Time: 0.0000e+00
 
-161.598361 seconds (177.08 M allocations: 10.733 GiB, 4.20% gc time, 95.72% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 5.890298979697957e13
-For model : Max abs rel. err: 5.890298979697957e13
-For model : Max abs rel. err: 5.8902989796977445e13
-For model : Max abs rel. err: 5.8902989796977445e13
+Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.670,  k8 = 0.492,  k9 = -0.163, k10 = -0.312
+Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.507, x7(t) = 6122725514784.138
+Error: 1.8856e-09
+Time: 0.0000e+00
+
+Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.670,  k8 = 0.180,  k9 = 0.163, k10 = 0.312
+Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.819, x7(t) = 6122725514784.139
+Error: 1.8312e-09
+Time: 0.0000e+00
+
+ 64.024692 seconds (62.35 M allocations: 3.819 GiB, 2.42% gc time, 89.81% compilation time: 5% of which was recompilation)
 
 
-CPU time: 16.03+226.71 sec	Max. resident set size: 3511596 KB	 Elapsed: 227.66 sec.
+CPU time: 15.09+132.50 sec	Max. resident set size: 3383212 KB	 Elapsed: 132.85 sec.

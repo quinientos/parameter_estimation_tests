@@ -16,26 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  4[K[K[AComputing mixed cells... 23 	 Time: 0:00:00[K
-  mixed_volume:  50[K
 [ Info: Best estimate found
-3 Froissart doublets. Number of residues = 10
-1 Froissart doublets. Number of residues = 10
-5 Froissart doublets. Number of residues = 10
-Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 0.288, k14 = 1.844, k21 = 0.132, k31 = 0.587, k41 = 0.092
-Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.685, x4(t) = 0.164
-Error: 6.0432e-03
-Time: -5.0000e-01
+Starting backsolving.
+parameter values: [0.5760000000079784, 0.9290000013917376, 0.6634539586597932, 0.31937121605706986, 0.13200000140211285, 0.28802543934320207, 0.7178749042685428]
+midpoint initial conditions [0.38915554210207387, 0.3857822389680831, 0.640348428155079, 0.11381287700798629]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.1830000958266919, x2(t) => 0.5869999927024588, x3(t) => 0.8379998598187702, x4(t) => 0.011000070513803072)
+Starting backsolving.
+parameter values: [0.5760000000079784, 0.9290000013917376, 0.31937121605706986, 0.6634539586597932, 0.13200000140211285, 0.7178749042685428, 0.28802543934320207]
+midpoint initial conditions [0.38915554210207387, 0.3857822389680831, 0.11381287700798629, 0.640348428155079]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.18300009582669235, x2(t) => 0.5869999927024588, x3(t) => 0.011000070513802971, x4(t) => 0.8379998598187702)
+Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 0.663, k14 = 0.319, k21 = 0.132, k31 = 0.288, k41 = 0.718
+Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.838, x4(t) = 0.011
+Error: 1.2428e-08
+Time: 0.0000e+00
 
-Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 1.844, k14 = 0.288, k21 = 0.132, k31 = 0.092, k41 = 0.587
-Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.164, x4(t) = 0.685
-Error: 6.0432e-03
-Time: -5.0000e-01
+Parameter(s)        :	k01 = 0.576, k12 = 0.929, k13 = 0.319, k14 = 0.663, k21 = 0.132, k31 = 0.718, k41 = 0.288
+Initial Condition(s):	x1(t) = 0.183, x2(t) = 0.587, x3(t) = 0.011, x4(t) = 0.838
+Error: 1.2428e-08
+Time: 0.0000e+00
 
-148.285035 seconds (169.89 M allocations: 10.286 GiB, 4.18% gc time, 96.06% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 33.24589043111429
-For model : Max abs rel. err: 7.204825298959119
+ 53.230366 seconds (46.17 M allocations: 2.908 GiB, 2.25% gc time, 84.42% compilation time: 7% of which was recompilation)
 
 
-CPU time: 14.92+212.53 sec	Max. resident set size: 3456172 KB	 Elapsed: 212.80 sec.
+CPU time: 14.68+122.01 sec	Max. resident set size: 3298632 KB	 Elapsed: 122.06 sec.

@@ -16,37 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  8[K[K[AComputing mixed cells... 32 	 Time: 0:00:00[K
-  mixed_volume:  50[K
-┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
-│ Consider using tuples instead.
-└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
-┌ Warning: No solution found
-└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
-ERROR: LoadError: type Array has no field states
-Stacktrace:
- [1] getproperty(x::Vector{ParameterEstimation.EstimationResult}, f::Symbol)
-   @ Base ./Base.jl:37
- [2] top-level scope
-   @ ~/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:37
-in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/daisy_mamil4_3.jl:36
-3 Froissart doublets. Number of residues = 10
-3 Froissart doublets. Number of residues = 10
-4 Froissart doublets. Number of residues = 10
-2-element Vector{ParameterEstimation.EstimationResult}:
- Parameter(s)        :	k01 = 0.568+0.000im, k12 = 0.019+0.000im, k13 = 0.644+0.052im, k14 = 0.644+-0.052im, k21 = 0.617+0.000im, k31 = 0.816+0.559im, k41 = 0.816+-0.559im
-Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.379+0.173im, x4(t) = 0.379+-0.173im
-Error: Not yet calculated
-Time: -5.0000e-01
+[ Info: Best estimate found
+Starting backsolving.
+parameter values: [0.5679999990302937, 0.019000027756551265, -11.89312828521124, 0.6776257660767122, 0.6170000654858766, -1.4114833390786283, 1.8221490329552108]
+midpoint initial conditions [0.21642990616461863, 0.5164565092003418, 0.024515706020982922, 0.7202505675321526]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.35999760658450164, x2(t) => 0.4370001576563402, x3(t) => 0.03842718362361545, x4(t) => 0.7195749052402597)
+Starting backsolving.
+parameter values: [0.5679999990302937, 0.019000027756551265, 0.6776257660767122, -11.89312828521124, 0.6170000654858766, 1.8221490329552108, -1.4114833390786283]
+midpoint initial conditions [0.21642990616461863, 0.5164565092003418, 0.7202505675321526, 0.024515706020982922]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.35999760658450203, x2(t) => 0.43700015765634015, x3(t) => 0.7195749052402594, x4(t) => 0.03842718362361548)
+Parameter(s)        :	k01 = 0.568, k12 = 0.019, k13 = -11.893, k14 = 0.678, k21 = 0.617, k31 = -1.411, k41 = 1.822
+Initial Condition(s):	x1(t) = 0.360, x2(t) = 0.437, x3(t) = 0.038, x4(t) = 0.720
+Error: 1.0636e-06
+Time: 0.0000e+00
 
- Parameter(s)        :	k01 = 0.568+0.000im, k12 = 0.019+0.000im, k13 = 0.644+-0.052im, k14 = 0.644+0.052im, k21 = 0.617+0.000im, k31 = 0.816+-0.559im, k41 = 0.816+0.559im
-Initial Condition(s):	x1(t) = 0.360+0.000im, x2(t) = 0.437+0.000im, x3(t) = 0.379+-0.173im, x4(t) = 0.379+0.173im
-Error: Not yet calculated
-Time: -5.0000e-01
+Parameter(s)        :	k01 = 0.568, k12 = 0.019, k13 = 0.678, k14 = -11.893, k21 = 0.617, k31 = 1.822, k41 = -1.411
+Initial Condition(s):	x1(t) = 0.360, x2(t) = 0.437, x3(t) = 0.720, x4(t) = 0.038
+Error: 1.0636e-06
+Time: 0.0000e+00
 
-149.536287 seconds (173.47 M allocations: 10.509 GiB, 4.31% gc time, 95.20% compilation time: <1% of which was recompilation)
-Command exited with non-zero status 1
+ 50.094478 seconds (46.00 M allocations: 2.901 GiB, 2.49% gc time, 87.84% compilation time: 7% of which was recompilation)
 
 
-CPU time: 15.18+214.45 sec	Max. resident set size: 3409364 KB	 Elapsed: 214.96 sec.
+CPU time: 14.85+118.34 sec	Max. resident set size: 3321592 KB	 Elapsed: 118.48 sec.

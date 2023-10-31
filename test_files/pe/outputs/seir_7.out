@@ -16,24 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  2[K[K[AComputing mixed cells... 6 	 Time: 0:00:00[K
-  mixed_volume:  6[K
 [ Info: Best estimate found
-4 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [0.3638286181573928, 0.5700177897158568, 0.43915651614881723]
+midpoint initial conditions [0.678683342850421, 0.35762233297622037, 0.22363392886958244, 0.161]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.9876067122006652, E(t) => 0.10188216496236151, In(t) => 0.20899998951520485, NN(t) => 0.161)
+Starting backsolving.
+parameter values: [0.43915651614881723, 0.5700177897158568, 0.3638286181573928]
+midpoint initial conditions [0.8191994734330879, 0.47796694088789365, 0.22363392886958244, 0.161]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 1.19208302924435, E(t) => 0.1662479134427793, In(t) => 0.2089999885009916, NN(t) => 0.161)
 Parameter(s)        :	  a = 0.364,   b = 0.570,  nu = 0.439
 Initial Condition(s):	S(t) = 0.988, E(t) = 0.102, In(t) = 0.209, NN(t) = 0.161
-Error: 9.3394e-04
-Time: -5.0000e-01
+Error: 1.9286e-09
+Time: 0.0000e+00
 
 Parameter(s)        :	  a = 0.439,   b = 0.570,  nu = 0.364
-Initial Condition(s):	S(t) = 1.191, E(t) = 0.166, In(t) = 0.209, NN(t) = 0.161
-Error: 9.3394e-04
-Time: -5.0000e-01
+Initial Condition(s):	S(t) = 1.192, E(t) = 0.166, In(t) = 0.209, NN(t) = 0.161
+Error: 2.0204e-09
+Time: 0.0000e+00
 
-144.399417 seconds (169.18 M allocations: 10.207 GiB, 4.21% gc time, 99.51% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.00016999851433755313
-For model : Max abs rel. err: 0.6279914870240273
+ 46.824277 seconds (46.68 M allocations: 2.922 GiB, 2.74% gc time, 98.29% compilation time: 6% of which was recompilation)
 
 
-CPU time: 15.50+208.43 sec	Max. resident set size: 3449516 KB	 Elapsed: 209.20 sec.
+CPU time: 14.56+115.65 sec	Max. resident set size: 3218176 KB	 Elapsed: 115.62 sec.

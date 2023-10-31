@@ -16,24 +16,38 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  4[K[K[AComputing mixed cells... 3 	 Time: 0:00:00[K
-  mixed_volume:  6[K
 [ Info: Best estimate found
-1 Froissart doublets. Number of residues = 9
-Parameter(s)        :	  a = 0.522,   b = 0.415,  nu = 0.265
-Initial Condition(s):	S(t) = 0.774, E(t) = 0.456, In(t) = 0.568, NN(t) = 0.019
-Error: 5.4169e-04
-Time: -5.0000e-01
-
+Starting backsolving.
+parameter values: [0.26500007435568096, 0.41500002036449557, 0.5219998468188479]
+midpoint initial conditions [0.0008703444825878009, 0.27811344046243025, 0.5596340588796217, 0.019]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.39286849176516564, E(t) => -0.04808786863587211, In(t) => 0.5679972794814688, NN(t) => 0.019)
+Starting backsolving.
+parameter values: [12.445842009417365, 0.025130519391357378, 0.18831768210514638]
+midpoint initial conditions [8.628348391689826, 36.96938656096101, 0.5596340588796217, 0.019]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 12.493778271980663, E(t) => 36.57817822914014, In(t) => 0.5686785841017844, NN(t) => 0.019)
+Starting backsolving.
+parameter values: [0.5219998468188476, 0.4150000203644956, 0.26500007435568096]
+midpoint initial conditions [0.001714413430619181, 1.0905695019785457, 0.5596340588796217, 0.019]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.7738555586480727, E(t) => 0.45614676211549926, In(t) => 0.5679968769273503, NN(t) => 0.019)
+Starting backsolving.
+parameter values: [0.18831768210514638, 0.025130519391357374, 12.445842009417367]
+midpoint initial conditions [0.13055529455453552, 0.008216486664583064, 0.5596340588796217, 0.019]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.18905061730943026, E(t) => -0.006998484329849949, In(t) => 0.5690646402878193, NN(t) => 0.019)
 Parameter(s)        :	  a = 0.265,   b = 0.415,  nu = 0.522
 Initial Condition(s):	S(t) = 0.393, E(t) = -0.048, In(t) = 0.568, NN(t) = 0.019
-Error: 5.4167e-04
-Time: -5.0000e-01
+Error: 9.6571e-08
+Time: 0.0000e+00
 
-144.854024 seconds (169.38 M allocations: 10.229 GiB, 4.40% gc time, 99.45% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.00032170488481840726
-For model : Max abs rel. err: 1.1054558806611252
+Parameter(s)        :	  a = 0.522,   b = 0.415,  nu = 0.265
+Initial Condition(s):	S(t) = 0.774, E(t) = 0.456, In(t) = 0.568, NN(t) = 0.019
+Error: 1.1592e-07
+Time: 0.0000e+00
+
+ 44.950823 seconds (45.29 M allocations: 2.841 GiB, 2.43% gc time, 98.11% compilation time: 7% of which was recompilation)
 
 
-CPU time: 15.53+208.28 sec	Max. resident set size: 3433340 KB	 Elapsed: 209.39 sec.
+CPU time: 14.76+113.77 sec	Max. resident set size: 3271064 KB	 Elapsed: 113.55 sec.

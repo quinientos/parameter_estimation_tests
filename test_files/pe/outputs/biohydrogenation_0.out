@@ -16,25 +16,53 @@
 [ Info: Not identifiable parameters:                      [x7]
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  3[K[K[AComputing mixed cells... 26 	 Time: 0:00:00[K
-  mixed_volume:  50[K
-[ Info: Best estimate found
-3 Froissart doublets. Number of residues = 10
-4 Froissart doublets. Number of residues = 10
-Parameter(s)        :	 k5 = 0.549,  k6 = 0.715,  k7 = 0.603,  k8 = 0.545,  k9 = 0.424, k10 = 0.646
-Initial Condition(s):	x4(t) = 0.438, x5(t) = 0.892, x6(t) = 0.964, x7(t) = 3913106590637.159
-Error: 5.3962e-04
-Time: -5.0000e-01
+┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
+│ Consider using tuples instead.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
+┌ Warning: No solution found
+└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
+Starting backsolving.
+parameter values: Number[0.5490000139461491, 0.7150000268077037, -0.021210966005902047 - 4.003812258436315e-6im, -0.9756492712199742 - 1.7613799429903e-5im, -1.5157594402092786e6 + 154514.48808677396im, -5.229986018826028e-7 - 5.330862166774427e-8im]
+midpoint initial conditions Number[0.3414815533289829, 0.8822040412195403, -2.623250508783935e-7 - 2.5105255733992232e-8im, 6858502965114]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.43800000010862744 + 0.0im, x5(t) => 0.8927273812442933 - 2.0322178270807614e-6im, x6(t) => -4.0390649018807217e-7 + 7.815012712926921e-8im, x7(t) => 6.858502965113973e12 + 1.9289624442343632e-6im)
+Starting backsolving.
+parameter values: Number[0.5490000139461491, 0.7150000268077037, -0.021210966005902047 + 4.003812258436315e-6im, -0.9756492712199742 + 1.7613799429903e-5im, -1.5157594402092786e6 - 154514.48808677396im, -5.229986018826028e-7 + 5.330862166774427e-8im]
+midpoint initial conditions Number[0.3414815533289829, 0.8822040412195403, -2.623250508783935e-7 + 2.5105255733992232e-8im, 6858502965114]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.43800000010862744 + 0.0im, x5(t) => 0.8927273812442933 + 2.0322178270807614e-6im, x6(t) => -4.0390649018807217e-7 - 7.815012712926921e-8im, x7(t) => 6.858502965113973e12 - 1.9289624442343632e-6im)
+Starting backsolving.
+parameter values: Number[0.5490000139461491, 0.7150000268077037, -0.021210966005902047 - 4.003812258436315e-6im, -0.9756497942185761 - 1.7667108051570748e-5im, 1.5157594402092786e6 - 154514.48808677396im, 5.229986018826028e-7 + 5.330862166774427e-8im]
+midpoint initial conditions Number[0.3414815533289829, 0.8822040412195403, 2.606735510042093e-7 + 2.8203365933752037e-8im, 6858502965114]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.43800000010863105 + 0.0im, x5(t) => 0.8927273798066936 - 2.0318262194645735e-6im, x6(t) => 4.25227478933287e-7 + 2.1613684010297242e-7im, x7(t) => 6.858502965113971e12 + 1.8438927452848484e-6im)
+Starting backsolving.
+parameter values: Number[0.5490000139461491, 0.7150000268077037, -0.021210966005902047 + 4.003812258436315e-6im, -0.9756497942185761 + 1.7667108051570748e-5im, 1.5157594402092786e6 + 154514.48808677396im, 5.229986018826028e-7 - 5.330862166774427e-8im]
+midpoint initial conditions Number[0.3414815533289829, 0.8822040412195403, 2.606735510042093e-7 - 2.8203365933752037e-8im, 6858502965114]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.43800000010863105 + 0.0im, x5(t) => 0.8927273798066936 + 2.0318262194645735e-6im, x6(t) => 4.25227478933287e-7 - 2.1613684010297242e-7im, x7(t) => 6.858502965113971e12 - 1.8438927452848484e-6im)
+4-element Vector{ParameterEstimation.EstimationResult}:
+ Parameter(s)        :	 k5 = 0.549+0.000im,  k6 = 0.715+0.000im,  k7 = -0.021+-0.000im,  k8 = -0.976+-0.000im,  k9 = -1515759.440+154514.488im, k10 = -0.000+-0.000im
+Initial Condition(s):	x4(t) = 0.438+0.000im, x5(t) = 0.893+-0.000im, x6(t) = -0.000+0.000im, x7(t) = 6858502965113.973+0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
 
-Parameter(s)        :	 k5 = 0.549,  k6 = 0.715,  k7 = 0.603,  k8 = 1.191,  k9 = -0.424, k10 = -0.646
-Initial Condition(s):	x4(t) = 0.438, x5(t) = 0.892, x6(t) = 0.318, x7(t) = 3913106590637.159
-Error: 5.3962e-04
-Time: -5.0000e-01
+ Parameter(s)        :	 k5 = 0.549+0.000im,  k6 = 0.715+0.000im,  k7 = -0.021+0.000im,  k8 = -0.976+0.000im,  k9 = -1515759.440+-154514.488im, k10 = -0.000+0.000im
+Initial Condition(s):	x4(t) = 0.438+0.000im, x5(t) = 0.893+0.000im, x6(t) = -0.000+-0.000im, x7(t) = 6858502965113.973+-0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
 
-160.824663 seconds (177.14 M allocations: 10.737 GiB, 3.94% gc time, 96.04% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 1.0216988487302287e13
-For model : Max abs rel. err: 1.0216988487302287e13
+ Parameter(s)        :	 k5 = 0.549+0.000im,  k6 = 0.715+0.000im,  k7 = -0.021+-0.000im,  k8 = -0.976+-0.000im,  k9 = 1515759.440+-154514.488im, k10 = 0.000+0.000im
+Initial Condition(s):	x4(t) = 0.438+0.000im, x5(t) = 0.893+-0.000im, x6(t) = 0.000+0.000im, x7(t) = 6858502965113.971+0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
+
+ Parameter(s)        :	 k5 = 0.549+0.000im,  k6 = 0.715+0.000im,  k7 = -0.021+0.000im,  k8 = -0.976+0.000im,  k9 = 1515759.440+154514.488im, k10 = 0.000+-0.000im
+Initial Condition(s):	x4(t) = 0.438+0.000im, x5(t) = 0.893+0.000im, x6(t) = 0.000+-0.000im, x7(t) = 6858502965113.971+-0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
+
+ 92.188062 seconds (441.31 M allocations: 15.180 GiB, 3.90% gc time, 66.35% compilation time: 4% of which was recompilation)
 
 
-CPU time: 15.26+224.70 sec	Max. resident set size: 3563452 KB	 Elapsed: 225.32 sec.
+CPU time: 19.43+158.10 sec	Max. resident set size: 3428924 KB	 Elapsed: 162.67 sec.

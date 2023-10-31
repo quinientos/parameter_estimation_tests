@@ -17,14 +17,27 @@
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
-2 Froissart doublets. Number of residues = 10
+Starting backsolving.
+parameter values: [-0.8976824853567633, 0.0017444782314500645, -0.6368558182694715]
+midpoint initial conditions [0.6901358825335268, -586.1855512577249]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5219994831695344, w(t) => -426.1044494191971)
+Starting backsolving.
+parameter values: [0.6563964747521788, 1.0451456551311369, 1.2434889399825833]
+midpoint initial conditions [0.6901358825335268, 0.04778063292589335]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5220032539060634, w(t) => 0.06500335815947086)
+Starting backsolving.
+parameter values: [0.6399995951512828, 0.14296212638350594, 0.9449842426072831]
+midpoint initial conditions [0.6901358825335268, 0.2701529901992895]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5220000011318869, w(t) => 0.41510838845608966)
 Parameter(s)        :	 k1 = 0.640,  k2 = 0.143,  k3 = 0.945
 Initial Condition(s):	r(t) = 0.522, w(t) = 0.415
-Error: 3.8223e-03
-Time: -5.0000e-01
+Error: 1.5832e-09
+Time: 0.0000e+00
 
-138.628244 seconds (159.32 M allocations: 9.609 GiB, 4.23% gc time, 99.77% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 0.0002267162090295584
+ 37.893443 seconds (33.51 M allocations: 2.098 GiB, 2.21% gc time, 98.96% compilation time: 8% of which was recompilation)
 
 
-CPU time: 15.02+202.64 sec	Max. resident set size: 3345552 KB	 Elapsed: 211.05 sec.
+CPU time: 15.22+106.79 sec	Max. resident set size: 3244880 KB	 Elapsed: 107.53 sec.

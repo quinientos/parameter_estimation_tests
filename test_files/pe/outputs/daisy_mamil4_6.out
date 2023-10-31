@@ -16,26 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-Computing mixed cells... 2 	 Time: 0:00:00[K
-  mixed_volume:  14[K[K[AComputing mixed cells... 9 	 Time: 0:00:00[K
-  mixed_volume:  50[K
 [ Info: Best estimate found
-1 Froissart doublets. Number of residues = 10
-2 Froissart doublets. Number of residues = 10
-2 Froissart doublets. Number of residues = 10
-Parameter(s)        :	k01 = 0.821, k12 = 0.097, k13 = -0.175, k14 = -1198.778, k21 = 0.976, k31 = -2.146, k41 = 1276.931
-Initial Condition(s):	x1(t) = -6266511.913, x2(t) = 84917.041, x3(t) = -185989.125, x4(t) = 6296251.077
-Error: 1.5249e+05
-Time: -5.0000e-01
+Starting backsolving.
+parameter values: [0.8209999950171818, 0.09699994832983778, -0.1754541632368503, -278.8165039637219, 0.9759997315375072, -2.1570393266985293, 300.650054205718]
+midpoint initial conditions [0.16465315231573346, 0.8582737182634007, 0.685695586107931, -0.1762528056169723]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.5946479916075216, x2(t) => 0.7395555956335153, x3(t) => 0.9662062091768064, x4(t) => -0.6348748040382066)
+Starting backsolving.
+parameter values: [0.8209999950171818, 0.09699994832983778, -278.8165039637219, -0.1754541632368503, 0.9759997315375072, 300.650054205718, -2.1570393266985293]
+midpoint initial conditions [0.16465315231573346, 0.8582737182634007, -0.1762528056169723, 0.685695586107931]
+saveat: 0.5:-0.025:0.0
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.5946479916672629, x2(t) => 0.7395555956298295, x3(t) => -0.6348748040992022, x4(t) => 0.9662062091848183)
+Parameter(s)        :	k01 = 0.821, k12 = 0.097, k13 = -0.175, k14 = -278.817, k21 = 0.976, k31 = -2.157, k41 = 300.650
+Initial Condition(s):	x1(t) = 0.595, x2(t) = 0.740, x3(t) = 0.966, x4(t) = -0.635
+Error: 4.0723e-04
+Time: 0.0000e+00
 
-Parameter(s)        :	k01 = 0.821, k12 = 0.097, k13 = -1198.778, k14 = -0.175, k21 = 0.976, k31 = 1276.931, k41 = -2.146
-Initial Condition(s):	x1(t) = -6266511.295, x2(t) = 84917.032, x3(t) = 6296250.456, x4(t) = -185989.107
-Error: 1.5249e+05
-Time: -5.0000e-01
+Parameter(s)        :	k01 = 0.821, k12 = 0.097, k13 = -278.817, k14 = -0.175, k21 = 0.976, k31 = 300.650, k41 = -2.157
+Initial Condition(s):	x1(t) = 0.595, x2(t) = 0.740, x3(t) = -0.635, x4(t) = 0.966
+Error: 4.0723e-04
+Time: 0.0000e+00
 
-147.436216 seconds (169.09 M allocations: 10.235 GiB, 4.25% gc time, 96.31% compilation time: <1% of which was recompilation)
-For model : Max abs rel. err: 2.2248236022426646e7
-For model : Max abs rel. err: 1.614423183898752e8
+ 50.692228 seconds (45.98 M allocations: 2.901 GiB, 2.60% gc time, 87.97% compilation time: 6% of which was recompilation)
 
 
-CPU time: 15.68+211.26 sec	Max. resident set size: 3390712 KB	 Elapsed: 212.26 sec.
+CPU time: 15.67+119.33 sec	Max. resident set size: 3223908 KB	 Elapsed: 119.99 sec.
