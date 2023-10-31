@@ -22,16 +22,10 @@ measured_quantities = [
 ]
 ic = [0.603, 0.545]
 p_true = [0.549, 0.715]
-time_interval = [-0.5, 0.5]
+time_interval = [0.0, 1.0]
 datasize = 21
 
 data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/harmonic_0.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
-                all_params = vcat(ic, p_true)
-for each in res
-  estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
-  println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
-end
-~       
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time=0.5)

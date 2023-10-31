@@ -20,23 +20,17 @@ parameters = [lm, d, beta, a, k, uu, c, q, b, h]
                              D(z) ~ c * q * yy * w - h * z,
                          ], t, states, parameters)
 measured_quantities = [
-        y1 ~ x,
+        y1 ~ w,
         y2 ~ z,
-        y3 ~ w,
+        y3 ~ x,
         y4 ~ yy+vv,
 ]
 ic = [0.704, 0.1, 0.919, 0.714, 0.999]
 p_true = [0.591, 0.574, 0.653, 0.652, 0.431, 0.897, 0.368, 0.436, 0.892, 0.806]
-time_interval = [-0.5, 0.5]
+time_interval = [0.0, 1.0]
 datasize = 21
 
 data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/hiv_9.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
-                all_params = vcat(ic, p_true)
-for each in res
-  estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
-  println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
-end
-~       
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time=0.5)

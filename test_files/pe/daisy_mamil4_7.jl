@@ -25,16 +25,10 @@ measured_quantities = [
 ]
 ic = [0.567, 0.265, 0.523, 0.094]
 p_true = [0.12, 0.296, 0.119, 0.318, 0.414, 0.064, 0.692]
-time_interval = [-0.5, 0.5]
+time_interval = [0.0, 1.0]
 datasize = 21
 
 data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/daisy_mamil4_7.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
-                all_params = vcat(ic, p_true)
-for each in res
-  estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
-  println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
-end
-~       
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time=0.5)

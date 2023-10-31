@@ -20,23 +20,17 @@ parameters = [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, del
                              D(p) ~ p * p * rhoP - p * muP - e * p * muPE - s * p * muPL,
                          ], t, states, parameters)
 measured_quantities = [
-        y1 ~ e,
-        y2 ~ n,
+        y1 ~ n,
+        y2 ~ e,
         y3 ~ s+m,
         y4 ~ p,
 ]
 ic = [0.097, 0.838, 0.096, 0.976, 0.469]
 p_true = [0.209, 0.161, 0.653, 0.253, 0.466, 0.244, 0.159, 0.11, 0.656, 0.138, 0.197, 0.369, 0.821]
-time_interval = [-0.5, 0.5]
+time_interval = [0.0, 1.0]
 datasize = 21
 
 data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/crauste_3.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad))
-                all_params = vcat(ic, p_true)
-for each in res
-  estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
-  println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
-end
-~       
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time=0.5)
