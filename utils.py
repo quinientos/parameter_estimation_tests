@@ -90,8 +90,6 @@ def get_settings(system, instance):
         "time_start": instance["time"]["start"],
         "time_end": instance["time"]["end"],
         "time_count": instance["time"]["count"],
-        "lower_bound": instance["bounds"]["lower"],
-        "upper_bound": instance["bounds"]["upper"]
     }
 
     return settings
