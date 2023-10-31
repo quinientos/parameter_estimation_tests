@@ -2,6 +2,7 @@ push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
 using ParameterEstimation
 using ModelingToolkit, DifferentialEquations
 using BenchmarkTools
+using JLD2, FileIO
 
 solver = AutoVern8(Rodas4()) #Tsit5()
 
@@ -30,9 +31,8 @@ data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
                 solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), at_time={{at_time}})
-                all_params = vcat(ic, p_true)
+all_params = vcat(ic, p_true)
 for each in res
   estimates = vcat(collect(values(each.states)), collect(values(each.parameters)))
   println("For model ", name, ": Max abs rel. err: ", maximum(abs.((estimates .- all_params) ./ (all_params))))
 end
-~       

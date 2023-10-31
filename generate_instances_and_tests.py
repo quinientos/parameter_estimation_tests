@@ -17,7 +17,7 @@ pd.set_option("display.precision",16)
 import argparse
 from utils import *
 
-NUM_TESTS = 10
+NUM_TESTS = 1
 TEST_INTERVAL = [0.0, 1.0]
 NUM_PTS = 21
 SCIML_DAT_STR = {
@@ -77,7 +77,7 @@ def convert_instance(system, instance_name, param_vals, initial_vals):
         })
     instance = {
         "name": instance_name,
-        "sys_name": system["name"],
+        "system-name": system["name"],
         "states": states,
         "parameters": parameters,
         "time_start": TEST_INTERVAL[0],
@@ -149,6 +149,7 @@ def main(args):
             settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)#.replace("  ", ", ")
 
             with open('test_files/pe/' + instance["name"] + '.jl', 'w') as output_file:
+                settings["at_time"] = (TEST_INTERVAL[1] - TEST_INTERVAL[0])/2 + TEST_INTERVAL[0]
                 testfile = chevron.render(open('templates/pe.jl.template'), settings)
                 output_file.write(testfile)
 
@@ -195,6 +196,7 @@ def main(args):
                    output_file.write(testfile)
                 #settings.pop("data")
             
+                settings["data_expr"] = SCIML_DAT_STR[instance["system-name"]]
                 with open('test_files/sciml/' + instance["name"] + file_suffix + '.jl', 'w') as output_file:
                     testfile = chevron.render(open('templates/sciml.jl.template'), settings)
                     output_file.write(testfile)
