@@ -25,7 +25,7 @@
 			"parameter-variables": ["muN", "muEE", "muLE", "muLL", "muM", "muP", "muPE", "muPL", "deltaNE", "deltaEL", "deltaLM", "rhoE", "rhoP"],
       "measurement-variables": ["y1", "y2", "y3", "y4"],
 			"ode-system": {"n": "-1 * n * muN - n * p * deltaNE", "e": "n * p * deltaNE - e * e * muEE - e * deltaEL + e * p * rhoE", "s": "s * deltaEL - s * deltaLM - s * s * muLL - e * s * muLE", "m": "s * deltaLM - muM * m", "p": "p * p * rhoP - p * muP - e * p * muPE - s * p * muPL"},
-			"measurements": {"y1": "e", "y2": "n", "y3": "s+m", "y4": "p"}
+			"measurements": {"y1": "n", "y2": "e", "y3": "s+m", "y4": "p"}
     }, 
     {
       "name": "daisy_mamil3",
@@ -57,7 +57,7 @@
 			"parameter-variables": ["lm", "d", "beta", "a", "k", "uu", "c", "q", "b", "h"],
       "measurement-variables": ["y1", "y2", "y3", "y4"],
 			"ode-system": {"x": "lm - d * x - beta * x * vv", "yy": "beta * x * vv - a * yy", "vv": "k * yy - uu * vv", "w": "c * x * yy * w - c * q * yy * w - b * w", "z": "c * q * yy * w - h * z"},
-			"measurements": {"y1": "x", "y2": "z", "y3": "w", "y4": "yy+vv"}
+			"measurements": {"y1": "w", "y2": "z", "y3": "x", "y4": "yy+vv"}
     }, 
 		{
 			"name": "lotka_volterra",
