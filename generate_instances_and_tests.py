@@ -17,7 +17,7 @@ pd.set_option("display.precision",16)
 import argparse
 from utils import *
 
-NUM_TESTS = 1
+NUM_TESTS = 10
 TEST_INTERVAL = [0.0, 1.0]
 NUM_PTS = 21
 SCIML_DAT_STR = {
