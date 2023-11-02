@@ -18,26 +18,26 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.5290000000726756, 0.5680000000332808, 0.9260153051869229, 0.07099844895242428, 0.08699999995439481, 0.020006098616460247, 0.8329836854031603]
-midpoint initial conditions [0.8020461184415458, 0.6855364124139313, 0.6226330072281134, 1.1019647439661502]
+parameter values: [0.5759999999387603, 0.611000000929668, 0.9329453299710446, 0.1640093995736899, 0.178000000878353, 0.11797216140131946, 0.849060559635151]
+midpoint initial conditions [0.7965835401313176, 0.712882225991579, 0.653658024128997, 1.0857525054295412]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7780000405862005, x2(t) => 0.8699999965414859, x3(t) => 0.9789746306646271, x4(t) => 0.7990253459823647)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.8000000974134464, x2(t) => 0.8829999871761778, x3(t) => 0.9810937849461218, x4(t) => 0.8189061591681007)
 Starting backsolving.
-parameter values: [0.5290000000726756, 0.5680000000332808, 0.07099844895242428, 0.9260153051869229, 0.08699999995439481, 0.8329836854031603, 0.020006098616460247]
-midpoint initial conditions [0.8020461184415458, 0.6855364124139313, 1.1019647439661502, 0.6226330072281134]
+parameter values: [0.5759999999387603, 0.611000000929668, 0.1640093995736899, 0.9329453299710446, 0.178000000878353, 0.849060559635151, 0.11797216140131946]
+midpoint initial conditions [0.7965835401313176, 0.712882225991579, 1.0857525054295412, 0.653658024128997]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7780000405862009, x2(t) => 0.869999996541486, x3(t) => 0.7990253459823646, x4(t) => 0.9789746306646271)
-Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.926, k14 = 0.071, k21 = 0.087, k31 = 0.020, k41 = 0.833
-Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.979, x4(t) = 0.799
-Error: 8.3589e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.8000000974134464, x2(t) => 0.8829999871761779, x3(t) => 0.8189061591681006, x4(t) => 0.9810937849461218)
+Parameter(s)        :	k01 = 0.576, k12 = 0.611, k13 = 0.933, k14 = 0.164, k21 = 0.178, k31 = 0.118, k41 = 0.849
+Initial Condition(s):	x1(t) = 0.800, x2(t) = 0.883, x3(t) = 0.981, x4(t) = 0.819
+Error: 1.7846e-08
 Time: 0.0000e+00
 
-Parameter(s)        :	k01 = 0.529, k12 = 0.568, k13 = 0.071, k14 = 0.926, k21 = 0.087, k31 = 0.833, k41 = 0.020
-Initial Condition(s):	x1(t) = 0.778, x2(t) = 0.870, x3(t) = 0.799, x4(t) = 0.979
-Error: 8.3588e-09
+Parameter(s)        :	k01 = 0.576, k12 = 0.611, k13 = 0.164, k14 = 0.933, k21 = 0.178, k31 = 0.849, k41 = 0.118
+Initial Condition(s):	x1(t) = 0.800, x2(t) = 0.883, x3(t) = 0.819, x4(t) = 0.981
+Error: 1.7846e-08
 Time: 0.0000e+00
 
- 48.377413 seconds (45.94 M allocations: 2.900 GiB, 2.57% gc time, 91.00% compilation time: 6% of which was recompilation)
+ 46.752987 seconds (45.91 M allocations: 2.898 GiB, 2.47% gc time, 92.73% compilation time: 7% of which was recompilation)
 
 
-CPU time: 15.13+117.16 sec	Max. resident set size: 3362164 KB	 Elapsed: 117.41 sec.
+CPU time: 14.78+114.74 sec	Max. resident set size: 3298324 KB	 Elapsed: 114.86 sec.

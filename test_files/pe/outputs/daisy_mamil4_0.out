@@ -16,32 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-┌ Warning: Instability detected. Aborting
-└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
-┌ Warning: Instability detected. Aborting
-└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.5490000009474295, 0.7150007032398428, 0.6046708310144542, 1348.573579189592, 0.4240007816460842, 1.135477727825618, 47.015207100480225]
-midpoint initial conditions [0.7330779827342616, 0.8162540613336763, 1.2361378446738776, 0.025562602117284797]
+parameter values: [0.5940000729317583, 0.7431092688772308, 0.6368251497057963, 0.602712348970646, 0.4799919919207056, 0.5918385074560945, 0.5846954539292075]
+midpoint initial conditions [0.7307057931867151, 0.8269131862078858, 0.3833488473097688, 0.948423090388895]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => -9.942348296680357e37, x2(t) => 3.022028550334727e34, x3(t) => 8.092378315400107e34, x4(t) => 9.927322944858391e37)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.9029996747110898, x2(t) => 0.9670063749813198, x3(t) => 0.24868363851125982, x4(t) => 1.0093102713402877)
 Starting backsolving.
-parameter values: [0.5490000009474295, 0.7150007032398428, 1348.573579189592, 0.6046708310144542, 0.4240007816460842, 47.015207100480225, 1.135477727825618]
-midpoint initial conditions [0.7330779827342616, 0.8162540613336763, 0.025562602117284797, 1.2361378446738776]
+parameter values: [0.5940000729317583, 0.7431092688772308, 0.602712348970646, 0.6368251497057963, 0.4799919919207056, 0.5846954539292075, 0.5918385074560945]
+midpoint initial conditions [0.7307057931867151, 0.8269131862078858, 0.948423090388895, 0.3833488473097688]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => -1.0015888958162165e38, x2(t) => 3.044381617434858e34, x3(t) => 1.0000752468178574e38, x4(t) => 8.152235286461406e34)
-Parameter(s)        :	k01 = 0.549, k12 = 0.715, k13 = 0.605, k14 = 1348.574, k21 = 0.424, k31 = 1.135, k41 = 47.015
-Initial Condition(s):	x1(t) = -99423482966803574135574049126497648640.000, x2(t) = 30220285503347269065564787723730944.000, x3(t) = 80923783154001073576593854209982464.000, x4(t) = 99273229448583912156627990979614343168.000
-Error: 2.3668e+36
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.90299967471109, x2(t) => 0.9670063749813198, x3(t) => 1.0093102713402877, x4(t) => 0.24868363851125982)
+Parameter(s)        :	k01 = 0.594, k12 = 0.743, k13 = 0.637, k14 = 0.603, k21 = 0.480, k31 = 0.592, k41 = 0.585
+Initial Condition(s):	x1(t) = 0.903, x2(t) = 0.967, x3(t) = 0.249, x4(t) = 1.009
+Error: 8.0514e-07
 Time: 0.0000e+00
 
-Parameter(s)        :	k01 = 0.549, k12 = 0.715, k13 = 1348.574, k14 = 0.605, k21 = 0.424, k31 = 47.015, k41 = 1.135
-Initial Condition(s):	x1(t) = -100158889581621651393315802247568818176.000, x2(t) = 30443816174348581049739822084653056.000, x3(t) = 100007524681785739987323367980888227840.000, x4(t) = 81522352864614060387170762945986560.000
-Error: 2.3843e+36
+Parameter(s)        :	k01 = 0.594, k12 = 0.743, k13 = 0.603, k14 = 0.637, k21 = 0.480, k31 = 0.585, k41 = 0.592
+Initial Condition(s):	x1(t) = 0.903, x2(t) = 0.967, x3(t) = 1.009, x4(t) = 0.249
+Error: 8.0514e-07
 Time: 0.0000e+00
 
- 48.329669 seconds (45.20 M allocations: 2.851 GiB, 2.17% gc time, 88.30% compilation time: 7% of which was recompilation)
+ 51.481476 seconds (46.03 M allocations: 2.902 GiB, 2.19% gc time, 83.85% compilation time: 7% of which was recompilation)
 
 
-CPU time: 15.32+115.44 sec	Max. resident set size: 3292948 KB	 Elapsed: 115.82 sec.
+CPU time: 14.53+119.65 sec	Max. resident set size: 3295056 KB	 Elapsed: 119.73 sec.

@@ -16,33 +16,28 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
-│ Consider using tuples instead.
-└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
-┌ Warning: No solution found
-└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
+[ Info: Best estimate found
 Starting backsolving.
-parameter values: Number[0.1200000096777819, 0.2959999983248909, 0.20088529927530327 + 0.12691151330492684im, 0.20088529927530327 - 0.12691151330492684im, 0.4139999889358242, 0.415928792457361 + 0.03928933339746036im, 0.415928792457361 - 0.03928933339746036im]
-midpoint initial conditions Number[0.37284714702618765, 0.31608270258059745, 0.3663154304921007 - 0.05199957306575326im, 0.3663154304921007 + 0.05199957306575326im]
+parameter values: [0.2079999999304229, 0.36700000569819297, 0.6704857654999807, 0.026124006527882316, 0.4730000054873105, 0.7357155954501778, -0.055947126686195926]
+midpoint initial conditions [0.40241215112037365, 0.38743333349012876, 0.2037536859988049, 0.6604092243166141]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.5670000414968457 + 0.0im, x2(t) => 0.2650000056004181 + 0.0im, x3(t) => 0.3084999772410547 - 0.04409957862467223im, x4(t) => 0.3084999772410547 + 0.04409957862467223im)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6099996834451096, x2(t) => 0.33900002438529353, x3(t) => 0.0731089643063794, x4(t) => 0.682891318338916)
 Starting backsolving.
-parameter values: Number[0.1200000096777819, 0.2959999983248909, 0.20088529927530327 - 0.12691151330492684im, 0.20088529927530327 + 0.12691151330492684im, 0.4139999889358242, 0.415928792457361 - 0.03928933339746036im, 0.415928792457361 + 0.03928933339746036im]
-midpoint initial conditions Number[0.37284714702618765, 0.31608270258059745, 0.3663154304921007 + 0.05199957306575326im, 0.3663154304921007 - 0.05199957306575326im]
+parameter values: [0.2079999999304229, 0.36700000569819297, 0.026124006527882316, 0.6704857654999807, 0.4730000054873105, -0.055947126686195926, 0.7357155954501778]
+midpoint initial conditions [0.40241215112037365, 0.38743333349012876, 0.6604092243166141, 0.2037536859988049]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.5670000414968457 + 0.0im, x2(t) => 0.2650000056004181 + 0.0im, x3(t) => 0.3084999772410547 + 0.04409957862467223im, x4(t) => 0.3084999772410547 - 0.04409957862467223im)
-2-element Vector{ParameterEstimation.EstimationResult}:
- Parameter(s)        :	k01 = 0.120+0.000im, k12 = 0.296+0.000im, k13 = 0.201+0.127im, k14 = 0.201+-0.127im, k21 = 0.414+0.000im, k31 = 0.416+0.039im, k41 = 0.416+-0.039im
-Initial Condition(s):	x1(t) = 0.567+0.000im, x2(t) = 0.265+0.000im, x3(t) = 0.308+-0.044im, x4(t) = 0.308+0.044im
-Error: Not yet calculated
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6099996834451096, x2(t) => 0.33900002438529353, x3(t) => 0.6828913183389161, x4(t) => 0.07310896430637942)
+Parameter(s)        :	k01 = 0.208, k12 = 0.367, k13 = 0.670, k14 = 0.026, k21 = 0.473, k31 = 0.736, k41 = -0.056
+Initial Condition(s):	x1(t) = 0.610, x2(t) = 0.339, x3(t) = 0.073, x4(t) = 0.683
+Error: 2.9732e-08
 Time: 0.0000e+00
 
- Parameter(s)        :	k01 = 0.120+0.000im, k12 = 0.296+0.000im, k13 = 0.201+-0.127im, k14 = 0.201+0.127im, k21 = 0.414+0.000im, k31 = 0.416+-0.039im, k41 = 0.416+0.039im
-Initial Condition(s):	x1(t) = 0.567+0.000im, x2(t) = 0.265+0.000im, x3(t) = 0.308+0.044im, x4(t) = 0.308+-0.044im
-Error: Not yet calculated
+Parameter(s)        :	k01 = 0.208, k12 = 0.367, k13 = 0.026, k14 = 0.670, k21 = 0.473, k31 = -0.056, k41 = 0.736
+Initial Condition(s):	x1(t) = 0.610, x2(t) = 0.339, x3(t) = 0.683, x4(t) = 0.073
+Error: 2.9732e-08
 Time: 0.0000e+00
 
- 59.249498 seconds (62.48 M allocations: 3.816 GiB, 2.70% gc time, 85.75% compilation time: 5% of which was recompilation)
+ 50.907913 seconds (46.00 M allocations: 2.901 GiB, 2.36% gc time, 85.38% compilation time: 7% of which was recompilation)
 
 
-CPU time: 15.17+127.67 sec	Max. resident set size: 3305564 KB	 Elapsed: 127.87 sec.
+CPU time: 15.30+118.99 sec	Max. resident set size: 3305356 KB	 Elapsed: 119.89 sec.

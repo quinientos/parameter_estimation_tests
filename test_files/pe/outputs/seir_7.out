@@ -18,26 +18,26 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.3638286181573928, 0.5700177897158568, 0.43915651614881723]
-midpoint initial conditions [0.678683342850421, 0.35762233297622037, 0.22363392886958244, 0.161]
+parameter values: [0.4269467588804664, 0.6130060310269657, 0.4950490795295398]
+midpoint initial conditions [0.6871945010323348, 0.4163079354924559, 0.30405727682679123, 0.245]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.9876067122006652, E(t) => 0.10188216496236151, In(t) => 0.20899998951520485, NN(t) => 0.161)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.989888115115017, E(t) => 0.19195004329732973, In(t) => 0.28799999095137296, NN(t) => 0.245)
 Starting backsolving.
-parameter values: [0.43915651614881723, 0.5700177897158568, 0.3638286181573928]
-midpoint initial conditions [0.8191994734330879, 0.47796694088789365, 0.22363392886958244, 0.161]
+parameter values: [0.49504907952954175, 0.6130060310269654, 0.4269467588804646]
+midpoint initial conditions [0.7968089653283111, 0.531213463297481, 0.30405727682679123, 0.245]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 1.19208302924435, E(t) => 0.1662479134427793, In(t) => 0.2089999885009916, NN(t) => 0.161)
-Parameter(s)        :	  a = 0.364,   b = 0.570,  nu = 0.439
-Initial Condition(s):	S(t) = 0.988, E(t) = 0.102, In(t) = 0.209, NN(t) = 0.161
-Error: 1.9286e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 1.1477852616044264, E(t) => 0.2685069296139715, In(t) => 0.2879999895654613, NN(t) => 0.245)
+Parameter(s)        :	  a = 0.427,   b = 0.613,  nu = 0.495
+Initial Condition(s):	S(t) = 0.990, E(t) = 0.192, In(t) = 0.288, NN(t) = 0.245
+Error: 1.6167e-09
 Time: 0.0000e+00
 
-Parameter(s)        :	  a = 0.439,   b = 0.570,  nu = 0.364
-Initial Condition(s):	S(t) = 1.192, E(t) = 0.166, In(t) = 0.209, NN(t) = 0.161
-Error: 2.0204e-09
+Parameter(s)        :	  a = 0.495,   b = 0.613,  nu = 0.427
+Initial Condition(s):	S(t) = 1.148, E(t) = 0.269, In(t) = 0.288, NN(t) = 0.245
+Error: 1.7832e-09
 Time: 0.0000e+00
 
- 46.824277 seconds (46.68 M allocations: 2.922 GiB, 2.74% gc time, 98.29% compilation time: 6% of which was recompilation)
+ 45.572085 seconds (46.69 M allocations: 2.923 GiB, 2.79% gc time, 98.11% compilation time: 6% of which was recompilation)
 
 
-CPU time: 14.56+115.65 sec	Max. resident set size: 3218176 KB	 Elapsed: 115.62 sec.
+CPU time: 14.56+113.94 sec	Max. resident set size: 3210820 KB	 Elapsed: 113.53 sec.

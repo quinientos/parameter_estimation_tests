@@ -16,38 +16,50 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-[ Info: Best estimate found
+┌ Warning: No solution found
+└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
 Starting backsolving.
-parameter values: [0.46253401702520786, 0.6183235139633075, 0.8231514101678163]
-midpoint initial conditions [0.3122276753108319, 0.30142925906345525, 0.6163258930003618, 0.438]
+parameter values: ComplexF64[0.6432276988294157 - 0.03621999456803093im, 0.7468856039515913 + 0.005620569579545618im, 0.5889915612535781 + 0.028850734204059973im]
+midpoint initial conditions Number[0.38584654678740815 - 0.024451136265870897im, 0.6447392309470633 - 0.07168980857911442im, 0.6522224086375192, 0.494]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.4866109077865207, E(t) => 0.24275899629416373, In(t) => 0.6459990608088045, NN(t) => 0.438)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.6376789080175731 - 0.03799091346554654im, E(t) => 0.577769100676247 - 0.07018008061402103im, In(t) => 0.6810000026395092 + 4.473908003324722e-8im, NN(t) => 0.494 + 0.0im)
 Starting backsolving.
-parameter values: [0.8231514101678202, 0.6183235139633048, 0.46253401702520763]
-midpoint initial conditions [0.5556578365381626, 1.0169625134801081, 0.6163258930003618, 0.438]
+parameter values: ComplexF64[0.6432276988294157 + 0.03621999456803093im, 0.7468856039515913 - 0.005620569579545618im, 0.5889915612535781 - 0.028850734204059973im]
+midpoint initial conditions Number[0.38584654678740815 + 0.024451136265870897im, 0.6447392309470633 + 0.07168980857911442im, 0.6522224086375192, 0.494]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.8659999594585077, E(t) => 0.9356845300814439, In(t) => 0.6459990507994591, NN(t) => 0.438)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.6376789080175731 + 0.03799091346554654im, E(t) => 0.577769100676247 + 0.07018008061402103im, In(t) => 0.6810000026395092 - 4.473908003324722e-8im, NN(t) => 0.494 + 0.0im)
 Starting backsolving.
-parameter values: [0.5784624237089883, 0.7169769303824061, 0.570733472304839]
-midpoint initial conditions [0.3429654260561638, 0.5599314109734297, 0.6163258930003618, 0.438]
+parameter values: ComplexF64[0.5889915612535781 - 0.028850734204059973im, 0.7468856039515913 - 0.005620569579545618im, 0.6432276988294157 + 0.03621999456803093im]
+midpoint initial conditions Number[0.35357428330605384 - 0.01482663429972799im, 0.5352521238491899 - 0.05939409083502362im, 0.6522224086375192, 0.494]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5737302356723423, E(t) => 0.48131786067585197, In(t) => 0.6460000368599557, NN(t) => 0.438)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5841108737480313 - 0.026705426371787442im, E(t) => 0.4715639263626141 - 0.057097656827366894im, In(t) => 0.6810000039430795 - 4.473900786658031e-8im, NN(t) => 0.494 + 0.0im)
 Starting backsolving.
-parameter values: [0.570733472304839, 0.7169769303824061, 0.5784624237089883]
-midpoint initial conditions [0.3383829968392489, 0.5442152033710448, 0.6163258930003618, 0.438]
+parameter values: ComplexF64[0.5889915612535781 + 0.028850734204059973im, 0.7468856039515913 + 0.005620569579545618im, 0.6432276988294157 - 0.03621999456803093im]
+midpoint initial conditions Number[0.35357428330605384 + 0.01482663429972799im, 0.5352521238491899 + 0.05939409083502362im, 0.6522224086375192, 0.494]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5660645125077698, E(t) => 0.46625554157071525, In(t) => 0.6460000370233961, NN(t) => 0.438)
-Parameter(s)        :	  a = 0.578,   b = 0.717,  nu = 0.571
-Initial Condition(s):	S(t) = 0.574, E(t) = 0.481, In(t) = 0.646, NN(t) = 0.438
-Error: 3.3313e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(S(t) => 0.5841108737480313 + 0.026705426371787442im, E(t) => 0.4715639263626141 + 0.057097656827366894im, In(t) => 0.6810000039430795 + 4.473900786658031e-8im, NN(t) => 0.494 + 0.0im)
+4-element Vector{ParameterEstimation.EstimationResult}:
+ Parameter(s)        :	  a = 0.643+-0.036im,   b = 0.747+0.006im,  nu = 0.589+0.029im
+Initial Condition(s):	S(t) = 0.638+-0.038im, E(t) = 0.578+-0.070im, In(t) = 0.681+0.000im, NN(t) = 0.494+0.000im
+Error: Not yet calculated
 Time: 0.0000e+00
 
-Parameter(s)        :	  a = 0.571,   b = 0.717,  nu = 0.578
-Initial Condition(s):	S(t) = 0.566, E(t) = 0.466, In(t) = 0.646, NN(t) = 0.438
-Error: 3.3363e-09
+ Parameter(s)        :	  a = 0.643+0.036im,   b = 0.747+-0.006im,  nu = 0.589+-0.029im
+Initial Condition(s):	S(t) = 0.638+0.038im, E(t) = 0.578+0.070im, In(t) = 0.681+-0.000im, NN(t) = 0.494+0.000im
+Error: Not yet calculated
 Time: 0.0000e+00
 
- 45.994367 seconds (46.75 M allocations: 2.926 GiB, 2.51% gc time, 98.25% compilation time: 7% of which was recompilation)
+ Parameter(s)        :	  a = 0.589+-0.029im,   b = 0.747+-0.006im,  nu = 0.643+0.036im
+Initial Condition(s):	S(t) = 0.584+-0.027im, E(t) = 0.472+-0.057im, In(t) = 0.681+-0.000im, NN(t) = 0.494+0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
+
+ Parameter(s)        :	  a = 0.589+0.029im,   b = 0.747+0.006im,  nu = 0.643+-0.036im
+Initial Condition(s):	S(t) = 0.584+0.027im, E(t) = 0.472+0.057im, In(t) = 0.681+0.000im, NN(t) = 0.494+0.000im
+Error: Not yet calculated
+Time: 0.0000e+00
+
+ 51.047301 seconds (60.04 M allocations: 3.636 GiB, 2.74% gc time, 98.32% compilation time: 5% of which was recompilation)
 
 
-CPU time: 14.59+114.37 sec	Max. resident set size: 3230608 KB	 Elapsed: 113.32 sec.
+CPU time: 15.29+118.91 sec	Max. resident set size: 3227132 KB	 Elapsed: 118.74 sec.

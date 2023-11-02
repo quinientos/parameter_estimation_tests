@@ -18,46 +18,46 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.15900000035262488, 0.11000000171656676, 0.00012198909251612108, 0.9008265469045897, -0.3157866308085201, -1.7970268210692604]
-midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, -1.034838548859448, 6122725514784]
+parameter values: [0.24299999897379876, 0.1989999961092122, 0.0004550078470848498, -0.8094642702916911, 0.5346131430982002, 1.514911161679878]
+midpoint initial conditions Real[0.7419601255697538, 0.23175872187678798, 0.5787075673289741, 4875716625502]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.821000000021006, x5(t) => 0.09701475193113665, x6(t) => -0.9976423520353028, x7(t) => 6.122725514783931e12)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8389999999710241, x5(t) => 0.18701116350630767, x6(t) => 0.6232849735382755, x7(t) => 4.875716625501903e12)
 Starting backsolving.
-parameter values: [0.15900000035262488, 0.11000000171656676, 0.00012198909251612108, -0.8962002741646707, 0.3157866308085201, 1.7970268210692604]
-midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.7621882722098124, 6122725514784]
+parameter values: [0.24299999897379876, 0.1989999961092122, 0.0004550078470848498, 0.7054468913881871, -0.5346131430982002, -1.514911161679878]
+midpoint initial conditions Real[0.7419601255697538, 0.23175872187678798, -0.9362035943509041, 4875716625502]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.821000000021007, x5(t) => 0.09701475187878576, x6(t) => 0.799384469095367, x7(t) => 6.122725514783931e12)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8389999999709866, x5(t) => 0.1870111691396153, x6(t) => -0.8916261939229823, x7(t) => 4.875716625501903e12)
 Starting backsolving.
-parameter values: [0.15900000035262488, 0.11000000171656676, 0.669649355943208, 0.4916355844014467, -0.16325798823745963, -0.3119284375807788]
-midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.6775940645003607, 6122725514784]
+parameter values: [0.24299999897379876, 0.1989999961092122, 0.6507397466014684, 0.12381244781880812, 0.365417983601651, 0.5365852537428444]
+midpoint initial conditions Real[0.7419601255697538, 0.23175872187678798, 1.0774888058851289, 4875716625502]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8210000000200401, x5(t) => 0.09699998258449812, x6(t) => 0.5066924046269737, x7(t) => 6.122725514784138e12)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.838999999968906, x5(t) => 0.18700001214495376, x6(t) => 0.8804803109228306, x7(t) => 4.8757166255021455e12)
 Starting backsolving.
-parameter values: [0.15900000035262488, 0.11000000171656676, 0.669649355943208, 0.17970714682066788, 0.16325798823745963, 0.3119284375807788]
-midpoint initial conditions Real[0.7512642256578668, 0.13424945493167242, 0.9895225020811396, 6122725514784]
+parameter values: [0.24299999897379876, 0.1989999961092122, 0.6507397466014684, 0.6603977015616525, -0.365417983601651, -0.5365852537428444]
+midpoint initial conditions Real[0.7419601255697538, 0.23175872187678798, 0.5409035521422844, 4875716625502]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.8210000000200889, x5(t) => 0.0969999830811888, x6(t) => 0.8186208317002951, x7(t) => 6.122725514784139e12)
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.000,  k8 = 0.901,  k9 = -0.316, k10 = -1.797
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = -0.998, x7(t) = 6122725514783.931
-Error: 7.0997e-07
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.838999999969529, x5(t) => 0.18700001657526488, x6(t) => 0.3438950004079327, x7(t) => 4.875716625502145e12)
+Parameter(s)        :	 k5 = 0.243,  k6 = 0.199,  k7 = 0.000,  k8 = -0.809,  k9 = 0.535, k10 = 1.515
+Initial Condition(s):	x4(t) = 0.839, x5(t) = 0.187, x6(t) = 0.623, x7(t) = 4875716625501.903
+Error: 4.8901e-07
 Time: 0.0000e+00
 
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.000,  k8 = -0.896,  k9 = 0.316, k10 = 1.797
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.799, x7(t) = 6122725514783.931
-Error: 7.1022e-07
+Parameter(s)        :	 k5 = 0.243,  k6 = 0.199,  k7 = 0.000,  k8 = 0.705,  k9 = -0.535, k10 = -1.515
+Initial Condition(s):	x4(t) = 0.839, x5(t) = 0.187, x6(t) = -0.892, x7(t) = 4875716625501.903
+Error: 4.9005e-07
 Time: 0.0000e+00
 
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.670,  k8 = 0.492,  k9 = -0.163, k10 = -0.312
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.507, x7(t) = 6122725514784.138
-Error: 1.8856e-09
+Parameter(s)        :	 k5 = 0.243,  k6 = 0.199,  k7 = 0.651,  k8 = 0.124,  k9 = 0.365, k10 = 0.537
+Initial Condition(s):	x4(t) = 0.839, x5(t) = 0.187, x6(t) = 0.880, x7(t) = 4875716625502.146
+Error: 2.2967e-09
 Time: 0.0000e+00
 
-Parameter(s)        :	 k5 = 0.159,  k6 = 0.110,  k7 = 0.670,  k8 = 0.180,  k9 = 0.163, k10 = 0.312
-Initial Condition(s):	x4(t) = 0.821, x5(t) = 0.097, x6(t) = 0.819, x7(t) = 6122725514784.139
-Error: 1.8312e-09
+Parameter(s)        :	 k5 = 0.243,  k6 = 0.199,  k7 = 0.651,  k8 = 0.660,  k9 = -0.365, k10 = -0.537
+Initial Condition(s):	x4(t) = 0.839, x5(t) = 0.187, x6(t) = 0.344, x7(t) = 4875716625502.145
+Error: 2.5090e-09
 Time: 0.0000e+00
 
- 64.024692 seconds (62.35 M allocations: 3.819 GiB, 2.42% gc time, 89.81% compilation time: 5% of which was recompilation)
+ 64.121620 seconds (62.35 M allocations: 3.819 GiB, 2.48% gc time, 89.50% compilation time: 5% of which was recompilation)
 
 
-CPU time: 15.09+132.50 sec	Max. resident set size: 3383212 KB	 Elapsed: 132.85 sec.
+CPU time: 14.93+132.65 sec	Max. resident set size: 3295292 KB	 Elapsed: 132.38 sec.

@@ -18,26 +18,26 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [-0.8976824853567633, 0.0017444782314500645, -0.6368558182694715]
-midpoint initial conditions [0.6901358825335268, -586.1855512577249]
+parameter values: [0.6948873201468414, 0.8232148970265216, 1.1723857460061213]
+midpoint initial conditions [0.7456133423355815, 0.10526954894002957]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5219994831695344, w(t) => -426.1044494191971)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5700028444564703, w(t) => 0.14469125199738014)
 Starting backsolving.
-parameter values: [0.6563964747521788, 1.0451456551311369, 1.2434889399825833]
-midpoint initial conditions [0.6901358825335268, 0.04778063292589335]
+parameter values: [-0.8643001177584092, 0.003825969209524903, -0.6674103556270502]
+midpoint initial conditions [0.7456133423355815, -281.20756783275107]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5220032539060634, w(t) => 0.06500335815947086)
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5699989102955928, w(t) => -201.16828989043293)
 Starting backsolving.
-parameter values: [0.6399995951512828, 0.14296212638350594, 0.9449842426072831]
-midpoint initial conditions [0.6901358825335268, 0.2701529901992895]
+parameter values: [0.6760009076807686, 0.22904121845917189, 0.9500180851305935]
+midpoint initial conditions [0.7456133423355815, 0.3168752779756772]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5220000011318869, w(t) => 0.41510838845608966)
-Parameter(s)        :	 k1 = 0.640,  k2 = 0.143,  k3 = 0.945
-Initial Condition(s):	r(t) = 0.522, w(t) = 0.415
-Error: 1.5832e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.5700000076071433, w(t) => 0.47291720942566623)
+Parameter(s)        :	 k1 = 0.676,  k2 = 0.229,  k3 = 0.950
+Initial Condition(s):	r(t) = 0.570, w(t) = 0.473
+Error: 4.4156e-09
 Time: 0.0000e+00
 
- 37.893443 seconds (33.51 M allocations: 2.098 GiB, 2.21% gc time, 98.96% compilation time: 8% of which was recompilation)
+ 36.838557 seconds (33.51 M allocations: 2.098 GiB, 2.32% gc time, 98.93% compilation time: 8% of which was recompilation)
 
 
-CPU time: 15.22+106.79 sec	Max. resident set size: 3244880 KB	 Elapsed: 107.53 sec.
+CPU time: 15.29+104.43 sec	Max. resident set size: 3241416 KB	 Elapsed: 104.56 sec.

@@ -16,48 +16,9 @@
 [ Info: Not identifiable parameters:                      [x7]
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
-[ Info: Best estimate found
-Starting backsolving.
-parameter values: [0.7250000001939683, 0.5010000002105581, 0.9558609068823268, 0.6438256982659708, 0.42397908764679204, 0.6059531406406745]
-midpoint initial conditions Real[0.00939389441933739, 0.2331079733575821, 0.765138479902773, 2136252857173]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.018999999966183657, x5(t) => 0.3020000001883377, x6(t) => 0.6599406265026878, x7(t) => 2.1362528571730269e12)
-Starting backsolving.
-parameter values: [0.7250000001939683, 0.5010000002105581, 17.336246624216916, 28.104976143760176, -1.2680242650041353, 46.78480355115538]
-midpoint initial conditions Real[0.00939389441933739, 0.2331079733575821, 1.443830373421613, 2136252857173]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.018999999997355067, x5(t) => 0.301999441036746, x6(t) => 0.7175259899665559, x7(t) => 2.1362528571736477e12)
-Starting backsolving.
-parameter values: [0.7250000001939683, 0.5010000002105581, 17.336246624216916, 74.88977969491555, 1.2680242650041353, -46.78480355115538]
-midpoint initial conditions Real[0.00939389441933739, 0.2331079733575821, -45.340973177733765, 2136252857173]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.018999999966322807, x5(t) => 0.30199944109808563, x6(t) => -46.0672775590145, x7(t) => 2.136252857173648e12)
-Starting backsolving.
-parameter values: [0.7250000001939683, 0.5010000002105581, 0.9558609068823268, 1.2497788389066453, -0.42397908764679204, -0.6059531406406745]
-midpoint initial conditions Real[0.00939389441933739, 0.2331079733575821, 0.15918533926209844, 2136252857173]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x4(t) => 0.01899999997089626, x5(t) => 0.30200000018166084, x6(t) => 0.05398748585795939, x7(t) => 2.1362528571730266e12)
-Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 0.956,  k8 = 0.644,  k9 = 0.424, k10 = 0.606
-Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.660, x7(t) = 2136252857173.027
-Error: 1.5733e-10
-Time: 0.0000e+00
-
-Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 17.336,  k8 = 28.105,  k9 = -1.268, k10 = 46.785
-Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.718, x7(t) = 2136252857173.648
-Error: 3.0929e-08
-Time: 0.0000e+00
-
-Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 17.336,  k8 = 74.890,  k9 = 1.268, k10 = -46.785
-Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = -46.067, x7(t) = 2136252857173.648
-Error: 3.0932e-08
-Time: 0.0000e+00
-
-Parameter(s)        :	 k5 = 0.725,  k6 = 0.501,  k7 = 0.956,  k8 = 1.250,  k9 = -0.424, k10 = -0.606
-Initial Condition(s):	x4(t) = 0.019, x5(t) = 0.302, x6(t) = 0.054, x7(t) = 2136252857173.027
-Error: 1.2831e-10
-Time: 0.0000e+00
-
- 64.229670 seconds (62.35 M allocations: 3.818 GiB, 2.56% gc time, 89.36% compilation time: 5% of which was recompilation)
+┌ Warning: No solution found
+└ @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:28
+ 43.835007 seconds (42.37 M allocations: 2.698 GiB, 2.32% gc time, 85.81% compilation time: 6% of which was recompilation)
 
 
-CPU time: 16.07+132.27 sec	Max. resident set size: 3363896 KB	 Elapsed: 133.59 sec.
+CPU time: 14.47+112.92 sec	Max. resident set size: 3271048 KB	 Elapsed: 112.31 sec.
