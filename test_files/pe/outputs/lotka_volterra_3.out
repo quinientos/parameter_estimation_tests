@@ -18,26 +18,16 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [-0.7610353025005556, 0.00022487572708076168, -0.17681724772281254]
-midpoint initial conditions [0.8289418567223259, -3143.5334925428297]
+parameter values: [-1.7729422150495466, 0.6727710793720718, 0.38392433413545746]
+midpoint initial conditions [0.7462079410732074, -2.0573826668713937]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.8000002521833228, w(t) => -2877.285914683657)
-Starting backsolving.
-parameter values: [0.17877080543454368, 0.20744105936328627, 0.915675535203231]
-midpoint initial conditions [0.8289418567223259, 0.347762591233549]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.7999998086575802, w(t) => 0.5052451345226311)
-Starting backsolving.
-parameter values: [0.17800284580004713, 0.11833649840498614, 0.8492511248972164]
-midpoint initial conditions [0.8289418567223259, 0.6042400055001856]
-saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.7999999993219127, w(t) => 0.8805083076194453)
-Parameter(s)        :	 k1 = 0.178,  k2 = 0.118,  k3 = 0.849
-Initial Condition(s):	r(t) = 0.800, w(t) = 0.881
-Error: 7.3318e-11
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(r(t) => 0.7232973377322046, w(t) => -1.9477903580963083)
+Parameter(s)        :	 k1 = -1.773,  k2 = 0.673,  k3 = 0.384
+Initial Condition(s):	r(t) = 0.723, w(t) = -1.948
+Error: 3.0424e-05
 Time: 0.0000e+00
 
- 36.747497 seconds (33.51 M allocations: 2.098 GiB, 2.22% gc time, 98.93% compilation time: 8% of which was recompilation)
+ 36.820785 seconds (33.48 M allocations: 2.096 GiB, 2.30% gc time, 98.94% compilation time: 8% of which was recompilation)
 
 
-CPU time: 14.42+105.17 sec	Max. resident set size: 3205192 KB	 Elapsed: 104.25 sec.
+CPU time: 14.99+103.93 sec	Max. resident set size: 3233896 KB	 Elapsed: 103.54 sec.

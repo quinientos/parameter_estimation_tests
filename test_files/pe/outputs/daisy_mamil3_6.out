@@ -16,18 +16,20 @@
 [ Info: Not identifiable parameters:                      []
 [ Info: ===============
 [ Info: Estimating via the interpolators: ["AAA"]
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.3839999983285607, 0.4270207483646486, 0.6129999963351481, 0.4950147253148453, 0.9899758326370307]
-midpoint initial conditions [0.13277637605198095, 0.28139092302713337, 0.23278733845866678]
+parameter values: [0.3519999467798157, 1100.5253557898188, 0.5559998917372028, -497.579640015303, 0.44314314393105947]
+midpoint initial conditions [0.12892280878873572, 0.2623510067835331, -0.05831718316468097]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.19199996000650438, x2(t) => 0.28800001266160985, x3(t) => 0.24498385796748764)
-Parameter(s)        :	a12 = 0.384, a13 = 0.427, a21 = 0.613, a31 = 0.495, a01 = 0.990
-Initial Condition(s):	x1(t) = 0.192, x2(t) = 0.288, x3(t) = 0.245
-Error: 6.8111e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 5.431292495116786e46, x2(t) => -5.018223081328367e43, x3(t) => -5.422276985071418e46)
+Parameter(s)        :	a12 = 0.352, a13 = 1100.525, a21 = 0.556, a31 = -497.580, a01 = 0.443
+Initial Condition(s):	x1(t) = 54312924951167864503756426795638168477667164160.000, x2(t) = -50182230813283674522909839499799103902056448.000, x3(t) = -54222769850714181026462472590084191763065470976.000
+Error: 8.6291e+44
 Time: 0.0000e+00
 
- 32.601779 seconds (29.24 M allocations: 1.823 GiB, 2.40% gc time, 98.34% compilation time: 9% of which was recompilation)
+ 32.728894 seconds (29.24 M allocations: 1.823 GiB, 2.27% gc time, 97.75% compilation time: 9% of which was recompilation)
 
 
-CPU time: 15.13+100.80 sec	Max. resident set size: 3147212 KB	 Elapsed: 100.31 sec.
+CPU time: 14.50+100.04 sec	Max. resident set size: 3195384 KB	 Elapsed: 99.35 sec.

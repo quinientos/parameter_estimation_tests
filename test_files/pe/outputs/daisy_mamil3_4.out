@@ -18,16 +18,16 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.5109999834412151, 0.6120001426373952, 0.11699997948771278, 0.6560000545994735, 0.6510000163024626]
-midpoint initial conditions [0.6313944888806778, 0.7683382806047786, 0.70807376728357]
+parameter values: [0.4650000037158374, 0.5548100903766201, 0.11500000452675235, 0.5939129742980063, 0.5899906720657636]
+midpoint initial conditions [0.5732433364024954, 0.7076447505437389, 0.6405278732768063]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.6550000603797929, x2(t) => 0.9489999941688098, x3(t) => 0.7139998802136454)
-Parameter(s)        :	a12 = 0.511, a13 = 0.612, a21 = 0.117, a31 = 0.656, a01 = 0.651
-Initial Condition(s):	x1(t) = 0.655, x2(t) = 0.949, x3(t) = 0.714
-Error: 9.9355e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.5940000995759136, x2(t) => 0.8549999953681487, x3(t) => 0.6451168477274793)
+Parameter(s)        :	a12 = 0.465, a13 = 0.555, a21 = 0.115, a31 = 0.594, a01 = 0.590
+Initial Condition(s):	x1(t) = 0.594, x2(t) = 0.855, x3(t) = 0.645
+Error: 1.0493e-08
 Time: 0.0000e+00
 
- 32.651920 seconds (29.24 M allocations: 1.823 GiB, 2.27% gc time, 98.35% compilation time: 9% of which was recompilation)
+ 32.458741 seconds (29.24 M allocations: 1.823 GiB, 2.31% gc time, 98.48% compilation time: 9% of which was recompilation)
 
 
-CPU time: 14.80+101.11 sec	Max. resident set size: 3170996 KB	 Elapsed: 100.76 sec.
+CPU time: 14.71+100.16 sec	Max. resident set size: 3150028 KB	 Elapsed: 99.49 sec.

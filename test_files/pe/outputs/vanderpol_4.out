@@ -18,16 +18,16 @@
 [ Info: Estimating via the interpolators: ["AAA"]
 [ Info: Best estimate found
 Starting backsolving.
-parameter values: [0.1180000000682502, 0.8489999982455181]
-midpoint initial conditions [0.8433688544679605, 0.5727049438818496]
+parameter values: [0.1160000006632469, 0.7659999957972264]
+midpoint initial conditions [0.7621221845754388, 0.5399600233157474]
 saveat: 0.5:-0.025:0.0
-startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7999999990524634, x2(t) => 0.883000001397789)
-Parameter(s)        :	  a = 0.118,   b = 0.849
-Initial Condition(s):	x1(t) = 0.800, x2(t) = 0.883
-Error: 1.0403e-09
+startpoint initial conditions: OrderedCollections.OrderedDict{Any, Any}(x1(t) => 0.7229999993087308, x2(t) => 0.7959999968651122)
+Parameter(s)        :	  a = 0.116,   b = 0.766
+Initial Condition(s):	x1(t) = 0.723, x2(t) = 0.796
+Error: 1.4622e-09
 Time: 0.0000e+00
 
- 36.941613 seconds (33.04 M allocations: 2.066 GiB, 1.97% gc time, 99.10% compilation time: 8% of which was recompilation)
+ 37.469740 seconds (33.04 M allocations: 2.067 GiB, 2.18% gc time, 99.05% compilation time: 8% of which was recompilation)
 
 
-CPU time: 14.82+104.63 sec	Max. resident set size: 3186696 KB	 Elapsed: 104.64 sec.
+CPU time: 14.50+105.42 sec	Max. resident set size: 3138056 KB	 Elapsed: 104.57 sec.

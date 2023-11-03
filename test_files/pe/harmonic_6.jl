@@ -20,8 +20,8 @@ measured_quantities = [
         y1 ~ x1,
         y2 ~ x2,
 ]
-ic = [0.229, 0.95]
-p_true = [0.206, 0.676]
+ic = [0.215, 0.856]
+p_true = [0.195, 0.612]
 time_interval = [0.0, 1.0]
 datasize = 21
 

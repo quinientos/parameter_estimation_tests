@@ -19,8 +19,8 @@ parameters = [k1, k2, k3]
 measured_quantities = [
         y1 ~ r,
 ]
-ic = [0.933, 0.164]
-p_true = [0.813, 0.576, 0.611]
+ic = [0.84, 0.157]
+p_true = [0.733, 0.523, 0.554]
 time_interval = [0.0, 1.0]
 datasize = 21
 
