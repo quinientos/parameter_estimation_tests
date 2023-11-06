@@ -1,0 +1,32 @@
+using ParameterEstimation
+using ModelingToolkit, DifferentialEquations
+using BenchmarkTools
+
+solver = Tsit5()
+
+name = "{{name}}"
+@parameters {{#parameters}}{{varname}}{{space}}{{/parameters}}
+@variables t {{#states}}{{varname}}(t){{space}}{{/states}} {{#measurements}}{{varname}}(t){{space}}{{/measurements}}
+D = Differential(t)
+states = [{{#states}}{{varname}}{{comma}}{{/states}}]
+parameters = [{{#parameters}}{{varname}}{{comma}}{{/parameters}}]
+@named model = ODESystem([
+                            {{#components}}
+                             D({{state_var}}) ~ {{state_expr}},
+                            {{/components}}
+                         ], t, states, parameters)
+measured_quantities = [
+    {{#measured_quantities}}
+        {{measurement}} ~ {{measurement_expression}},
+    {{/measured_quantities}}
+]
+ic = [{{#initial_conditions}}{{value}}{{comma}}{{/initial_conditions}}]
+p_true = [{{#parameters}}{{true}}{{comma}}{{/parameters}}]
+time_interval = [{{time_start}}, {{time_end}}]
+datasize = {{time_count}}
+
+data_sample = ParameterEstimation.sample_data(model, measured_quantities, convert(Array{Float64},time_interval),
+                                              p_true, ic, datasize; solver = solver)
+
+@time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad)) #, at_time={{at_time}})
