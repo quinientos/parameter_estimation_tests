@@ -140,14 +140,10 @@ def main(args):
 
 
 def getArgs(args):
-    datadir = os.path.abspath(args.data)
-    if not os.path.exists( datadir ): throwError("invalid directory path")
-
-    instances_file = args.instances
+    #instances_file = args.instances
     systems_file = args.systems
     sys_args = {
-        "datadir": datadir,
-        "instances-file": instances_file,
+        #"instances-file": instances_file,
         "systems-file": systems_file
     }
 
