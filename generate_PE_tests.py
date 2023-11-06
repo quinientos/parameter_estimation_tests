@@ -85,7 +85,7 @@ def main(args):
     for system in systems["systems"]:
         systems_by_name[system["name"]] = system
     
-    instances = {"instances":[]}
+    #instances = {"instances":[]}
     for system in systems["systems"]:
         print(system["name"])
         instance_basename = system["name"] + "_"
@@ -132,11 +132,11 @@ def main(args):
                 testfile = chevron.render(open('templates/pe_standalone.jl.template'), settings)
                 output_file.write(testfile)
             
-            instances["instances"].append(convert_instance(system, instance_name, param_values, state_values))
+            #instances["instances"].append(convert_instance(system, instance_name, param_values, state_values))
             i += 1
     
-    with open(sargs["instances-file"], 'w') as outfile:
-        outfile.write(chevron.render(open('templates/instances.json.template'), instances))
+    #with open(sargs["instances-file"], 'w') as outfile:
+    #    outfile.write(chevron.render(open('templates/instances.json.template'), instances))
 
 
 def getArgs(args):
@@ -155,8 +155,7 @@ def getArgs(args):
     
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-d', '--data', default="./data")
-    parser.add_argument('-i', '--instances', default="input_files/instances.json")
+    #parser.add_argument('-i', '--instances', default="input_files/instances.json")
     parser.add_argument('-s', '--systems', default="input_files/systems.json")
     #add other options as they come up
     args = parser.parse_args()
