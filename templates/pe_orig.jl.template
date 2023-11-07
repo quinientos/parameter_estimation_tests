@@ -24,10 +24,6 @@ measured_quantities = [
 ]
 ic = [{{#initial_conditions}}{{value}}{{comma}}{{/initial_conditions}}]
 p_true = [{{#parameters}}{{true}}{{comma}}{{/parameters}}]
-
-p_constraints = Dict({{#parameters}}({{varname}}=>({{lower_bound}}, {{upper_bound}})){{comma}}{{/parameters}})
-ic_constraints = Dict({{#states}}({{varname}}=>({{lower_bound}}, {{upper_bound}})){{comma}}{{/states}})
- 
 time_interval = [{{time_start}}, {{time_end}}]
 datasize = {{time_count}}
 
@@ -37,7 +33,7 @@ data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
 #                                              p_true, ic, datasize; solver = solver)
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
-            solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), parameter_constraints = p_constraints, ic_constraints = ic_constraints)
+                solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad)) #, at_time={{at_time}})
 
 
 for each in res
