@@ -25,7 +25,7 @@ SCIML_DAT_STR = {
 "biohydrogenation": "(sol[1, :]), (sol[2, :])",
 "crauste":"(sol[1, :]), (sol[2, :]), (sol[3, :] .+ sol[4, :]), (sol[5, :])",
 "daisy_mamil3": "vcat(sol[1, :]), vcat(sol[2, :])",
-"daisy_mamil4": "(sol[1, :]), (sol[2, :]), (sol[3, :] + sol[4, :])]",
+"daisy_mamil4": "(sol[1, :]), (sol[2, :]), (sol[3, :] + sol[4, :])",
 "harmonic": "vcat(sol[1, :]), vcat(sol[2, :])",
 "hiv": "(sol[4, :]), (sol[5, :]), (sol[1, :]), (sol[2, :] .+ sol[3, :])",
 "lotka_volterra": "sol[1, :]",
@@ -40,7 +40,7 @@ def main(args):
     systems_by_name = {}
     for system in systems["systems"]:
         systems_by_name[system["name"]] = system
-    
+
     outfile_name = "data_gen.jl"
     header = 'push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")\n using ModelingToolkit, DifferentialEquations, Plots\n using ParameterEstimation\n using JLD2, FileIO\n solver = Tsit5()\n\n'
     with open('julia_files/' + outfile_name, 'w') as output_file:
@@ -53,7 +53,7 @@ def main(args):
             dat_gen_str = chevron.render(open('templates/julia_sample_noheader.jl.template'), settings) 
             output_file.write(dat_gen_str + "\n\n")
 
-    
+
     ## run julia code here
     ##cmd = ['julia', 'julia_files/' + instance["name"], '>', 'dat_files/' + re.sub('.jl$', '.dat', instance["name"])]
     cmd_str = 'julia julia_files/' + outfile_name 
@@ -75,7 +75,6 @@ def main(args):
 
         df = pd.read_csv(settings["datadir"] + '/csv/' + instance["name"] + '.csv', header=None, index_col=False)
         settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)#.replace("  ", ", ")
-
 
         for bounds in [[0.0, 1.0], [0.0, 2.0], [0.0, 3.0]]:
             outfilename = instance["name"] + "_" + str(int(bounds[1]))
