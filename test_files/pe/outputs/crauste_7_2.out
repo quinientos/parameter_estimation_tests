@@ -1,0 +1,36 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 15 	 Time: 0:00:00[K
+  mixed_volume:  16[K[K[AComputing mixed cells... 44 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+Parameter(s)        :	muN = 0.115, muEE = 0.341, muLE = 0.628, muLL = 0.332, muM = 0.594, muP = 0.443, muPE = 0.208, muPL = 0.339, deltaNE = 0.556, deltaEL = 0.573, deltaLM = 0.559, rhoE = 0.623, rhoP = 0.622
+Initial Condition(s):	n(t) = 0.445, e(t) = 0.817, s(t) = 0.394, m(t) = 0.449, p(t) = 0.814
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	muN = 0.115, muEE = 0.341, muLE = 0.130, muLL = 0.158, muM = 1.141, muP = 0.425, muPE = 0.076, muPL = 0.535, deltaNE = 0.556, deltaEL = 0.573, deltaLM = 0.779, rhoE = 0.623, rhoP = 0.588
+Initial Condition(s):	n(t) = 0.445, e(t) = 0.817, s(t) = 0.433, m(t) = 0.410, p(t) = 0.814
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 55.145432 seconds (56.64 M allocations: 4.245 GiB, 2.69% gc time, 72.34% compilation time: 7% of which was recompilation)
+For model crauste_7: Max abs rel. err: 4.2267936119649426e-7
+For model crauste_7: Max abs rel. err: 0.9201022910947371
+
+
+CPU time: 14.79+123.88 sec	Max. resident set size: 3346632 KB	 Elapsed: 121.74 sec.

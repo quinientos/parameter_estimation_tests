@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: [x7_0]
+[ Info: Locally identifiable parameters: [k5, k6, k7, k8, k9, k10, x6, x5, x4]
+[ Info: Not identifiable parameters:     [x7]
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k6, k7, x5, k5, x4]
+[ Info: Locally but not globally identifiable parameters: [k8, x6, k9, k10]
+[ Info: Not identifiable parameters:                      [x7]
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	 k5 = 0.539,  k6 = 0.672,  k7 = 0.582,  k8 = 0.536,  k9 = 0.439, k10 = 0.617
+Initial Condition(s):	x4(t) = 0.450, x5(t) = 0.813, x6(t) = 0.871, x7(t) = 2878849625715.128
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 53.425106 seconds (54.40 M allocations: 3.333 GiB, 2.32% gc time, 87.67% compilation time: 6% of which was recompilation)
+For model biohydrogenation_0: Max abs rel. err: 7.073340603721673e12
+
+
+CPU time: 15.52+123.10 sec	Max. resident set size: 3424880 KB	 Elapsed: 122.49 sec.

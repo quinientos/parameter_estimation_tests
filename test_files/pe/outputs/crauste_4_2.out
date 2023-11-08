@@ -1,0 +1,39 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 12 	 Time: 0:00:00[K
+  mixed_volume:  12[K[K[AComputing mixed cells... 44 	 Time: 0:00:00[K
+  mixed_volume:  46[K[K[AComputing mixed cells... 49 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
+Parameter(s)        :	muN = 0.881, muEE = 0.584, muLE = 0.680, muLL = 0.239, muM = 0.323, muP = 0.196, muPE = 0.338, muPL = 0.191, deltaNE = 0.354, deltaEL = 0.431, deltaLM = 0.138, rhoE = 0.654, rhoP = 0.553
+Initial Condition(s):	n(t) = 0.312, e(t) = 0.519, s(t) = 0.177, m(t) = 0.559, p(t) = 0.843
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	muN = 0.881, muEE = 0.584, muLE = 0.691, muLL = 0.133, muM = 0.326, muP = 0.196, muPE = 0.337, muPL = 0.195, deltaNE = 0.354, deltaEL = 0.431, deltaLM = 0.151, rhoE = 0.654, rhoP = 0.553
+Initial Condition(s):	n(t) = 0.312, e(t) = 0.519, s(t) = 0.175, m(t) = 0.561, p(t) = 0.843
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 70.038695 seconds (56.61 M allocations: 4.238 GiB, 2.09% gc time, 56.92% compilation time: 8% of which was recompilation)
+For model crauste_4: Max abs rel. err: 0.8267159585585049
+For model crauste_4: Max abs rel. err: 0.014209834631311872
+
+
+CPU time: 15.64+138.64 sec	Max. resident set size: 3355964 KB	 Elapsed: 138.98 sec.

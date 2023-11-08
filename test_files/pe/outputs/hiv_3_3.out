@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [lm, d, beta, a, k, uu, c, q, b, h, x, yy, vv, w, z]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [uu, beta, k, lm, c, w, q, d, h, vv, z, a, x, yy, b]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	 lm = 0.637,   d = 0.268, beta = 0.203,   a = 0.352,   k = 0.391,  uu = 0.556,   c = 0.451,   q = 0.891,   b = 0.182,   h = 0.267
+Initial Condition(s):	x(t) = 0.229, yy(t) = 0.622, vv(t) = 0.303, w(t) = 0.473, z(t) = 0.296
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 41.923157 seconds (42.15 M allocations: 2.834 GiB, 2.96% gc time, 94.88% compilation time: 8% of which was recompilation)
+For model hiv_3: Max abs rel. err: 2.0999315145531243e-7
+
+
+CPU time: 15.44+118.10 sec	Max. resident set size: 3214040 KB	 Elapsed: 121.39 sec.

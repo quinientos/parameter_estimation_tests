@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k1, k2, k3, w, r]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k3, w, r, k1, k2]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	 k1 = 0.388,  k2 = 0.450,  k3 = 0.658
+Initial Condition(s):	r(t) = 0.148, w(t) = 0.633
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 32.226812 seconds (29.19 M allocations: 1.834 GiB, 2.75% gc time, 97.99% compilation time: 10% of which was recompilation)
+For model lotka_volterra_8: Max abs rel. err: 2.521245367173266e-6
+
+
+CPU time: 16.55+106.29 sec	Max. resident set size: 3217732 KB	 Elapsed: 108.15 sec.

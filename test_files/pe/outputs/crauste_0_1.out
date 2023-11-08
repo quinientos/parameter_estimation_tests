@@ -1,0 +1,30 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 8 	 Time: 0:00:00[K
+  mixed_volume:  10[K[K[AComputing mixed cells... 40 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+Parameter(s)        :	muN = 0.539, muEE = 0.672, muLE = 0.582, muLL = 0.536, muM = 0.439, muP = 0.617, muPE = 0.450, muPL = 0.813, deltaNE = 0.871, deltaEL = 0.407, deltaLM = 0.733, rhoE = 0.523, rhoP = 0.554
+Initial Condition(s):	n(t) = 0.840, e(t) = 0.157, s(t) = 0.170, m(t) = 0.116, p(t) = 0.766
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 69.929902 seconds (56.82 M allocations: 4.251 GiB, 2.18% gc time, 57.92% compilation time: 8% of which was recompilation)
+For model crauste_0: Max abs rel. err: 5.740382046975796e-7
+
+
+CPU time: 15.59+139.26 sec	Max. resident set size: 3337260 KB	 Elapsed: 138.74 sec.

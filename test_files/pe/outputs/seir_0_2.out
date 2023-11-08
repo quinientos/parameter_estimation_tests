@@ -1,0 +1,45 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	  a = 0.581,   b = 0.672,  nu = 0.540
+Initial Condition(s):	S(t) = 0.578, E(t) = 0.521, In(t) = 0.617, NN(t) = 0.450
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.597,   b = 0.669,  nu = 0.527
+Initial Condition(s):	S(t) = 0.595, E(t) = 0.553, In(t) = 0.617, NN(t) = 0.450
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.540,   b = 0.672,  nu = 0.581
+Initial Condition(s):	S(t) = 0.537, E(t) = 0.441, In(t) = 0.617, NN(t) = 0.450
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.527,   b = 0.669,  nu = 0.597
+Initial Condition(s):	S(t) = 0.525, E(t) = 0.416, In(t) = 0.617, NN(t) = 0.450
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 38.850452 seconds (38.61 M allocations: 2.428 GiB, 2.99% gc time, 97.48% compilation time: 9% of which was recompilation)
+For model seir_0: Max abs rel. err: 0.18693872252877833
+For model seir_0: Max abs rel. err: 0.2593273721555193
+For model seir_0: Max abs rel. err: 0.004167729151619744
+For model seir_0: Max abs rel. err: 0.053300870532400395
+
+
+CPU time: 16.63+114.87 sec	Max. resident set size: 3198000 KB	 Elapsed: 118.79 sec.

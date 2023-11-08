@@ -1,0 +1,42 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 17 	 Time: 0:00:00[K
+  mixed_volume:  23[K[K[AComputing mixed cells... 41 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+Parameter(s)        :	muN = 0.267, muEE = 0.229, muLE = 0.622, muLL = 0.303, muM = 0.473, muP = 0.296, muPE = 0.227, muPL = 0.188, deltaNE = 0.625, deltaEL = 0.211, deltaLM = 0.257, rhoE = 0.395, rhoP = 0.757
+Initial Condition(s):	n(t) = 0.178, e(t) = 0.770, s(t) = 0.177, m(t) = 0.881, p(t) = 0.475
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	muN = 0.267, muEE = 0.229, muLE = 0.688, muLL = 0.034, muM = 0.602, muP = 0.296, muPE = 0.261, muPL = 0.044, deltaNE = 0.625, deltaEL = 0.211, deltaLM = 0.349, rhoE = 0.395, rhoP = 0.800
+Initial Condition(s):	n(t) = 0.178, e(t) = 0.770, s(t) = 0.624, m(t) = 0.434, p(t) = 0.475
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	muN = 0.267, muEE = 0.229, muLE = 0.825, muLL = 0.524, muM = 0.444, muP = 0.292, muPE = 0.229, muPL = 0.322, deltaNE = 0.625, deltaEL = 0.211, deltaLM = 0.052, rhoE = 0.395, rhoP = 0.758
+Initial Condition(s):	n(t) = 0.178, e(t) = 0.770, s(t) = 0.111, m(t) = 0.947, p(t) = 0.475
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 62.470785 seconds (56.74 M allocations: 4.248 GiB, 2.32% gc time, 64.36% compilation time: 7% of which was recompilation)
+For model crauste_3: Max abs rel. err: 0.00018917013623980414
+For model crauste_3: Max abs rel. err: 2.525603629510817
+For model crauste_3: Max abs rel. err: 0.7986184760919632
+
+
+CPU time: 15.28+131.42 sec	Max. resident set size: 3457328 KB	 Elapsed: 131.54 sec.

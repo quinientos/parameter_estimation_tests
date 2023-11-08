@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, x2, x1]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [b, x2, x1, a]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	  a = 0.439,   b = 0.617
+Initial Condition(s):	x1(t) = 0.450, x2(t) = 0.813
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 27.998381 seconds (24.61 M allocations: 1.542 GiB, 2.43% gc time, 98.26% compilation time: 11% of which was recompilation)
+For model harmonic_1: Max abs rel. err: 3.3900489114972363e-13
+
+
+CPU time: 16.12+104.05 sec	Max. resident set size: 3117292 KB	 Elapsed: 106.93 sec.

@@ -1,0 +1,33 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [lm, d, beta, a, k, uu, c, q, b, h, x, yy, vv, w, z]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [uu, beta, k, lm, c, w, q, d, h, vv, z, a, x, yy, b]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	 lm = 0.486,   d = 0.549, beta = 0.848,   a = 0.513,   k = 0.522,  uu = 0.990,   c = 0.370,   q = 0.813,   b = 0.871,   h = 0.407
+Initial Condition(s):	x(t) = 0.733, yy(t) = 0.636, vv(t) = 0.441, w(t) = 0.840, z(t) = 0.157
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	 lm = 0.539,   d = 0.672, beta = 0.582,   a = 0.536,   k = 0.439,  uu = 0.617,   c = 0.450,   q = 0.813,   b = 0.871,   h = 0.407
+Initial Condition(s):	x(t) = 0.733, yy(t) = 0.523, vv(t) = 0.554, w(t) = 0.840, z(t) = 0.157
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 41.148670 seconds (42.15 M allocations: 2.834 GiB, 2.81% gc time, 94.69% compilation time: 8% of which was recompilation)
+For model hiv_0: Max abs rel. err: 0.6045769495492629
+For model hiv_0: Max abs rel. err: 7.358373437108725e-8
+
+
+CPU time: 17.00+118.53 sec	Max. resident set size: 3313864 KB	 Elapsed: 122.89 sec.

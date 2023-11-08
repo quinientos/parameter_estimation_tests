@@ -1,0 +1,32 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, deltaLM, rhoE, rhoP, n, m, p, s, e]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [n, deltaEL, muPL, m, muM, rhoE, muLL, muPE, muLE, muEE, e, muN, rhoP, p, s, deltaNE, muP, deltaLM]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Computing mixed cells... 9 	 Time: 0:00:00[K
+  mixed_volume:  12[K[K[AComputing mixed cells... 38 	 Time: 0:00:00[K
+  mixed_volume:  53[K
+┌ Warning: Instability detected. Aborting
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:606
+Parameter(s)        :	muN = 0.745, muEE = 0.663, muLE = 0.180, muLL = 0.836, muM = 0.671, muP = 0.899, muPE = 0.220, muPL = 0.795, deltaNE = 0.230, deltaEL = 0.592, deltaLM = 0.199, rhoE = 0.778, rhoP = 0.746
+Initial Condition(s):	n(t) = 0.555, e(t) = 0.426, s(t) = 0.155, m(t) = 0.658, p(t) = 0.463
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 65.692026 seconds (56.60 M allocations: 4.241 GiB, 2.26% gc time, 61.84% compilation time: 7% of which was recompilation)
+For model crauste_8: Max abs rel. err: 0.0001901314179142719
+
+
+CPU time: 14.92+135.06 sec	Max. resident set size: 3403300 KB	 Elapsed: 132.09 sec.

@@ -1,0 +1,29 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [lm, d, beta, a, k, uu, c, q, b, h, x, yy, vv, w, z]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [uu, beta, k, lm, c, w, q, d, h, vv, z, a, x, yy, b]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+┌ Warning: Interrupted. Larger maxiters is needed. If you are using an integrator for non-stiff ODEs or an automatic switching algorithm (the default), you may want to consider using a method for stiff equations. See the solver pages for more details (e.g. https://docs.sciml.ai/DiffEqDocs/stable/solvers/ode_solve/#Stiff-Problems).
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/integrator_interface.jl:580
+Parameter(s)        :	 lm = 0.561,   d = 0.574, beta = 0.558,   a = 0.278,   k = 0.862,  uu = 0.458,   c = 0.777,   q = 0.660,   b = 0.338,   h = 0.751
+Initial Condition(s):	x(t) = 0.417, yy(t) = 0.805, vv(t) = 0.565, w(t) = 0.805, z(t) = 0.654
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 41.803613 seconds (42.16 M allocations: 2.834 GiB, 2.69% gc time, 93.89% compilation time: 9% of which was recompilation)
+For model hiv_7: Max abs rel. err: 1.5146398715584382e-6
+
+
+CPU time: 12.48+117.88 sec	Max. resident set size: 3270928 KB	 Elapsed: 123.04 sec.

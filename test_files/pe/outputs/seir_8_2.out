@@ -1,0 +1,33 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	  a = 0.473,   b = 0.303,  nu = 0.622
+Initial Condition(s):	S(t) = 0.225, E(t) = 0.128, In(t) = 0.188, NN(t) = 0.625
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	  a = 0.622,   b = 0.303,  nu = 0.473
+Initial Condition(s):	S(t) = 0.296, E(t) = 0.227, In(t) = 0.188, NN(t) = 0.625
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 39.330236 seconds (39.95 M allocations: 2.496 GiB, 2.91% gc time, 97.11% compilation time: 8% of which was recompilation)
+For model seir_8: Max abs rel. err: 0.43797313347403305
+For model seir_8: Max abs rel. err: 5.117260727593361e-5
+
+
+CPU time: 16.82+114.26 sec	Max. resident set size: 3220428 KB	 Elapsed: 117.58 sec.

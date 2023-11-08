@@ -1,0 +1,33 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [k01, k12, k13, k14, k21, k31, k41, x3, x1, x2, x4]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [k12, k21, x1, k01, x2]
+[ Info: Locally but not globally identifiable parameters: [x4, k13, x3, k41, k14, k31]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	k01 = 0.561, k12 = 0.843, k13 = 0.355, k14 = 0.634, k21 = 0.205, k31 = 0.673, k41 = 0.332
+Initial Condition(s):	x1(t) = 0.247, x2(t) = 0.569, x3(t) = 0.116, x4(t) = 0.763
+Error: Not yet calculated
+Time: -5.0000e-01
+
+Parameter(s)        :	k01 = 0.561, k12 = 0.843, k13 = 0.634, k14 = 0.355, k21 = 0.205, k31 = 0.332, k41 = 0.673
+Initial Condition(s):	x1(t) = 0.247, x2(t) = 0.569, x3(t) = 0.763, x4(t) = 0.116
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 42.264911 seconds (39.28 M allocations: 2.487 GiB, 2.62% gc time, 88.16% compilation time: 9% of which was recompilation)
+For model daisy_mamil4_8: Max abs rel. err: 0.00039344737610311014
+For model daisy_mamil4_8: Max abs rel. err: 5.577192762189949
+
+
+CPU time: 15.06+116.69 sec	Max. resident set size: 3237780 KB	 Elapsed: 121.04 sec.

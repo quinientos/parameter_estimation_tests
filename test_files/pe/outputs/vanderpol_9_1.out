@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, x2, x1]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [b, x2, x1, a]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	  a = 0.590,   b = 0.594
+Initial Condition(s):	x1(t) = 0.855, x2(t) = 0.645
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 30.659547 seconds (27.26 M allocations: 1.712 GiB, 2.33% gc time, 98.44% compilation time: 11% of which was recompilation)
+For model vanderpol_9: Max abs rel. err: 3.429965813804339e-9
+
+
+CPU time: 15.62+108.08 sec	Max. resident set size: 3155152 KB	 Elapsed: 114.95 sec.

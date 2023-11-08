@@ -1,0 +1,27 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a12, a13, a21, a31, a01, x2, x3, x1]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [a01, a13, x2, x3, a31, a12, x1, a21]
+[ Info: Locally but not globally identifiable parameters: []
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+Parameter(s)        :	a12 = 0.881, a13 = 0.584, a21 = 0.691, a31 = 0.131, a01 = 0.326
+Initial Condition(s):	x1(t) = 0.196, x2(t) = 0.337, x3(t) = 0.195
+Error: Not yet calculated
+Time: -5.0000e-01
+
+ 25.440898 seconds (23.46 M allocations: 1.468 GiB, 2.40% gc time, 96.60% compilation time: 14% of which was recompilation)
+For model daisy_mamil3_9: Max abs rel. err: 2.999453676885913e-8
+
+
+CPU time: 15.26+98.56 sec	Max. resident set size: 3123508 KB	 Elapsed: 101.36 sec.

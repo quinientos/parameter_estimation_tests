@@ -1,0 +1,57 @@
+[ Info: Preproccessing `ModelingToolkit.ODESystem` object
+[ Info: Solving the problem
+[ Info: Constructing the maximal system
+[ Info: Truncating
+[ Info: Assessing local identifiability
+[ Info: Found Pivots: []
+[ Info: Locally identifiable parameters: [a, b, nu, E, In, S, NN]
+[ Info: Not identifiable parameters:     []
+[ Info: Randomizing
+[ Info: Gröbner basis computation
+[ Info: Remainder computation
+[ Info: === Summary ===
+[ Info: Globally identifiable parameters:                 [In, b, NN]
+[ Info: Locally but not globally identifiable parameters: [E, a, nu, S]
+[ Info: Not identifiable parameters:                      []
+[ Info: ===============
+[ Info: Estimating via the interpolators: ["AAA"]
+┌ Warning: Using arrays or dicts to store parameters of different types can hurt performance.
+│ Consider using tuples instead.
+└ @ SciMLBase ~/.julia/packages/SciMLBase/K9t9C/src/performance_warnings.jl:32
+ERROR: LoadError: MethodError: no method matching isless(::Float64, ::ComplexF64)
+
+Closest candidates are:
+  isless(::T, !Matched::T) where T<:Union{Float16, Float32, Float64}
+   @ Base float.jl:547
+  isless(!Matched::Unitful.AbstractQuantity, ::Number)
+   @ Unitful ~/.julia/packages/Unitful/QEYHc/src/quantities.jl:267
+  isless(!Matched::Hecke.EmbeddedNumFieldElem, ::Any)
+   @ Hecke ~/.julia/packages/Hecke/nbhqx/src/NumField/Embedded.jl:140
+  ...
+
+Stacktrace:
+  [1] <(x::Float64, y::ComplexF64)
+    @ Base ./operators.jl:343
+  [2] <=(x::Float64, y::ComplexF64)
+    @ Base ./operators.jl:392
+  [3] check_constraints(estimate::ParameterEstimation.EstimationResult, parameter_constraints::Dict{Num, Tuple{Float64, Float64}}, ic_constraints::Dict{Num, Tuple{Float64, Float64}})
+    @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:11
+  [4] #169
+    @ ~/ParameterEstimation.jl/src/estimation/utils.jl:42 [inlined]
+  [5] filter(f::ParameterEstimation.var"#169#176"{Dict{Num, Tuple{Float64, Float64}}, Dict{Num, Tuple{Float64, Float64}}}, a::Vector{ParameterEstimation.EstimationResult})
+    @ Base ./array.jl:2610
+  [6] post_process(estimates::Vector{Vector{ParameterEstimation.EstimationResult}}, filtermode::Symbol, parameter_constraints::Dict{Num, Tuple{Float64, Float64}}, ic_constraints::Dict{Num, Tuple{Float64, Float64}})
+    @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/utils.jl:42
+  [7] estimate_serial(model::ODESystem, measured_quantities::Vector{Equation}, inputs::Vector{Equation}, data_sample::OrderedCollections.OrderedDict{Any, Vector{Float64}}; at_time::Float64, solver::Tsit5{typeof(OrdinaryDiffEq.trivial_limiter!), typeof(OrdinaryDiffEq.trivial_limiter!), Static.False}, interpolators::Dict{String, typeof(ParameterEstimation.aaad)}, report_time::Float64, method::Symbol, real_tol::Float64, filtermode::Symbol, parameter_constraints::Dict{Num, Tuple{Float64, Float64}}, ic_constraints::Dict{Num, Tuple{Float64, Float64}})
+    @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/serial.jl:48
+  [8] estimate_serial
+    @ ~/ParameterEstimation.jl/src/estimation/serial.jl:1 [inlined]
+  [9] estimate(model::ODESystem, measured_quantities::Vector{Equation}, data_sample::OrderedCollections.OrderedDict{Any, Vector{Float64}}; inputs::Vector{Equation}, at_time::Float64, method::Symbol, solver::Tsit5{typeof(OrdinaryDiffEq.trivial_limiter!), typeof(OrdinaryDiffEq.trivial_limiter!), Static.False}, report_time::Float64, interpolators::Dict{String, typeof(ParameterEstimation.aaad)}, real_tol::Float64, threaded::Bool, filtermode::Symbol, parameter_constraints::Dict{Num, Tuple{Float64, Float64}}, ic_constraints::Dict{Num, Tuple{Float64, Float64}})
+    @ ParameterEstimation ~/ParameterEstimation.jl/src/estimation/estimate.jl:48
+ [10] top-level scope
+    @ ./timing.jl:273
+in expression starting at /home/soogo/parameter_estimation_tests/test_files/pe/seir_5_2.jl:39
+Command exited with non-zero status 1
+
+
+CPU time: 16.97+128.66 sec	Max. resident set size: 3272196 KB	 Elapsed: 133.28 sec.
