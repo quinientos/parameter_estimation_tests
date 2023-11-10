@@ -16,14 +16,14 @@ inputs.model.st_names=char('x1', 'x2', 'x3', 'x4');    % Names of the states
 inputs.model.par_names=char('k01', 'k12', 'k13', 'k14', 'k21', 'k31', 'k41');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char( 'dx1 = -k01 * x1 + k12 * x2 + k13 * x3 + k14 * x4 - k21 * x1 - k31 * x1 - k41 * x1;',  'dx2 = -k12 * x2 + k21 * x1;',  'dx3 = -k13 * x3 + k31 * x1;',  'dx4 = -k14 * x4 + k41 * x1;');               % Equations describing system dynamics.
-inputs.model.par = [0.005, 0.678, 0.27, 0.735, 0.962, 0.249, 0.576];         % Nominal value for the parameters
+inputs.model.par = [0.104, 0.642, 0.316, 0.688, 0.87, 0.299, 0.561];         % Nominal value for the parameters
 %==================================
 % EXPERIMENTAL SCHEME RELATED DATA
 %==================================
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[0.592, 0.572, 0.223, 0.953];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.574, 0.558, 0.278, 0.862];        % Initial conditions
 inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=3;                       % Number of observables
 inputs.exps.obs_names{1}=char('y1', 'y2', 'y3'); % Names of the observables
@@ -32,49 +32,39 @@ inputs.exps.t_con{1}=[-0.5, 0.5];                 % Input swithching times inclu
 inputs.exps.n_s{1}=21;
 inputs.exps.data_type='real';
 inputs.exps.exp_data{1}=[
-0.5920000000000000 0.5720000000000000 1.1759999999999999
-0.5960518124760225 0.5810310378720701 1.1627686297532469
-0.5994985151936381 0.5899379870503390 1.1502655222492415
-0.6024126087813725 0.5986981249609955 1.1384410414621589
-0.6048581875972199 0.6072927112976768 1.1272499583161857
-0.6068919078113266 0.6157064811910269 1.1166509914116751
-0.6085638441980054 0.6239271983956820 1.1066063987959991
-0.6099182484026364 0.6319452614527328 1.0970816150832907
-0.6109942200301514 0.6397533567742383 1.0880449286511935
-0.6118263005543324 0.6473461531219935 1.0794671944652880
-0.6124449989282599 0.6547200326964925 1.0713215784525136
-0.6128772567491738 0.6618728546457449 1.0635833297752819
-0.6131468599071200 0.6688037470554367 1.0562295780331510
-0.6132748028908933 0.6755129242796211 1.0492391523679201
-0.6132796111768505 0.6820015265261795 1.0425924201463712
-0.6131776265223037 0.6882714791490711 1.0362711429555294
-0.6129832594328610 0.6943253693366026 1.0302583479605050
-0.6127092125711061 0.7001663381238925 1.0245382129379603
-0.6123666784449585 0.7057979859670024 1.0190959634151648
-0.6119655143450583 0.7112242902339598 1.0139177805972963
-0.6115143971280765 0.7164495332888574 1.0089907188130141
+0.5740000000000000 0.5580000000000001 1.1399999999999999
+0.5732681978252925 0.5649297554857344 1.1308191045496845
+0.5724402083309379 0.5716071495002856 1.1219908195328476
+0.5715294480005325 0.5780363312168398 1.1134980438547528
+0.5705477487316511 0.5842218582969054 1.1053247869562326
+0.5695055397093809 0.5901686201435092 1.0974560714443888
+0.5684120085352597 0.5958817709092308 1.0898778458223406
+0.5672752439736710 0.6013666711149435 1.0825769062016866
+0.5661023624097523 0.6066288368661137 1.0755408260068211
+0.5648996198740046 0.6116738957701180 1.0687578927922363
+0.5636725112776586 0.6165075487611107 1.0622170513929057
+0.5624258583157050 0.6211355371303002 1.0559078527156305
+0.5611638873286436 0.6255636141403950 1.0498204075570370
+0.5598902982670878 0.6297975206746237 1.0439453449028653
+0.5586083257726365 0.6338429644343702 1.0382737742246584
+0.5573207932739782 0.6377056022553484 1.0327972513436023
+0.5560301608935800 0.6413910251624840 1.0275077474801737
+0.5547385678711101 0.6449047458272892 1.0223976211500081
+0.5534478701280056 0.6482521881310138 1.0174595926051189
+0.5521596735275928 0.6514386785710746 1.0126867205523715
+0.5508753633213546 0.6544694392790940 1.0080723809113663
 ];
 
 
-inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
-inputs.ivpsol.atol=1.0e-12;
+inputs.ivpsol.rtol=1.0e-13;                            % [] IVP solver integration tolerances
+inputs.ivpsol.atol=1.0e-13;
 
-inputs.PEsol.id_global_theta=char('k12', 'k21', 'k01');
-inputs.PEsol.global_theta_max=3.0*ones(1,3);
-inputs.PEsol.global_theta_min=0.0*ones(1,3);
-inputs.PEsol.id_global_theta_y0=char('x1', 'x2');               % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.global_theta_y0_max=3.0*ones(1,2);                % Maximum allowed values for the initial conditions
-inputs.PEsol.global_theta_y0_min=0.0*ones(1,2)
-
-inputs.PEsol.id_local_theta{1}=char('k13', 'k41', 'k14', 'k31');                % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.local_theta_max{1}=3.0*ones(1,4);              % Maximum allowed values for the paramters
-inputs.PEsol.local_theta_min{1}=0.0*ones(1,4)              % Minimum allowed values for the parameters
-inputs.PEsol.local_theta_guess{1}=[];            % [] Initial guess
-inputs.PEsol.id_local_theta_y0{1}=char('x3', 'x4');             % [] 'all'|User selected| 'none' (default)
-inputs.PEsol.local_theta_y0_max{1}=3.0*ones(1,2);           % Maximum allowed values for the initial conditions
-inputs.PEsol.local_theta_y0_min{1}=0.0*ones(1,2);           % Minimum allowed values for the initial conditions
-inputs.PEsol.local_theta_y0_guess{1}=[];         % [] Initial guess
-
+inputs.PEsol.id_global_theta='all';
+inputs.PEsol.global_theta_max=3.0*ones(1,7);
+inputs.PEsol.global_theta_min=0.0*ones(1,7);
+inputs.PEsol.id_global_theta_y0='all';               % [] 'all'|User selected| 'none' (default)
+inputs.PEsol.global_theta_y0_max=3.0*ones(1,4);                % Maximum allowed values for the initial conditions
+inputs.PEsol.global_theta_y0_min=0.0*ones(1,4);
 %=============================================================
 % COST FUNCTION RELATED DATA
 % SOLVING THE PROBLEM WITH WEIGHTED LEAST SQUARES FUNCTION
@@ -93,7 +83,7 @@ inputs.nlpsol.nlpsolver='eSS';                      % Solver used for optimizati
 inputs.nlpsol.eSS.log_var=1:(4+7); 
 inputs.nlpsol.eSS.local.solver = 'nl2sol';
 inputs.nlpsol.eSS.local.finish = 'nl2sol';
-inputs.nlpsol.eSS.maxeval = 100000;                  % Maximum number of cost function evaluations
+inputs.nlpsol.eSS.maxeval = 200000;                  % Maximum number of cost function evaluations
 inputs.nlpsol.eSS.maxtime = 600;                    % Maximum time spent for optimization
 inputs.nlpsol.eSS.local.nl2sol.maxiter             =      1000;
 inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      2000;
@@ -107,13 +97,3 @@ AMIGO_Prep(inputs);
 [PEresults] = AMIGO_PE(inputs);
 PEresults.fit.global_theta_estimated
 PEresults.fit.global_theta_y0_estimated
-
-%val names
-inputs.model.par_names
-inputs.model.st_names
-%true vals:
-inputs.model.par
-inputs.exps.exp_y0{1}
-
-
-

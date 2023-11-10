@@ -1,5 +1,8 @@
+using ModelingToolkit, DifferentialEquations, Optimization, OptimizationPolyalgorithms,
+      OptimizationOptimJL, SciMLSensitivity, ForwardDiff, Plots
 using Distributions, Random, StaticArrays
-solver = Tsit5()
+using JLD2, FileIO
+solver = Vern9()
 
 @parameters k5 k6 k7 k8 k9 k10
 @variables t x4(t) x5(t) x6(t) x7(t) y1(t) y2(t)
@@ -18,33 +21,33 @@ measured_quantities = [
         y2 ~ x5,
 ]
 
-ic = [0.019, 0.302, 0.66, 0.29]
-p_true = [0.725, 0.501, 0.956, 0.644, 0.424, 0.606]
+ic = [0.574, 0.558, 0.278, 0.862]
+p_true = [0.642, 0.316, 0.688, 0.87, 0.299, 0.561]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
 sampling_times = range(time_interval[1], time_interval[2], length = datasize)
 
-prob_true = ODEProblem{false}(model, ic, time_interval, p_true)
-solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
-                      abstol = 1e-12, reltol = 1e-12)
-
-data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
-#data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/biohydrogenation_9.jld2", "data")
+#prob_true = ODEProblem{false}(model, ic, time_interval, p_true)
+#solution_true = solve(prob_true, solver, p = p_true, saveat = sampling_times;
+#                      abstol = 1e-13, reltol = 1e-13)
+#
+#data_sample = Dict(v.rhs => solution_true[v.rhs] for v in measured_quantities)
+data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/biohydrogenation_9.jld2", "data")
 
 p_rand = rand(Uniform(0.0, 2.0), length(ic) + length(p_true)) # Random Parameters
 prob = ODEProblem{false}(model, ic, time_interval, p_rand)
 sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver,
             p = p_rand[(length(ic) + 1):end],
             saveat = sampling_times;
-            abstol = 1e-12, reltol = 1e-12)
+            abstol = 1e-13, reltol = 1e-13)
 
 function loss(p)
     sol = solve(remake(prob; u0 = SVector{ 4 }(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times;
-                abstol = 1e-12, reltol = 1e-12)
+                abstol = 1e-13, reltol = 1e-13)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
-    data = [TOBEFILLEDOUT] # [(sol[2, :]), (p[5] / p[6] .+ sol[4, :])]
+    data = [(sol[1, :]), (sol[2, :])]
     if sol.retcode == ReturnCode.Success
         loss = sum(sum((data[i] .- data_true[i]) .^ 2) for i in eachindex(data))
         return loss, sol
@@ -61,7 +64,7 @@ adtype = Optimization.AutoForwardDiff()
 optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
 optprob = Optimization.OptimizationProblem(optf, p_rand, lb = 0.0*ones(4+6), ub = 2.0*ones(4+6))
 
-@time result_ode = Optimization.solve(optprob, BFGS(), callback = callback, maxiters = 100000)
+@time result_ode = Optimization.solve(optprob, BFGS(), callback = callback, maxiters = 200000)
 
 println(result_ode.u)
 

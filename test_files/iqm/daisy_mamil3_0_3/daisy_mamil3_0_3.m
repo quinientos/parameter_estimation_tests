@@ -56,14 +56,14 @@ estimation.experiments.weight = [1];
 
 % Optimization settings
 estimation.optimization.method = 'simplexIQM';
-estimation.optimization.options.maxfunevals = 100000;
+estimation.optimization.options.maxfunevals = 200000;
 
 % Integrator settings
-estimation.integrator.options.abstol = 1e-12;
-estimation.integrator.options.reltol = 1e-12;
+estimation.integrator.options.abstol = 1e-13;
+estimation.integrator.options.reltol = 1e-13;
 estimation.integrator.options.minstep = 0;
 estimation.integrator.options.maxstep = Inf;
-estimation.integrator.options.maxnumsteps = 5000;
+estimation.integrator.options.maxnumsteps = 200000;
 
 % Flags
 estimation.displayFlag = 2; % show iterations and final message

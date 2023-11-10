@@ -16,14 +16,14 @@ inputs.model.st_names=char('S', 'E', 'In', 'NN');    % Names of the states
 inputs.model.par_names=char('a', 'b', 'nu');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char( 'dS = -b * S * In / NN;',  'dE = b * S * In / NN - nu * E;',  'dIn = nu * E - a * In;',  'dNN = 0;');               % Equations describing system dynamics.
-inputs.model.par = [0.071, 0.087, 0.02];         % Nominal value for the parameters
+inputs.model.par = [0.157, 0.17, 0.116];         % Nominal value for the parameters
 %==================================
 % EXPERIMENTAL SCHEME RELATED DATA
 %==================================
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[0.833, 0.778, 0.87, 0.979];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.766, 0.723, 0.796, 0.883];        % Initial conditions
 inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=2;                       % Number of observables
 inputs.exps.obs_names{1}=char('y1', 'y2'); % Names of the observables
@@ -32,27 +32,27 @@ inputs.exps.t_con{1}=[-0.5, 0.5];                 % Input swithching times inclu
 inputs.exps.n_s{1}=21;
 inputs.exps.data_type='real';
 inputs.exps.exp_data{1}=[
-0.8700000000000000 0.979
-0.8676948120049979 0.979
-0.8654002074164426 0.979
-0.8631161256384474 0.979
-0.8608425065010356 0.979
-0.8585792902456888 0.979
-0.8563264175293401 0.979
-0.8540838294172099 0.979
-0.8518514673799544 0.979
-0.8496292732907010 0.979
-0.8474171894245360 0.979
-0.8452151584430067 0.979
-0.8430231234066047 0.979
-0.8408410277621324 0.979
-0.8386688153414462 0.979
-0.8365064303580917 0.979
-0.8343538174040450 0.979
-0.8322109214460940 0.979
-0.8300776878239465 0.979
-0.8279540622456024 0.979
-0.8258399907931607 0.979
+0.7960000000000000 0.883
+0.7939576264683164 0.883
+0.7919405065438174 0.883
+0.7899480501964795 0.883
+0.7879796791555065 0.883
+0.7860348266728103 0.883
+0.7841129372919620 0.883
+0.7822134666225270 0.883
+0.7803358811195021 0.883
+0.7784796578678714 0.883
+0.7766442843720822 0.883
+0.7748292583502466 0.883
+0.7730340875330435 0.883
+0.7712582894671054 0.883
+0.7695013913228366 0.883
+0.7677629297065205 0.883
+0.7660424504766004 0.883
+0.7643395085640243 0.883
+0.7626536677965501 0.883
+0.7609845007269050 0.883
+0.7593315884647021 0.883
 ];
 
 

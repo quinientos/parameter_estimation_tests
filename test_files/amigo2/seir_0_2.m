@@ -16,14 +16,14 @@ inputs.model.st_names=char('S', 'E', 'In', 'NN');    % Names of the states
 inputs.model.par_names=char('a', 'b', 'nu');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char( 'dS = -b * S * In / NN;',  'dE = b * S * In / NN - nu * E;',  'dIn = nu * E - a * In;',  'dNN = 0;');               % Equations describing system dynamics.
-inputs.model.par = [0.549, 0.715, 0.603];         % Nominal value for the parameters
+inputs.model.par = [0.539, 0.672, 0.582];         % Nominal value for the parameters
 %==================================
 % EXPERIMENTAL SCHEME RELATED DATA
 %==================================
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[0.545, 0.424, 0.646, 0.438];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.536, 0.439, 0.617, 0.45];        % Initial conditions
 inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=2;                       % Number of observables
 inputs.exps.obs_names{1}=char('y1', 'y2'); % Names of the observables
@@ -32,27 +32,27 @@ inputs.exps.t_con{1}=[-0.5, 0.5];                 % Input swithching times inclu
 inputs.exps.n_s{1}=21;
 inputs.exps.data_type='real';
 inputs.exps.exp_data{1}=[
-0.6460000000000000 0.438
-0.6413457050222379 0.438
-0.6372292711022545 0.438
-0.6335787388833579 0.438
-0.6303290883656819 0.438
-0.6274215520164462 0.438
-0.6248030107228931 0.438
-0.6224254606929490 0.438
-0.6202455412209129 0.438
-0.6182241148761740 0.438
-0.6163258929991891 0.438
-0.6145191004399282 0.438
-0.6127751744297713 0.438
-0.6110684931922880 0.438
-0.6093761306117124 0.438
-0.6076776337281852 0.438
-0.6059548203624219 0.438
-0.6041915944989098 0.438
-0.6023737774505873 0.438
-0.6004889530292402 0.438
-0.5985263252475468 0.438
+0.6170000000000000 0.45
+0.6133623432765417 0.45
+0.6101186947906703 0.45
+0.6072170692898018 0.45
+0.6046101526930301 0.45
+0.6022548808232735 0.45
+0.6001120643114447 0.45
+0.5981460535978604 0.45
+0.5963244388471983 0.45
+0.5946177803424167 0.45
+0.5929993655536210 0.45
+0.5914449896114251 0.45
+0.5899327563670852 0.45
+0.5884428976067335 0.45
+0.5869576083160545 0.45
+0.5854608961729943 0.45
+0.5839384436868342 0.45
+0.5823774816099838 0.45
+0.5807666724262867 0.45
+0.5790960028737621 0.45
+0.5773566845923543 0.45
 ];
 
 

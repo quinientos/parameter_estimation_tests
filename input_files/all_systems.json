@@ -4,6 +4,7 @@
     "crauste",
     "daisy_mamil3",
     "daisy_mamil4",
+    "fitzhugh_nagumo",
 		"harmonic",
     "hiv",
 		"lotka_volterra",
@@ -43,6 +44,14 @@
       "ode-system": { "x1": "-k01 * x1 + k12 * x2 + k13 * x3 + k14 * x4 - k21 * x1 - k31 * x1 - k41 * x1", "x2": "-k12 * x2 + k21 * x1", "x3": "-k13 * x3 + k31 * x1", "x4": "-k14 * x4 + k41 * x1"}, 
       "measurements": {"y1": "x1", "y2": "x2", "y3": "x3 + x4"}
     }, 
+    {
+      "name": "fitzhugh_nagumo",
+      "state-variables": ["V", "R"],
+			"parameter-variables": ["g", "a", "b"],
+      "measurement-variables": ["y1"],
+			"ode-system": {"V": "g * (V - V^3 / 3 + R)", "R": "1 / g * (V - a + b * R)"},
+			"measurements": { "y1": "V" }
+    },
 		{
 			"name": "harmonic",
 			"state-variables": ["x1", "x2"],

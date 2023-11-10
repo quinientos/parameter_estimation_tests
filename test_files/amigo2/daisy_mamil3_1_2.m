@@ -16,14 +16,14 @@ inputs.model.st_names=char('x1', 'x2', 'x3');    % Names of the states
 inputs.model.par_names=char('a12', 'a13', 'a21', 'a31', 'a01');             % Names of the parameters
 %inputs.model.stimulus_names=char('light');  % Names of the stimuli
 inputs.model.eqns=char( 'dx1 = -(a21 + a31 + a01) * x1 + a12 * x2 + a13 * x3;',  'dx2 = a21 * x1 - a12 * x2;',  'dx3 = a31 * x1 - a13 * x3;');               % Equations describing system dynamics.
-inputs.model.par = [0.964, 0.383, 0.792, 0.529, 0.568];         % Nominal value for the parameters
+inputs.model.par = [0.871, 0.407, 0.733, 0.523, 0.554];         % Nominal value for the parameters
 %==================================
 % EXPERIMENTAL SCHEME RELATED DATA
 %==================================
 % EXPERIMENT DESIGN
 inputs.exps.n_exp=1;                          % Number of experiments
 % EXPERIMENT 1
-inputs.exps.exp_y0{1}=[0.926, 0.071, 0.087];        % Initial conditions
+inputs.exps.exp_y0{1}=[0.84, 0.157, 0.17];        % Initial conditions
 inputs.exps.t_f{1}=1;                       % Experiments duration
 inputs.exps.n_obs{1}=2;                       % Number of observables
 inputs.exps.obs_names{1}=char('y1', 'y2'); % Names of the observables
@@ -32,32 +32,32 @@ inputs.exps.t_con{1}=[-0.5, 0.5];                 % Input swithching times inclu
 inputs.exps.n_s{1}=21;
 inputs.exps.data_type='real';
 inputs.exps.exp_data{1}=[
-0.9260000000000000 0.0710000000000000
-0.8483415268169803 0.1019158789616532
-0.7793740343833466 0.1285474187532751
-0.7180894392915889 0.1514121808522091
-0.6635973029696931 0.1709667381122778
-0.6151110834309049 0.1876138195315349
-0.5719359941568359 0.2017086192776647
-0.5334582824626334 0.2135643676145546
-0.4991357609358453 0.2234572501866372
-0.4684894460491112 0.2316307516671766
-0.4410961739573261 0.2382994912581967
-0.4165820796403826 0.2436526093431671
-0.3946168380297324 0.2478567578901253
-0.3749085786438890 0.2510587408012047
-0.3571993942930275 0.2533878453037373
-0.3412613750083937 0.2549579003869804
-0.3268931053396487 0.2558690942928642
-0.3139165711801682 0.2562095791858763
-0.3021744280101404 0.2560568879280668
-0.2915275884475831 0.2554791849172104
-0.2818530917283333 0.2545363704048934
+0.8400000000000000 0.1570000000000000
+0.7778214283952084 0.1792908207213725
+0.7222066614920954 0.1985226168729590
+0.6724334959851721 0.2150478526487428
+0.6278596806492348 0.2291795433464148
+0.5879140535909880 0.2411956406588107
+0.5520886622640886 0.2513429313321282
+0.5199317572630028 0.2598405031672650
+0.4910415629964214 0.2668828263548378
+0.4650607390880271 0.2726424928115332
+0.4416714559058202 0.2772726514537336
+0.4205910161161995 0.2809091731368886
+0.4015679617118642 0.2836725752482588
+0.3843786126768762 0.2856697326151716
+0.3688239894235989 0.2869953984333943
+0.3547270764435576 0.2877335562915981
+0.3419303893343439 0.2879586220301141
+0.3302938115605360 0.2877365120940635
+0.3196926710379152 0.2871255931929076
+0.3100160299464317 0.2861775264360383
+0.3011651641276530 0.2849380176528356
 ];
 
 
-inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
-inputs.ivpsol.atol=1.0e-12;
+inputs.ivpsol.rtol=1.0e-13;                            % [] IVP solver integration tolerances
+inputs.ivpsol.atol=1.0e-13;
 
 inputs.PEsol.id_global_theta='all';
 inputs.PEsol.global_theta_max=2.0*ones(1,5);
@@ -83,7 +83,7 @@ inputs.nlpsol.nlpsolver='eSS';                      % Solver used for optimizati
 inputs.nlpsol.eSS.log_var=1:(3+5); 
 inputs.nlpsol.eSS.local.solver = 'nl2sol';
 inputs.nlpsol.eSS.local.finish = 'nl2sol';
-inputs.nlpsol.eSS.maxeval = 100000;                  % Maximum number of cost function evaluations
+inputs.nlpsol.eSS.maxeval = 200000;                  % Maximum number of cost function evaluations
 inputs.nlpsol.eSS.maxtime = 600;                    % Maximum time spent for optimization
 inputs.nlpsol.eSS.local.nl2sol.maxiter             =      1000;
 inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      2000;

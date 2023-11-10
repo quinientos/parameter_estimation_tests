@@ -19,7 +19,9 @@ import argparse
 from tqdm.auto import tqdm
 from collections import defaultdict
 
-PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
+#PLATFORMS = ["pe", "iqm", "sciml"]
+#PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
+PLATFORMS = ["amigo2"]
 
 def parse_output(output, system, platform):
     if platform == "pe":
