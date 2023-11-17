@@ -134,16 +134,16 @@ def main(args):
 
 #            generate_pe_test(outfilename, settings)
 #
-#            df = pd.read_csv(settings["datadir"] + '/csv/' + instance["name"] + '.csv', header=None, index_col=False)
+            df = pd.read_csv(settings["datadir"] + '/csv/' + instance["name"] + '.csv', header=None, index_col=False)
 #
-#            settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)
-#            generate_amigo2_test(outfilename, system, settings)
+            settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)
+            generate_amigo2_test(outfilename, system, settings)
 #
 #            settings["data"] = df.to_csv(index=False, header=False)
 #            generate_iqm_test(outfilename, system, settings)
 
-            settings["data_expr"] = SCIML_DAT_STR[instance["system-name"]]
-            generate_sciml_test(outfilename, settings)        
+#            settings["data_expr"] = SCIML_DAT_STR[instance["system-name"]]
+#            generate_sciml_test(outfilename, settings)        
 
 def getArgs(args):
     datadir = os.path.abspath(args.data)

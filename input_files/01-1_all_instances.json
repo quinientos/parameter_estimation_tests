@@ -1,0 +1,1994 @@
+{
+	"instances": [
+		{
+			"name": "biohydrogenation_0",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.594,  
+            "k6": 0.744,  
+            "k7": 0.642,  
+            "k8": 0.59,  
+            "k9": 0.481,  
+            "k10": 0.681 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.494,  
+                "x5": 0.903,  
+                "x6": 0.967,  
+                "x7": 0.445 
+        }
+		},
+		{
+			"name": "biohydrogenation_1",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.813,  
+            "k6": 0.576,  
+            "k7": 0.611,  
+            "k8": 0.933,  
+            "k9": 0.164,  
+            "k10": 0.178 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.118,  
+                "x5": 0.849,  
+                "x6": 0.8,  
+                "x7": 0.883 
+        }
+		},
+		{
+			"name": "biohydrogenation_2",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.981,  
+            "k6": 0.819,  
+            "k7": 0.515,  
+            "k8": 0.802,  
+            "k9": 0.206,  
+            "k10": 0.676 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.229,  
+                "x5": 0.95,  
+                "x6": 0.57,  
+                "x7": 0.473 
+        }
+		},
+		{
+			"name": "biohydrogenation_3",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.338,  
+            "k6": 0.797,  
+            "k7": 0.511,  
+            "k8": 0.612,  
+            "k9": 0.117,  
+            "k10": 0.656 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.651,  
+                "x5": 0.655,  
+                "x6": 0.949,  
+                "x7": 0.714 
+        }
+		},
+		{
+			"name": "biohydrogenation_4",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.424,  
+            "k6": 0.493,  
+            "k7": 0.728,  
+            "k8": 0.154,  
+            "k9": 0.7,  
+            "k10": 0.704 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.289,  
+                "x5": 0.216,  
+                "x6": 0.384,  
+                "x7": 0.427 
+        }
+		},
+		{
+			"name": "biohydrogenation_5",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.613,  
+            "k6": 0.495,  
+            "k7": 0.99,  
+            "k8": 0.192,  
+            "k9": 0.288,  
+            "k10": 0.245 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.688,  
+                "x5": 0.328,  
+                "x6": 0.52,  
+                "x7": 0.32 
+        }
+		},
+		{
+			"name": "biohydrogenation_6",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.243,  
+            "k6": 0.199,  
+            "k7": 0.691,  
+            "k8": 0.224,  
+            "k9": 0.277,  
+            "k10": 0.432 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.839,  
+                "x5": 0.187,  
+                "x6": 0.854,  
+                "x7": 0.186 
+        }
+		},
+		{
+			"name": "biohydrogenation_7",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.386,  
+            "k6": 0.473,  
+            "k7": 0.158,  
+            "k8": 0.723,  
+            "k9": 0.61,  
+            "k10": 0.339 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.571,  
+                "x5": 0.185,  
+                "x6": 0.618,  
+                "x7": 0.936 
+        }
+		},
+		{
+			"name": "biohydrogenation_8",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.387,  
+            "k6": 0.701,  
+            "k7": 0.219,  
+            "k8": 0.745,  
+            "k9": 0.36,  
+            "k10": 0.265 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.628,  
+                "x5": 0.118,  
+                "x6": 0.846,  
+                "x7": 0.104 
+        }
+		},
+		{
+			"name": "biohydrogenation_9",
+			"system-name": "biohydrogenation",
+			"parameters": {
+            "k5": 0.71,  
+            "k6": 0.343,  
+            "k7": 0.762,  
+            "k8": 0.966,  
+            "k9": 0.324,  
+            "k10": 0.619 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x4": 0.633,  
+                "x5": 0.615,  
+                "x6": 0.301,  
+                "x7": 0.957 
+        }
+		},
+		{
+			"name": "crauste_0",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.594,  
+            "muEE": 0.744,  
+            "muLE": 0.642,  
+            "muLL": 0.59,  
+            "muM": 0.481,  
+            "muP": 0.681,  
+            "muPE": 0.494,  
+            "muPL": 0.903,  
+            "deltaNE": 0.967,  
+            "deltaEL": 0.445,  
+            "deltaLM": 0.813,  
+            "rhoE": 0.576,  
+            "rhoP": 0.611 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.933,  
+                "e": 0.164,  
+                "s": 0.178,  
+                "m": 0.118,  
+                "p": 0.849 
+        }
+		},
+		{
+			"name": "crauste_1",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.8,  
+            "muEE": 0.883,  
+            "muLE": 0.981,  
+            "muLL": 0.819,  
+            "muM": 0.515,  
+            "muP": 0.802,  
+            "muPE": 0.206,  
+            "muPL": 0.676,  
+            "deltaNE": 0.229,  
+            "deltaEL": 0.95,  
+            "deltaLM": 0.57,  
+            "rhoE": 0.473,  
+            "rhoP": 0.338 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.797,  
+                "e": 0.511,  
+                "s": 0.612,  
+                "m": 0.117,  
+                "p": 0.656 
+        }
+		},
+		{
+			"name": "crauste_2",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.651,  
+            "muEE": 0.655,  
+            "muLE": 0.949,  
+            "muLL": 0.714,  
+            "muM": 0.424,  
+            "muP": 0.493,  
+            "muPE": 0.728,  
+            "muPL": 0.154,  
+            "deltaNE": 0.7,  
+            "deltaEL": 0.704,  
+            "deltaLM": 0.289,  
+            "rhoE": 0.216,  
+            "rhoP": 0.384 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.427,  
+                "e": 0.613,  
+                "s": 0.495,  
+                "m": 0.99,  
+                "p": 0.192 
+        }
+		},
+		{
+			"name": "crauste_3",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.288,  
+            "muEE": 0.245,  
+            "muLE": 0.688,  
+            "muLL": 0.328,  
+            "muM": 0.52,  
+            "muP": 0.32,  
+            "muPE": 0.243,  
+            "muPL": 0.199,  
+            "deltaNE": 0.691,  
+            "deltaEL": 0.224,  
+            "deltaLM": 0.277,  
+            "rhoE": 0.432,  
+            "rhoP": 0.839 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.187,  
+                "e": 0.854,  
+                "s": 0.186,  
+                "m": 0.979,  
+                "p": 0.522 
+        }
+		},
+		{
+			"name": "crauste_4",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.979,  
+            "muEE": 0.644,  
+            "muLE": 0.765,  
+            "muLL": 0.135,  
+            "muM": 0.355,  
+            "muP": 0.208,  
+            "muPE": 0.367,  
+            "muPL": 0.207,  
+            "deltaNE": 0.386,  
+            "deltaEL": 0.473,  
+            "deltaLM": 0.158,  
+            "rhoE": 0.723,  
+            "rhoP": 0.61 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.339,  
+                "e": 0.571,  
+                "s": 0.185,  
+                "m": 0.618,  
+                "p": 0.936 
+        }
+		},
+		{
+			"name": "crauste_5",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.387,  
+            "muEE": 0.701,  
+            "muLE": 0.219,  
+            "muLL": 0.745,  
+            "muM": 0.36,  
+            "muP": 0.265,  
+            "muPE": 0.628,  
+            "muPL": 0.118,  
+            "deltaNE": 0.846,  
+            "deltaEL": 0.104,  
+            "deltaLM": 0.71,  
+            "rhoE": 0.343,  
+            "rhoP": 0.762 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.966,  
+                "e": 0.324,  
+                "s": 0.619,  
+                "m": 0.633,  
+                "p": 0.615 
+        }
+		},
+		{
+			"name": "crauste_6",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.301,  
+            "muEE": 0.957,  
+            "muLE": 0.502,  
+            "muLL": 0.862,  
+            "muM": 0.73,  
+            "muP": 0.368,  
+            "muPE": 0.832,  
+            "muPL": 0.457,  
+            "deltaNE": 0.893,  
+            "deltaEL": 0.623,  
+            "deltaLM": 0.894,  
+            "rhoE": 0.723,  
+            "rhoP": 0.753 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.551,  
+                "e": 0.96,  
+                "s": 0.68,  
+                "m": 0.481,  
+                "p": 0.646 
+        }
+		},
+		{
+			"name": "crauste_7",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.117,  
+            "muEE": 0.371,  
+            "muLE": 0.694,  
+            "muLL": 0.361,  
+            "muM": 0.656,  
+            "muP": 0.486,  
+            "muPE": 0.222,  
+            "muPL": 0.368,  
+            "deltaNE": 0.613,  
+            "deltaEL": 0.632,  
+            "deltaLM": 0.617,  
+            "rhoE": 0.688,  
+            "rhoP": 0.687 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.488,  
+                "e": 0.907,  
+                "s": 0.431,  
+                "m": 0.492,  
+                "p": 0.903 
+        }
+		},
+		{
+			"name": "crauste_8",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.826,  
+            "muEE": 0.733,  
+            "muLE": 0.19,  
+            "muLL": 0.928,  
+            "muM": 0.743,  
+            "muP": 0.999,  
+            "muPE": 0.235,  
+            "muPL": 0.881,  
+            "deltaNE": 0.246,  
+            "deltaEL": 0.654,  
+            "deltaLM": 0.211,  
+            "rhoE": 0.863,  
+            "rhoP": 0.827 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.612,  
+                "e": 0.466,  
+                "s": 0.162,  
+                "m": 0.728,  
+                "p": 0.508 
+        }
+		},
+		{
+			"name": "crauste_9",
+			"system-name": "crauste",
+			"parameters": {
+            "muN": 0.75,  
+            "muEE": 0.88,  
+            "muLE": 0.978,  
+            "muLL": 0.87,  
+            "muM": 0.111,  
+            "muP": 0.424,  
+            "muPE": 0.757,  
+            "muPL": 0.254,  
+            "deltaNE": 0.569,  
+            "deltaEL": 0.149,  
+            "deltaLM": 0.28,  
+            "rhoE": 0.117,  
+            "rhoP": 0.814 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "n": 0.302,  
+                "e": 0.411,  
+                "s": 0.935,  
+                "m": 0.734,  
+                "p": 0.129 
+        }
+		},
+		{
+			"name": "daisy_mamil3_0",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.594,  
+            "a13": 0.744,  
+            "a21": 0.642,  
+            "a31": 0.59,  
+            "a01": 0.481 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.681,  
+                "x2": 0.494,  
+                "x3": 0.903 
+        }
+		},
+		{
+			"name": "daisy_mamil3_1",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.967,  
+            "a13": 0.445,  
+            "a21": 0.813,  
+            "a31": 0.576,  
+            "a01": 0.611 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.933,  
+                "x2": 0.164,  
+                "x3": 0.178 
+        }
+		},
+		{
+			"name": "daisy_mamil3_2",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.118,  
+            "a13": 0.849,  
+            "a21": 0.8,  
+            "a31": 0.883,  
+            "a01": 0.981 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.819,  
+                "x2": 0.515,  
+                "x3": 0.802 
+        }
+		},
+		{
+			"name": "daisy_mamil3_3",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.206,  
+            "a13": 0.676,  
+            "a21": 0.229,  
+            "a31": 0.95,  
+            "a01": 0.57 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.473,  
+                "x2": 0.338,  
+                "x3": 0.797 
+        }
+		},
+		{
+			"name": "daisy_mamil3_4",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.511,  
+            "a13": 0.612,  
+            "a21": 0.117,  
+            "a31": 0.656,  
+            "a01": 0.651 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.655,  
+                "x2": 0.949,  
+                "x3": 0.714 
+        }
+		},
+		{
+			"name": "daisy_mamil3_5",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.424,  
+            "a13": 0.493,  
+            "a21": 0.728,  
+            "a31": 0.154,  
+            "a01": 0.7 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.704,  
+                "x2": 0.289,  
+                "x3": 0.216 
+        }
+		},
+		{
+			"name": "daisy_mamil3_6",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.384,  
+            "a13": 0.427,  
+            "a21": 0.613,  
+            "a31": 0.495,  
+            "a01": 0.99 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.192,  
+                "x2": 0.288,  
+                "x3": 0.245 
+        }
+		},
+		{
+			"name": "daisy_mamil3_7",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.688,  
+            "a13": 0.328,  
+            "a21": 0.52,  
+            "a31": 0.32,  
+            "a01": 0.243 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.199,  
+                "x2": 0.691,  
+                "x3": 0.224 
+        }
+		},
+		{
+			"name": "daisy_mamil3_8",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.277,  
+            "a13": 0.432,  
+            "a21": 0.839,  
+            "a31": 0.187,  
+            "a01": 0.854 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.186,  
+                "x2": 0.979,  
+                "x3": 0.522 
+        }
+		},
+		{
+			"name": "daisy_mamil3_9",
+			"system-name": "daisy_mamil3",
+			"parameters": {
+            "a12": 0.979,  
+            "a13": 0.644,  
+            "a21": 0.765,  
+            "a31": 0.135,  
+            "a01": 0.355 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.208,  
+                "x2": 0.367,  
+                "x3": 0.207 
+        }
+		},
+		{
+			"name": "daisy_mamil4_0",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.594,  
+            "k12": 0.744,  
+            "k13": 0.642,  
+            "k14": 0.59,  
+            "k21": 0.481,  
+            "k31": 0.681,  
+            "k41": 0.494 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.903,  
+                "x2": 0.967,  
+                "x3": 0.445,  
+                "x4": 0.813 
+        }
+		},
+		{
+			"name": "daisy_mamil4_1",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.576,  
+            "k12": 0.611,  
+            "k13": 0.933,  
+            "k14": 0.164,  
+            "k21": 0.178,  
+            "k31": 0.118,  
+            "k41": 0.849 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.8,  
+                "x2": 0.883,  
+                "x3": 0.981,  
+                "x4": 0.819 
+        }
+		},
+		{
+			"name": "daisy_mamil4_2",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.515,  
+            "k12": 0.802,  
+            "k13": 0.206,  
+            "k14": 0.676,  
+            "k21": 0.229,  
+            "k31": 0.95,  
+            "k41": 0.57 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.473,  
+                "x2": 0.338,  
+                "x3": 0.797,  
+                "x4": 0.511 
+        }
+		},
+		{
+			"name": "daisy_mamil4_3",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.612,  
+            "k12": 0.117,  
+            "k13": 0.656,  
+            "k14": 0.651,  
+            "k21": 0.655,  
+            "k31": 0.949,  
+            "k41": 0.714 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.424,  
+                "x2": 0.493,  
+                "x3": 0.728,  
+                "x4": 0.154 
+        }
+		},
+		{
+			"name": "daisy_mamil4_4",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.7,  
+            "k12": 0.704,  
+            "k13": 0.289,  
+            "k14": 0.216,  
+            "k21": 0.384,  
+            "k31": 0.427,  
+            "k41": 0.613 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.495,  
+                "x2": 0.99,  
+                "x3": 0.192,  
+                "x4": 0.288 
+        }
+		},
+		{
+			"name": "daisy_mamil4_5",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.245,  
+            "k12": 0.688,  
+            "k13": 0.328,  
+            "k14": 0.52,  
+            "k21": 0.32,  
+            "k31": 0.243,  
+            "k41": 0.199 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.691,  
+                "x2": 0.224,  
+                "x3": 0.277,  
+                "x4": 0.432 
+        }
+		},
+		{
+			"name": "daisy_mamil4_6",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.839,  
+            "k12": 0.187,  
+            "k13": 0.854,  
+            "k14": 0.186,  
+            "k21": 0.979,  
+            "k31": 0.522,  
+            "k41": 0.979 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.644,  
+                "x2": 0.765,  
+                "x3": 0.135,  
+                "x4": 0.355 
+        }
+		},
+		{
+			"name": "daisy_mamil4_7",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.208,  
+            "k12": 0.367,  
+            "k13": 0.207,  
+            "k14": 0.386,  
+            "k21": 0.473,  
+            "k31": 0.158,  
+            "k41": 0.723 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.61,  
+                "x2": 0.339,  
+                "x3": 0.571,  
+                "x4": 0.185 
+        }
+		},
+		{
+			"name": "daisy_mamil4_8",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.618,  
+            "k12": 0.936,  
+            "k13": 0.387,  
+            "k14": 0.701,  
+            "k21": 0.219,  
+            "k31": 0.745,  
+            "k41": 0.36 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.265,  
+                "x2": 0.628,  
+                "x3": 0.118,  
+                "x4": 0.846 
+        }
+		},
+		{
+			"name": "daisy_mamil4_9",
+			"system-name": "daisy_mamil4",
+			"parameters": {
+            "k01": 0.104,  
+            "k12": 0.71,  
+            "k13": 0.343,  
+            "k14": 0.762,  
+            "k21": 0.966,  
+            "k31": 0.324,  
+            "k41": 0.619 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.633,  
+                "x2": 0.615,  
+                "x3": 0.301,  
+                "x4": 0.957 
+        }
+		},
+		{
+			"name": "harmonic_0",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.594,  
+            "b": 0.744 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.642,  
+                "x2": 0.59 
+        }
+		},
+		{
+			"name": "harmonic_1",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.481,  
+            "b": 0.681 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.494,  
+                "x2": 0.903 
+        }
+		},
+		{
+			"name": "harmonic_2",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.967,  
+            "b": 0.445 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.813,  
+                "x2": 0.576 
+        }
+		},
+		{
+			"name": "harmonic_3",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.611,  
+            "b": 0.933 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.164,  
+                "x2": 0.178 
+        }
+		},
+		{
+			"name": "harmonic_4",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.118,  
+            "b": 0.849 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.8,  
+                "x2": 0.883 
+        }
+		},
+		{
+			"name": "harmonic_5",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.981,  
+            "b": 0.819 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.515,  
+                "x2": 0.802 
+        }
+		},
+		{
+			"name": "harmonic_6",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.206,  
+            "b": 0.676 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.229,  
+                "x2": 0.95 
+        }
+		},
+		{
+			"name": "harmonic_7",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.57,  
+            "b": 0.473 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.338,  
+                "x2": 0.797 
+        }
+		},
+		{
+			"name": "harmonic_8",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.511,  
+            "b": 0.612 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.117,  
+                "x2": 0.656 
+        }
+		},
+		{
+			"name": "harmonic_9",
+			"system-name": "harmonic",
+			"parameters": {
+            "a": 0.651,  
+            "b": 0.655 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.949,  
+                "x2": 0.714 
+        }
+		},
+		{
+			"name": "hiv_0",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.594,  
+            "d": 0.744,  
+            "beta": 0.642,  
+            "a": 0.59,  
+            "k": 0.481,  
+            "uu": 0.681,  
+            "c": 0.494,  
+            "q": 0.903,  
+            "b": 0.967,  
+            "h": 0.445 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.813,  
+                "yy": 0.576,  
+                "vv": 0.611,  
+                "w": 0.933,  
+                "z": 0.164 
+        }
+		},
+		{
+			"name": "hiv_1",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.178,  
+            "d": 0.118,  
+            "beta": 0.849,  
+            "a": 0.8,  
+            "k": 0.883,  
+            "uu": 0.981,  
+            "c": 0.819,  
+            "q": 0.515,  
+            "b": 0.802,  
+            "h": 0.206 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.676,  
+                "yy": 0.229,  
+                "vv": 0.95,  
+                "w": 0.57,  
+                "z": 0.473 
+        }
+		},
+		{
+			"name": "hiv_2",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.338,  
+            "d": 0.797,  
+            "beta": 0.511,  
+            "a": 0.612,  
+            "k": 0.117,  
+            "uu": 0.656,  
+            "c": 0.651,  
+            "q": 0.655,  
+            "b": 0.949,  
+            "h": 0.714 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.424,  
+                "yy": 0.493,  
+                "vv": 0.728,  
+                "w": 0.154,  
+                "z": 0.7 
+        }
+		},
+		{
+			"name": "hiv_3",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.704,  
+            "d": 0.289,  
+            "beta": 0.216,  
+            "a": 0.384,  
+            "k": 0.427,  
+            "uu": 0.613,  
+            "c": 0.495,  
+            "q": 0.99,  
+            "b": 0.192,  
+            "h": 0.288 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.245,  
+                "yy": 0.688,  
+                "vv": 0.328,  
+                "w": 0.52,  
+                "z": 0.32 
+        }
+		},
+		{
+			"name": "hiv_4",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.243,  
+            "d": 0.199,  
+            "beta": 0.691,  
+            "a": 0.224,  
+            "k": 0.277,  
+            "uu": 0.432,  
+            "c": 0.839,  
+            "q": 0.187,  
+            "b": 0.854,  
+            "h": 0.186 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.979,  
+                "yy": 0.522,  
+                "vv": 0.979,  
+                "w": 0.644,  
+                "z": 0.765 
+        }
+		},
+		{
+			"name": "hiv_5",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.135,  
+            "d": 0.355,  
+            "beta": 0.208,  
+            "a": 0.367,  
+            "k": 0.207,  
+            "uu": 0.386,  
+            "c": 0.473,  
+            "q": 0.158,  
+            "b": 0.723,  
+            "h": 0.61 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.339,  
+                "yy": 0.571,  
+                "vv": 0.185,  
+                "w": 0.618,  
+                "z": 0.936 
+        }
+		},
+		{
+			"name": "hiv_6",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.387,  
+            "d": 0.701,  
+            "beta": 0.219,  
+            "a": 0.745,  
+            "k": 0.36,  
+            "uu": 0.265,  
+            "c": 0.628,  
+            "q": 0.118,  
+            "b": 0.846,  
+            "h": 0.104 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.71,  
+                "yy": 0.343,  
+                "vv": 0.762,  
+                "w": 0.966,  
+                "z": 0.324 
+        }
+		},
+		{
+			"name": "hiv_7",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.619,  
+            "d": 0.633,  
+            "beta": 0.615,  
+            "a": 0.301,  
+            "k": 0.957,  
+            "uu": 0.502,  
+            "c": 0.862,  
+            "q": 0.73,  
+            "b": 0.368,  
+            "h": 0.832 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.457,  
+                "yy": 0.893,  
+                "vv": 0.623,  
+                "w": 0.894,  
+                "z": 0.723 
+        }
+		},
+		{
+			"name": "hiv_8",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.753,  
+            "d": 0.551,  
+            "beta": 0.96,  
+            "a": 0.68,  
+            "k": 0.481,  
+            "uu": 0.646,  
+            "c": 0.117,  
+            "q": 0.371,  
+            "b": 0.694,  
+            "h": 0.361 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.656,  
+                "yy": 0.486,  
+                "vv": 0.222,  
+                "w": 0.368,  
+                "z": 0.613 
+        }
+		},
+		{
+			"name": "hiv_9",
+			"system-name": "hiv",
+			"parameters": {
+            "lm": 0.632,  
+            "d": 0.617,  
+            "beta": 0.688,  
+            "a": 0.687,  
+            "k": 0.488,  
+            "uu": 0.907,  
+            "c": 0.431,  
+            "q": 0.492,  
+            "b": 0.903,  
+            "h": 0.826 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x": 0.733,  
+                "yy": 0.19,  
+                "vv": 0.928,  
+                "w": 0.743,  
+                "z": 0.999 
+        }
+		},
+		{
+			"name": "lotka_volterra_0",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.594,  
+            "k2": 0.744,  
+            "k3": 0.642 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.59,  
+                "w": 0.481 
+        }
+		},
+		{
+			"name": "lotka_volterra_1",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.681,  
+            "k2": 0.494,  
+            "k3": 0.903 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.967,  
+                "w": 0.445 
+        }
+		},
+		{
+			"name": "lotka_volterra_2",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.813,  
+            "k2": 0.576,  
+            "k3": 0.611 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.933,  
+                "w": 0.164 
+        }
+		},
+		{
+			"name": "lotka_volterra_3",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.178,  
+            "k2": 0.118,  
+            "k3": 0.849 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.8,  
+                "w": 0.883 
+        }
+		},
+		{
+			"name": "lotka_volterra_4",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.981,  
+            "k2": 0.819,  
+            "k3": 0.515 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.802,  
+                "w": 0.206 
+        }
+		},
+		{
+			"name": "lotka_volterra_5",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.676,  
+            "k2": 0.229,  
+            "k3": 0.95 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.57,  
+                "w": 0.473 
+        }
+		},
+		{
+			"name": "lotka_volterra_6",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.338,  
+            "k2": 0.797,  
+            "k3": 0.511 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.612,  
+                "w": 0.117 
+        }
+		},
+		{
+			"name": "lotka_volterra_7",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.656,  
+            "k2": 0.651,  
+            "k3": 0.655 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.949,  
+                "w": 0.714 
+        }
+		},
+		{
+			"name": "lotka_volterra_8",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.424,  
+            "k2": 0.493,  
+            "k3": 0.728 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.154,  
+                "w": 0.7 
+        }
+		},
+		{
+			"name": "lotka_volterra_9",
+			"system-name": "lotka_volterra",
+			"parameters": {
+            "k1": 0.704,  
+            "k2": 0.289,  
+            "k3": 0.216 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "r": 0.384,  
+                "w": 0.427 
+        }
+		},
+		{
+			"name": "seir_0",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.594,  
+            "b": 0.744,  
+            "nu": 0.642 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.59,  
+                "E": 0.481,  
+                "In": 0.681,  
+                "NN": 0.494 
+        }
+		},
+		{
+			"name": "seir_1",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.903,  
+            "b": 0.967,  
+            "nu": 0.445 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.813,  
+                "E": 0.576,  
+                "In": 0.611,  
+                "NN": 0.933 
+        }
+		},
+		{
+			"name": "seir_2",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.164,  
+            "b": 0.178,  
+            "nu": 0.118 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.849,  
+                "E": 0.8,  
+                "In": 0.883,  
+                "NN": 0.981 
+        }
+		},
+		{
+			"name": "seir_3",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.819,  
+            "b": 0.515,  
+            "nu": 0.802 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.206,  
+                "E": 0.676,  
+                "In": 0.229,  
+                "NN": 0.95 
+        }
+		},
+		{
+			"name": "seir_4",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.57,  
+            "b": 0.473,  
+            "nu": 0.338 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.797,  
+                "E": 0.511,  
+                "In": 0.612,  
+                "NN": 0.117 
+        }
+		},
+		{
+			"name": "seir_5",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.656,  
+            "b": 0.651,  
+            "nu": 0.655 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.949,  
+                "E": 0.714,  
+                "In": 0.424,  
+                "NN": 0.493 
+        }
+		},
+		{
+			"name": "seir_6",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.728,  
+            "b": 0.154,  
+            "nu": 0.7 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.704,  
+                "E": 0.289,  
+                "In": 0.216,  
+                "NN": 0.384 
+        }
+		},
+		{
+			"name": "seir_7",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.427,  
+            "b": 0.613,  
+            "nu": 0.495 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.99,  
+                "E": 0.192,  
+                "In": 0.288,  
+                "NN": 0.245 
+        }
+		},
+		{
+			"name": "seir_8",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.688,  
+            "b": 0.328,  
+            "nu": 0.52 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.32,  
+                "E": 0.243,  
+                "In": 0.199,  
+                "NN": 0.691 
+        }
+		},
+		{
+			"name": "seir_9",
+			"system-name": "seir",
+			"parameters": {
+            "a": 0.224,  
+            "b": 0.277,  
+            "nu": 0.432 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "S": 0.839,  
+                "E": 0.187,  
+                "In": 0.854,  
+                "NN": 0.186 
+        }
+		},
+		{
+			"name": "vanderpol_0",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.594,  
+            "b": 0.744 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.642,  
+                "x2": 0.59 
+        }
+		},
+		{
+			"name": "vanderpol_1",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.481,  
+            "b": 0.681 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.494,  
+                "x2": 0.903 
+        }
+		},
+		{
+			"name": "vanderpol_2",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.967,  
+            "b": 0.445 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.813,  
+                "x2": 0.576 
+        }
+		},
+		{
+			"name": "vanderpol_3",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.611,  
+            "b": 0.933 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.164,  
+                "x2": 0.178 
+        }
+		},
+		{
+			"name": "vanderpol_4",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.118,  
+            "b": 0.849 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.8,  
+                "x2": 0.883 
+        }
+		},
+		{
+			"name": "vanderpol_5",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.981,  
+            "b": 0.819 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.515,  
+                "x2": 0.802 
+        }
+		},
+		{
+			"name": "vanderpol_6",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.206,  
+            "b": 0.676 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.229,  
+                "x2": 0.95 
+        }
+		},
+		{
+			"name": "vanderpol_7",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.57,  
+            "b": 0.473 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.338,  
+                "x2": 0.797 
+        }
+		},
+		{
+			"name": "vanderpol_8",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.511,  
+            "b": 0.612 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.117,  
+                "x2": 0.656 
+        }
+		},
+		{
+			"name": "vanderpol_9",
+			"system-name": "vanderpol",
+			"parameters": {
+            "a": 0.651,  
+            "b": 0.655 
+        },
+			"time": {
+				"start": 0.0,
+				"end": 1.0,
+				"count": 21
+        },
+			"initial": {
+                "x1": 0.949,  
+                "x2": 0.714 
+        }
+		}
+	]
+}

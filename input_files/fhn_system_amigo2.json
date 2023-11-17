@@ -1,0 +1,15 @@
+{
+  "names":[
+    "fitzhugh_nagumo"
+  ],
+  "systems": [
+    {
+      "name": "fitzhugh_nagumo",
+      "state-variables": ["VV", "R"],
+			"parameter-variables": ["g", "a", "b"],
+      "measurement-variables": ["y1"],
+			"ode-system": {"V": "g * (VV - VV^3 / 3 + R)", "R": "1 / g * (VV - a + b * R)"},
+			"measurements": { "y1": "VV" }
+    }
+  ]
+}

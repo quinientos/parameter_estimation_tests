@@ -1,0 +1,15 @@
+{
+  "names":[
+    "lotka_volterra"
+  ],
+  "systems": [
+    {
+      "name": "lotka_volterra",
+      "state-variables": ["r", "w"],
+			"parameter-variables": ["k1", "k2", "k3"],
+      "measurement-variables": ["y1"],
+			"ode-system": {"r": "k1*r - k2*r*w", "w": "k2*r*w - k3*w"},
+			"measurements": { "y1": "r" }
+    }
+  ]
+}

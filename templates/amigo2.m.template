@@ -65,11 +65,11 @@ inputs.nlpsol.eSS.local.solver = 'nl2sol';
 inputs.nlpsol.eSS.local.finish = 'nl2sol';
 inputs.nlpsol.eSS.maxeval = 200000;                  % Maximum number of cost function evaluations
 inputs.nlpsol.eSS.maxtime = 600;                    % Maximum time spent for optimization
-inputs.nlpsol.eSS.local.nl2sol.maxiter             =      1000;
-inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      2000;
-inputs.nlpsol.eSS.local.nl2sol.tolrfun             =     1e-10;
-inputs.nlpsol.eSS.local.nl2sol.tolafun             =     1e-10;
-inputs.nlpsol.eSS.local.nl2sol.objrtol			 =     1e-10;
+inputs.nlpsol.eSS.local.nl2sol.maxiter             =      100000;
+inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      100000;
+inputs.nlpsol.eSS.local.nl2sol.tolrfun             =     1e-13;
+inputs.nlpsol.eSS.local.nl2sol.tolafun             =     1e-13;
+inputs.nlpsol.eSS.local.nl2sol.objrtol			 =     1e-13;
 % inputs.exps.u_interp{1}='sustained';          % Stimuli definition for experiment 1
                                               % Initial and final time
 %inputs.exps.u{1}=1;                           % Values of the inputs for exp 1

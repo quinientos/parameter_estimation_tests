@@ -1,0 +1,1462 @@
+{
+    "instances": [
+        {
+            "name": "lotka_volterra_000",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.539,  
+                "k2": 0.672,  
+                "k3": 0.582 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.536,  
+                "w": 0.439 
+            }
+        },
+        {
+            "name": "lotka_volterra_001",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.617,  
+                "k2": 0.45,  
+                "k3": 0.813 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.871,  
+                "w": 0.407 
+            }
+        },
+        {
+            "name": "lotka_volterra_002",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.733,  
+                "k2": 0.523,  
+                "k3": 0.554 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.84,  
+                "w": 0.157 
+            }
+        },
+        {
+            "name": "lotka_volterra_003",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.17,  
+                "k2": 0.116,  
+                "k3": 0.766 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.723,  
+                "w": 0.796 
+            }
+        },
+        {
+            "name": "lotka_volterra_004",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.883,  
+                "k2": 0.739,  
+                "k3": 0.469 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.724,  
+                "w": 0.195 
+            }
+        },
+        {
+            "name": "lotka_volterra_005",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.612,  
+                "k2": 0.215,  
+                "k3": 0.856 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.517,  
+                "w": 0.432 
+            }
+        },
+        {
+            "name": "lotka_volterra_006",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.312,  
+                "k2": 0.719,  
+                "k3": 0.465 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.555,  
+                "w": 0.115 
+            }
+        },
+        {
+            "name": "lotka_volterra_007",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.594,  
+                "k2": 0.59,  
+                "k3": 0.594 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.855,  
+                "w": 0.645 
+            }
+        },
+        {
+            "name": "lotka_volterra_008",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.388,  
+                "k2": 0.45,  
+                "k3": 0.658 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.148,  
+                "w": 0.633 
+            }
+        },
+        {
+            "name": "lotka_volterra_009",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.637,  
+                "k2": 0.268,  
+                "k3": 0.203 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.352,  
+                "w": 0.391 
+            }
+        },
+        {
+            "name": "lotka_volterra_010",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.556,  
+                "k2": 0.451,  
+                "k3": 0.891 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.182,  
+                "w": 0.267 
+            }
+        },
+        {
+            "name": "lotka_volterra_011",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.229,  
+                "k2": 0.622,  
+                "k3": 0.303 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.473,  
+                "w": 0.296 
+            }
+        },
+        {
+            "name": "lotka_volterra_012",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.227,  
+                "k2": 0.188,  
+                "k3": 0.625 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.211,  
+                "w": 0.257 
+            }
+        },
+        {
+            "name": "lotka_volterra_013",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.395,  
+                "k2": 0.757,  
+                "k3": 0.178 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.77,  
+                "w": 0.177 
+            }
+        },
+        {
+            "name": "lotka_volterra_014",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.881,  
+                "k2": 0.475,  
+                "k3": 0.881 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.584,  
+                "w": 0.691 
+            }
+        },
+        {
+            "name": "lotka_volterra_015",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.131,  
+                "k2": 0.326,  
+                "k3": 0.196 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.337,  
+                "w": 0.195 
+            }
+        },
+        {
+            "name": "lotka_volterra_016",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.354,  
+                "k2": 0.431,  
+                "k3": 0.151 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.654,  
+                "w": 0.553 
+            }
+        },
+        {
+            "name": "lotka_volterra_017",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.312,  
+                "k2": 0.519,  
+                "k3": 0.175 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.561,  
+                "w": 0.843 
+            }
+        },
+        {
+            "name": "lotka_volterra_018",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.355,  
+                "k2": 0.634,  
+                "k3": 0.205 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.673,  
+                "w": 0.332 
+            }
+        },
+        {
+            "name": "lotka_volterra_019",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.247,  
+                "k2": 0.569,  
+                "k3": 0.116 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.763,  
+                "w": 0.104 
+            }
+        },
+        {
+            "name": "lotka_volterra_020",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.642,  
+                "k2": 0.316,  
+                "k3": 0.688 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.87,  
+                "w": 0.299 
+            }
+        },
+        {
+            "name": "lotka_volterra_021",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.561,  
+                "k2": 0.574,  
+                "k3": 0.558 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.278,  
+                "w": 0.862 
+            }
+        },
+        {
+            "name": "lotka_volterra_022",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.458,  
+                "k2": 0.777,  
+                "k3": 0.66 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.338,  
+                "w": 0.751 
+            }
+        },
+        {
+            "name": "lotka_volterra_023",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.417,  
+                "k2": 0.805,  
+                "k3": 0.565 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.805,  
+                "w": 0.654 
+            }
+        },
+        {
+            "name": "lotka_volterra_024",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.68,  
+                "k2": 0.501,  
+                "k3": 0.865 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.615,  
+                "w": 0.439 
+            }
+        },
+        {
+            "name": "lotka_volterra_025",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.585,  
+                "k2": 0.115,  
+                "k3": 0.341 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.628,  
+                "w": 0.332 
+            }
+        },
+        {
+            "name": "lotka_volterra_026",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.594,  
+                "k2": 0.443,  
+                "k3": 0.208 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.339,  
+                "w": 0.556 
+            }
+        },
+        {
+            "name": "lotka_volterra_027",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.573,  
+                "k2": 0.559,  
+                "k3": 0.623 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.622,  
+                "w": 0.445 
+            }
+        },
+        {
+            "name": "lotka_volterra_028",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.817,  
+                "k2": 0.394,  
+                "k3": 0.449 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.814,  
+                "w": 0.745 
+            }
+        },
+        {
+            "name": "lotka_volterra_029",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.663,  
+                "k2": 0.18,  
+                "k3": 0.836 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.671,  
+                "w": 0.899 
+            }
+        },
+        {
+            "name": "lotka_volterra_030",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.22,  
+                "k2": 0.795,  
+                "k3": 0.23 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.592,  
+                "w": 0.199 
+            }
+        },
+        {
+            "name": "lotka_volterra_031",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.778,  
+                "k2": 0.746,  
+                "k3": 0.555 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.426,  
+                "w": 0.155 
+            }
+        },
+        {
+            "name": "lotka_volterra_032",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.658,  
+                "k2": 0.463,  
+                "k3": 0.678 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.793,  
+                "w": 0.88 
+            }
+        },
+        {
+            "name": "lotka_volterra_033",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.785,  
+                "k2": 0.109,  
+                "k3": 0.388 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.684,  
+                "w": 0.237 
+            }
+        },
+        {
+            "name": "lotka_volterra_034",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.517,  
+                "k2": 0.143,  
+                "k3": 0.26 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.115,  
+                "w": 0.735 
+            }
+        },
+        {
+            "name": "lotka_volterra_035",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.279,  
+                "k2": 0.376,  
+                "k3": 0.842 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.664,  
+                "w": 0.125 
+            }
+        },
+        {
+            "name": "lotka_volterra_036",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.232,  
+                "k2": 0.597,  
+                "k3": 0.562 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.29,  
+                "w": 0.847 
+            }
+        },
+        {
+            "name": "lotka_volterra_037",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.591,  
+                "k2": 0.529,  
+                "k3": 0.572 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.684,  
+                "w": 0.35 
+            }
+        },
+        {
+            "name": "lotka_volterra_038",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.419,  
+                "k2": 0.268,  
+                "k3": 0.249 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.855,  
+                "w": 0.692 
+            }
+        },
+        {
+            "name": "lotka_volterra_039",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.492,  
+                "k2": 0.282,  
+                "k3": 0.303 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.146,  
+                "w": 0.448 
+            }
+        },
+        {
+            "name": "lotka_volterra_040",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.349,  
+                "k2": 0.657,  
+                "k3": 0.402 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.244,  
+                "w": 0.12 
+            }
+        },
+        {
+            "name": "lotka_volterra_041",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.154,  
+                "k2": 0.644,  
+                "k3": 0.463 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.529,  
+                "w": 0.817 
+            }
+        },
+        {
+            "name": "lotka_volterra_042",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.892,  
+                "k2": 0.274,  
+                "k3": 0.63 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.311,  
+                "w": 0.117 
+            }
+        },
+        {
+            "name": "lotka_volterra_043",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.707,  
+                "k2": 0.356,  
+                "k3": 0.407 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.571,  
+                "w": 0.765 
+            }
+        },
+        {
+            "name": "lotka_volterra_044",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.603,  
+                "k2": 0.798,  
+                "k3": 0.319 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.738,  
+                "w": 0.249 
+            }
+        },
+        {
+            "name": "lotka_volterra_045",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.862,  
+                "k2": 0.65,  
+                "k3": 0.272 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.858,  
+                "w": 0.685 
+            }
+        },
+        {
+            "name": "lotka_volterra_046",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.303,  
+                "k2": 0.271,  
+                "k3": 0.515 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.121,  
+                "w": 0.266 
+            }
+        },
+        {
+            "name": "lotka_volterra_047",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.44,  
+                "k2": 0.399,  
+                "k3": 0.471 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.322,  
+                "w": 0.569 
+            }
+        },
+        {
+            "name": "lotka_volterra_048",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.791,  
+                "k2": 0.194,  
+                "k3": 0.514 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.206,  
+                "w": 0.673 
+            }
+        },
+        {
+            "name": "lotka_volterra_049",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.417,  
+                "k2": 0.552,  
+                "k3": 0.247 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.216,  
+                "w": 0.49 
+            }
+        },
+        {
+            "name": "lotka_volterra_050",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.384,  
+                "k2": 0.852,  
+                "k3": 0.712 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.699,  
+                "w": 0.823 
+            }
+        },
+        {
+            "name": "lotka_volterra_051",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.167,  
+                "k2": 0.542,  
+                "k3": 0.568 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.87,  
+                "w": 0.334 
+            }
+        },
+        {
+            "name": "lotka_volterra_052",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.293,  
+                "k2": 0.18,  
+                "k3": 0.113 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.844,  
+                "w": 0.636 
+            }
+        },
+        {
+            "name": "lotka_volterra_053",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.728,  
+                "k2": 0.325,  
+                "k3": 0.569 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.151,  
+                "w": 0.489 
+            }
+        },
+        {
+            "name": "lotka_volterra_054",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.882,  
+                "k2": 0.801,  
+                "k3": 0.371 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.869,  
+                "w": 0.285 
+            }
+        },
+        {
+            "name": "lotka_volterra_055",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.859,  
+                "k2": 0.853,  
+                "k3": 0.739 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.604,  
+                "w": 0.799 
+            }
+        },
+        {
+            "name": "lotka_volterra_056",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.334,  
+                "k2": 0.779,  
+                "k3": 0.594 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.111,  
+                "w": 0.378 
+            }
+        },
+        {
+            "name": "lotka_volterra_057",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.219,  
+                "k2": 0.885,  
+                "k3": 0.483 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.498,  
+                "w": 0.612 
+            }
+        },
+        {
+            "name": "lotka_volterra_058",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.395,  
+                "k2": 0.21,  
+                "k3": 0.758 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.252,  
+                "w": 0.509 
+            }
+        },
+        {
+            "name": "lotka_volterra_059",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.279,  
+                "k2": 0.178,  
+                "k3": 0.79 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.878,  
+                "w": 0.869 
+            }
+        },
+        {
+            "name": "lotka_volterra_060",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.825,  
+                "k2": 0.719,  
+                "k3": 0.367 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.165,  
+                "w": 0.426 
+            }
+        },
+        {
+            "name": "lotka_volterra_061",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.286,  
+                "k2": 0.206,  
+                "k3": 0.143 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.68,  
+                "w": 0.109 
+            }
+        },
+        {
+            "name": "lotka_volterra_062",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.716,  
+                "k2": 0.218,  
+                "k3": 0.164 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.172,  
+                "w": 0.638 
+            }
+        },
+        {
+            "name": "lotka_volterra_063",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.296,  
+                "k2": 0.436,  
+                "k3": 0.546 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.788,  
+                "w": 0.682 
+            }
+        },
+        {
+            "name": "lotka_volterra_064",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.316,  
+                "k2": 0.205,  
+                "k3": 0.144 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.341,  
+                "w": 0.31 
+            }
+        },
+        {
+            "name": "lotka_volterra_065",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.465,  
+                "k2": 0.647,  
+                "k3": 0.657 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.327,  
+                "w": 0.404 
+            }
+        },
+        {
+            "name": "lotka_volterra_066",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.245,  
+                "k2": 0.731,  
+                "k3": 0.145 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.658,  
+                "w": 0.723 
+            }
+        },
+        {
+            "name": "lotka_volterra_067",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.722,  
+                "k2": 0.308,  
+                "k3": 0.399 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.57,  
+                "w": 0.318 
+            }
+        },
+        {
+            "name": "lotka_volterra_068",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.397,  
+                "k2": 0.258,  
+                "k3": 0.468 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.136,  
+                "w": 0.74 
+            }
+        },
+        {
+            "name": "lotka_volterra_069",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.162,  
+                "k2": 0.515,  
+                "k3": 0.345 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.562,  
+                "w": 0.868 
+            }
+        },
+        {
+            "name": "lotka_volterra_070",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.616,  
+                "k2": 0.128,  
+                "k3": 0.444 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.508,  
+                "w": 0.529 
+            }
+        },
+        {
+            "name": "lotka_volterra_071",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.645,  
+                "k2": 0.322,  
+                "k3": 0.203 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.414,  
+                "w": 0.865 
+            }
+        },
+        {
+            "name": "lotka_volterra_072",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.25,  
+                "k2": 0.823,  
+                "k3": 0.535 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.466,  
+                "w": 0.806 
+            }
+        },
+        {
+            "name": "lotka_volterra_073",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.467,  
+                "k2": 0.679,  
+                "k3": 0.419 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.823,  
+                "w": 0.652 
+            }
+        },
+        {
+            "name": "lotka_volterra_074",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.66,  
+                "k2": 0.362,  
+                "k3": 0.705 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.609,  
+                "w": 0.292 
+            }
+        },
+        {
+            "name": "lotka_volterra_075",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.228,  
+                "k2": 0.737,  
+                "k3": 0.867 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.467,  
+                "w": 0.573 
+            }
+        },
+        {
+            "name": "lotka_volterra_076",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.786,  
+                "k2": 0.466,  
+                "k3": 0.861 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.561,  
+                "w": 0.757 
+            }
+        },
+        {
+            "name": "lotka_volterra_077",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.827,  
+                "k2": 0.752,  
+                "k3": 0.228 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.603,  
+                "w": 0.419 
+            }
+        },
+        {
+            "name": "lotka_volterra_078",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.15,  
+                "k2": 0.439,  
+                "k3": 0.307 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.779,  
+                "w": 0.127 
+            }
+        },
+        {
+            "name": "lotka_volterra_079",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.867,  
+                "k2": 0.384,  
+                "k3": 0.385 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.113,  
+                "w": 0.248 
+            }
+        },
+        {
+            "name": "lotka_volterra_080",
+            "system-name": "lotka_volterra",
+            "parameters": {
+                "k1": 0.421,  
+                "k2": 0.843,  
+                "k3": 0.18 
+            },
+            "time": {
+                "start": -0.5,
+                "end": 0.5,
+                "count": 21
+            },
+            "initial": {
+                "r": 0.856,  
+                "w": 0.796 
+            }
+        }
+]
+}

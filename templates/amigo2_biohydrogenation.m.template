@@ -36,8 +36,8 @@ inputs.exps.exp_data{1}=[
 ];
 
 
-inputs.ivpsol.rtol=1.0e-12;                            % [] IVP solver integration tolerances
-inputs.ivpsol.atol=1.0e-12;
+inputs.ivpsol.rtol=1.0e-13;                            % [] IVP solver integration tolerances
+inputs.ivpsol.atol=1.0e-13;
 
 inputs.PEsol.id_global_theta=char('k5', 'k6', 'k7');
 inputs.PEsol.global_theta_max={{upper_bound}}*ones(1,3);
@@ -73,13 +73,13 @@ inputs.nlpsol.nlpsolver='eSS';                      % Solver used for optimizati
 inputs.nlpsol.eSS.log_var=1:({{num_states}}+{{num_parameters}}); 
 inputs.nlpsol.eSS.local.solver = 'nl2sol';
 inputs.nlpsol.eSS.local.finish = 'nl2sol';
-inputs.nlpsol.eSS.maxeval = 100000;                  % Maximum number of cost function evaluations
+inputs.nlpsol.eSS.maxeval = 200000;                  % Maximum number of cost function evaluations
 inputs.nlpsol.eSS.maxtime = 600;                    % Maximum time spent for optimization
-inputs.nlpsol.eSS.local.nl2sol.maxiter             =      1000;
-inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      2000;
-inputs.nlpsol.eSS.local.nl2sol.tolrfun             =     1e-10;
-inputs.nlpsol.eSS.local.nl2sol.tolafun             =     1e-10;
-inputs.nlpsol.eSS.local.nl2sol.objrtol			 =     1e-10;
+inputs.nlpsol.eSS.local.nl2sol.maxiter             =      100000;
+inputs.nlpsol.eSS.local.nl2sol.maxfeval            =      100000;
+inputs.nlpsol.eSS.local.nl2sol.tolrfun             =     1e-13;
+inputs.nlpsol.eSS.local.nl2sol.tolafun             =     1e-13;
+inputs.nlpsol.eSS.local.nl2sol.objrtol			 =     1e-13;
 % inputs.exps.u_interp{1}='sustained';          % Stimuli definition for experiment 1
                                               % Initial and final time
 %inputs.exps.u{1}=1;                           % Values of the inputs for exp 1

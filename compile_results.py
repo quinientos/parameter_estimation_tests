@@ -21,7 +21,9 @@ from collections import defaultdict
 
 #PLATFORMS = ["pe", "iqm", "sciml"]
 #PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
-PLATFORMS = ["amigo2"]
+#PLATFORMS = ["amigo2"]
+PLATFORMS = ["pe"]
+NUM_TESTS = 50
 
 def parse_output(output, system, platform):
     if platform == "pe":
@@ -64,7 +66,7 @@ def compile_results(system, instance, bound, platform, csv_writer):
 
     #pbar.update(1)
     #pbar.set_description(res_file)
-    print(instance["name"]+"_"+str(bound))
+    #print(instance["name"]+"_"+str(bound))
 
     df = pd.DataFrame()  # create a dataframe to store the results
     results_dict = defaultdict(list)
@@ -151,8 +153,8 @@ def main(args):
                 csvwriter.writerow([""] + system["parameter-variables"] + system["state-variables"] + ["", "RMSRE"])        
                 for bound in range(1,4):
                     csvwriter.writerow(["Searching in [0.0, {}.0]".format(str(bound))])
-                    for i in range(10):
-                        instance = instances_by_name[system["name"] + "_" + str(i)]
+                    for i in range(NUM_TESTS):
+                        instance = instances_by_name[system["name"] + "_" + str(i).zfill(3)]
                         print(instance["name"])
                         compile_results(system, instance, bound, platform, csvwriter)            
 

@@ -1,0 +1,184 @@
+{
+	"instances": [
+		{
+			"name": "fitzhugh_nagumo_0",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.539,  
+            "a": 0.672,  
+            "b": 0.582 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.536,  
+                "R": 0.439 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_1",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.617,  
+            "a": 0.45,  
+            "b": 0.813 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.871,  
+                "R": 0.407 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_2",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.733,  
+            "a": 0.523,  
+            "b": 0.554 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.84,  
+                "R": 0.157 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_3",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.17,  
+            "a": 0.116,  
+            "b": 0.766 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.723,  
+                "R": 0.796 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_4",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.883,  
+            "a": 0.739,  
+            "b": 0.469 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.724,  
+                "R": 0.195 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_5",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.612,  
+            "a": 0.215,  
+            "b": 0.856 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.517,  
+                "R": 0.432 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_6",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.312,  
+            "a": 0.719,  
+            "b": 0.465 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.555,  
+                "R": 0.115 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_7",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.594,  
+            "a": 0.59,  
+            "b": 0.594 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.855,  
+                "R": 0.645 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_8",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.388,  
+            "a": 0.45,  
+            "b": 0.658 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.148,  
+                "R": 0.633 
+        }
+		},
+		{
+			"name": "fitzhugh_nagumo_9",
+			"system-name": "fitzhugh_nagumo",
+			"parameters": {
+            "g": 0.637,  
+            "a": 0.268,  
+            "b": 0.203 
+        },
+			"time": {
+				"start": -0.5,
+				"end": 0.5,
+				"count": 21
+        },
+			"initial": {
+                "V": 0.352,  
+                "R": 0.391 
+        }
+		}
+	]
+}

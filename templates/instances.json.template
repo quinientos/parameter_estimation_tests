@@ -3,7 +3,7 @@
     {{#instances}}
 		{
 			"name": "{{name}}",
-			"system-name": "{{sys_name}}",
+			"system-name": "{{system-name}}",
 			"parameters": {
             {{#parameters}}
             "{{varname}}": {{true}}{{comma}} 
