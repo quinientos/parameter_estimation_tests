@@ -2,8 +2,7 @@ push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
 using ModelingToolkit, DifferentialEquations
 using ParameterEstimation
 using JLD2, FileIO
-#solver = Tsit5()
-solver = AutoVern8(Rodas4())
+solver = Tsit5()
 
 @parameters k5 k6 k7 k8 k9 k10
 @variables t x4(t) x5(t) x6(t) x7(t) y1(t) y2(t)
@@ -20,8 +19,8 @@ measured_quantities = [
         y1 ~ x4,
         y2 ~ x5,
 ]
-ic = [0.523, 0.094, 0.576, 0.929]
-p_true = [0.318, 0.414, 0.064, 0.692, 0.567, 0.265]
+ic = [0.519, 0.175, 0.561, 0.843]
+p_true = [0.354, 0.431, 0.151, 0.654, 0.553, 0.312]
 time_interval = [-0.5, 0.5]
 datasize = 21
 

@@ -2,8 +2,7 @@ push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
 using ModelingToolkit, DifferentialEquations
 using ParameterEstimation
 using JLD2, FileIO
-#solver = Tsit5()
-solver = AutoVern8(Rodas4())
+solver = Tsit5()
 
 @parameters muN muEE muLE muLL muM muP muPE muPL deltaNE deltaEL deltaLM rhoE rhoP
 @variables t n(t) e(t) s(t) m(t) p(t) y1(t) y2(t) y3(t) y4(t)
@@ -18,13 +17,13 @@ parameters = [muN, muEE, muLE, muLL, muM, muP, muPE, muPL, deltaNE, deltaEL, del
                              D(p) ~ p * p * rhoP - p * muP - e * p * muPE - s * p * muPL,
                          ], t, states, parameters)
 measured_quantities = [
-        y1 ~ e,
-        y2 ~ n,
+        y1 ~ n,
+        y2 ~ e,
         y3 ~ s+m,
         y4 ~ p,
 ]
-ic = [0.774, 0.456, 0.568, 0.019, 0.618]
-p_true = [0.778, 0.87, 0.979, 0.799, 0.461, 0.781, 0.118, 0.64, 0.143, 0.945, 0.522, 0.415, 0.265]
+ic = [0.719, 0.465, 0.555, 0.115, 0.594]
+p_true = [0.723, 0.796, 0.883, 0.739, 0.469, 0.724, 0.195, 0.612, 0.215, 0.856, 0.517, 0.432, 0.312]
 time_interval = [-0.5, 0.5]
 datasize = 21
 

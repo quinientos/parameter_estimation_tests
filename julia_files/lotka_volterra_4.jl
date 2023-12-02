@@ -2,8 +2,7 @@ push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
 using ModelingToolkit, DifferentialEquations
 using ParameterEstimation
 using JLD2, FileIO
-#solver = Tsit5()
-solver = AutoVern8(Rodas4())
+solver = Tsit5()
 
 @parameters k1 k2 k3
 @variables t r(t) w(t) y1(t)
@@ -11,14 +10,14 @@ D = Differential(t)
 states = [r, w]
 parameters = [k1, k2, k3]
 @named model = ODESystem([
-                             D(r) ~ k1*r - k2*w,
+                             D(r) ~ k1*r - k2*r*w,
                              D(w) ~ k2*r*w - k3*w,
                          ], t, states, parameters)
 measured_quantities = [
         y1 ~ r,
 ]
-ic = [0.781, 0.118]
-p_true = [0.979, 0.799, 0.461]
+ic = [0.724, 0.195]
+p_true = [0.883, 0.739, 0.469]
 time_interval = [-0.5, 0.5]
 datasize = 21
 
