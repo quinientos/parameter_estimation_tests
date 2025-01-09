@@ -21,8 +21,8 @@ from collections import defaultdict
 
 #PLATFORMS = ["pe", "iqm", "sciml"]
 #PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
-#PLATFORMS = ["amigo2"]
-PLATFORMS = ["pe"]
+PLATFORMS = ["amigo2"]
+# PLATFORMS = ["pe"]
 NUM_TESTS = 50
 
 def parse_output(output, system, platform):
@@ -155,7 +155,7 @@ def main(args):
                 for bound in range(1,4):
                     csvwriter.writerow(["Searching in [0.0, {}.0]".format(str(bound))])
                     for i in range(NUM_TESTS):
-                        instance = instances_by_name[system["name"] + "_" + str(i).zfill(3)]
+                        instance = instances_by_name[system["name"] + "_" + str(i)]
                         print(instance["name"])
                         compile_results(system, instance, bound, platform, csvwriter)            
 
