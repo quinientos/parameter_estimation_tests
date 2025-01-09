@@ -19,6 +19,7 @@ from utils import *
 
 NUM_TESTS = 10
 TEST_INTERVAL = [-0.5, 0.5]
+PARAM_INTERVAL = [0.1, 0.9]
 NUM_PTS = 21
 # Sasha: modified system names
 SCIML_DAT_STR = {
@@ -115,8 +116,8 @@ def main(args):
         np.random.seed(0)
         while i < NUM_TESTS:
             instance_name = instance_basename + str(i)
-            param_values = np.random.rand(1,len(system["parameter-variables"])).round(3).tolist()[0]
-            state_values = np.random.rand(1,len(system["state-variables"])).round(3).tolist()[0]
+            param_values = np.random.uniform(low=PARAM_INTERVAL[0], high=PARAM_INTERVAL[1], size=len(system["parameter-variables"])).round(3).tolist()
+            state_values = np.random.uniform(low=PARAM_INTERVAL[0], high=PARAM_INTERVAL[1], size=len(system["state-variables"])).round(3).tolist()
             instance = generate_instance(system, instance_name, param_values, state_values)
 
             os.makedirs(os.path.dirname('./julia_files/'), exist_ok=True)
