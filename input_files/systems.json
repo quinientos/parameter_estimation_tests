@@ -4,6 +4,7 @@
     "crauste",
     "daisy-mamil3",
     "daisy-mamil4",
+    "fitzhugh-nagumo",
 		"harmonic",
     "hiv",
 		"lotka-volterra",
@@ -25,7 +26,7 @@
 			"parameter-variables": ["muN", "muEE", "muLE", "muLL", "muM", "muP", "muPE", "muPL", "deltaNE", "deltaEL", "deltaLM", "rhoE", "rhoP"],
       "measurement-variables": ["y1", "y2", "y3", "y4"],
 			"ode-system": {"n": "-1 * n * muN - n * p * deltaNE", "e": "n * p * deltaNE - e * e * muEE - e * deltaEL + e * p * rhoE", "s": "s * deltaEL - s * deltaLM - s * s * muLL - e * s * muLE", "m": "s * deltaLM - muM * m", "p": "p * p * rhoP - p * muP - e * p * muPE - s * p * muPL"},
-			"measurements": {"y1": "e", "y2": "n", "y3": "s+m", "y4": "p"}
+			"measurements": {"y1": "n", "y2": "e", "y3": "s+m", "y4": "p"}
     }, 
     {
       "name": "daisy-mamil3",
@@ -33,7 +34,7 @@
 			"parameter-variables": ["a12", "a13", "a21", "a31", "a01"],
       "measurement-variables": ["y1", "y2"],
 			"ode-system": {"x1": "-(a21 + a31 + a01) * x1 + a12 * x2 + a13 * x3", "x2": "a21 * x1 - a12 * x2", "x3": "a31 * x1 - a13 * x3"},
-			"measurements": {"y1": "x2", "y2": "x1"}
+			"measurements": {"y1": "x1", "y2": "x2"}
     }, 
     {
       "name": "daisy-mamil4",
@@ -42,6 +43,14 @@
       "measurement-variables": ["y1", "y2", "y3"],
       "ode-system": { "x1": "-k01 * x1 + k12 * x2 + k13 * x3 + k14 * x4 - k21 * x1 - k31 * x1 - k41 * x1", "x2": "-k12 * x2 + k21 * x1", "x3": "-k13 * x3 + k31 * x1", "x4": "-k14 * x4 + k41 * x1"}, 
       "measurements": {"y1": "x1", "y2": "x2", "y3": "x3 + x4"}
+    },
+    {
+      "name": "fitzhugh-nagumo",
+      "state-variables": ["V", "R"],
+                       "parameter-variables": ["g", "a", "b"],
+      "measurement-variables": ["y1"],
+                       "ode-system": {"V": "g * (V - V^3 / 3 + R)", "R": "1 / g * (V - a + b * R)"},
+                       "measurements": { "y1": "V" }
     }, 
 		{
 			"name": "harmonic",
@@ -57,14 +66,14 @@
 			"parameter-variables": ["lm", "d", "beta", "a", "k", "uu", "c", "q", "b", "h"],
       "measurement-variables": ["y1", "y2", "y3", "y4"],
 			"ode-system": {"x": "lm - d * x - beta * x * vv", "yy": "beta * x * vv - a * yy", "vv": "k * yy - uu * vv", "w": "c * x * yy * w - c * q * yy * w - b * w", "z": "c * q * yy * w - h * z"},
-			"measurements": {"y1": "x", "y2": "z", "y3": "w", "y4": "yy+vv"}
+			"measurements": {"y1": "w", "y2": "z", "y3": "x", "y4": "yy+vv"}
     }, 
 		{
 			"name": "lotka-volterra",
 			"state-variables": ["r", "w"],
 			"parameter-variables": ["k1", "k2", "k3"],
       "measurement-variables": ["y1"],
-			"ode-system": {"r": "k1*r - k2*w", "w": "k2*r*w - k3*w"},
+			"ode-system": {"r": "k1*r - k2*r*w", "w": "k2*r*w - k3*w"},
 			"measurements": { "y1": "r" }
 		},
     {

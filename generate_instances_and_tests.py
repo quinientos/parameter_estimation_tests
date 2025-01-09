@@ -18,18 +18,20 @@ import argparse
 from utils import *
 
 NUM_TESTS = 10
-TEST_INTERVAL = [0.0, 1.0]
+TEST_INTERVAL = [-0.5, 0.5]
 NUM_PTS = 21
+# Sasha: modified system names
 SCIML_DAT_STR = {
 "biohydrogenation": "(sol[1, :]), (sol[2, :])",
 "crauste":"(sol[1, :]), (sol[2, :]), (sol[3, :] .+ sol[4, :]), (sol[5, :])",
-"daisy_mamil3": "vcat(sol[1, :]), vcat(sol[2, :])",
-"daisy_mamil4": "(sol[1, :]), (sol[2, :]), (sol[3, :] + sol[4, :])]",
+"daisy-mamil3": "vcat(sol[1, :]), vcat(sol[2, :])",
+"daisy-mamil4": "(sol[1, :]), (sol[2, :]), (sol[3, :] + sol[4, :])]",
 "harmonic": "vcat(sol[1, :]), vcat(sol[2, :])",
 "hiv": "(sol[4, :]), (sol[5, :]), (sol[1, :]), (sol[2, :] .+ sol[3, :])",
-"lotka_volterra": "sol[1, :]",
+"lotka-volterra": "sol[1, :]",
 "seir": "(sol[3, :]), (sol[4, :])",
-"vanderpol": "(sol[1, :]), (sol[2, :])"
+"vanderpol": "(sol[1, :]), (sol[2, :])",
+"fitzhugh-nagumo": "(sol[1, :])"
 }
 
 def generate_instance(system, instance_name, param_vals, initial_vals):
@@ -99,6 +101,7 @@ def main(args):
     instances = {"instances":[]}
     for system in systems["systems"]:
         print(system["name"])
+        
         instance_basename = system["name"] + "_"
         #instance_basename = "bh_rand_"
         
@@ -146,17 +149,29 @@ def main(args):
                 continue
         
             df = pd.read_csv(settings["datadir"] + '/csv/' + instance["name"] + '.csv', header=None, index_col=False)
-            settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False)#.replace("  ", ", ")
+            settings["data"] = df[list(range(1, settings["num_measurements"]+1))].to_string(index=False, header=False, index_names=False) 
 
+            print("Instance:", instance["name"])
+            print("df: ", df)
+
+            # Sasha: moved below
+            """
             with open('test_files/pe/' + instance["name"] + '.jl', 'w') as output_file:
                 settings["at_time"] = (TEST_INTERVAL[1] - TEST_INTERVAL[0])/2 + TEST_INTERVAL[0]
                 testfile = chevron.render(open('templates/pe.jl.template'), settings)
                 output_file.write(testfile)
+            """
 
             for bounds in [[0.0, 1.0], [0.0, 2.0], [0.0, 3.0]]:
                 file_suffix = "_" + str(int(bounds[1]))
                 settings["lower_bound"] = bounds[0]
                 settings["upper_bound"] = bounds[1]
+
+
+                with open('test_files/pe/' + instance["name"] + file_suffix + '.jl', 'w') as output_file:
+                    settings["at_time"] = (TEST_INTERVAL[1] - TEST_INTERVAL[0])/2 + TEST_INTERVAL[0]
+                    testfile = chevron.render(open('templates/pe.jl.template'), settings)
+                    output_file.write(testfile)
 
                 with open('test_files/amigo2/' + instance["name"] + file_suffix + '.m', 'w') as output_file:
                     if system["name"] == "daisy-mamil4":

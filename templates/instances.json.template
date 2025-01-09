@@ -19,7 +19,7 @@
                 "{{varname}}": {{value}}{{comma}} 
             {{/states}}
         }
-		},
+		}
     {{/instances}}
 	]
 }

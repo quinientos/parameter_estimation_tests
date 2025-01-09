@@ -62,6 +62,7 @@ def rmsre(true_vals, res_vals):
     return (total/len(true_vals))**(0.5)
 
 def compile_results(system, instance, bound, platform, csv_writer):
+
     res_file = "./test_files/"+ platform + "/outputs/{}.out".format(instance["name"]+"_"+str(bound))
 
     #pbar.update(1)
@@ -139,7 +140,7 @@ def main(args):
     instances_by_name = {}
     for system in systems["systems"]:
         systems_by_name[system["name"]] = system
-    
+   
     for instance in instances["instances"]:
         instances_by_name[instance["name"]] = instance
 
@@ -177,8 +178,8 @@ def getArgs(args):
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--data', default="./data")
-    parser.add_argument('-i', '--instances', default="input_files/all_instances.json")
-    parser.add_argument('-s', '--systems', default="input_files/all_systems.json")
+    parser.add_argument('-i', '--instances', default="input_files/instances.json")
+    parser.add_argument('-s', '--systems', default="input_files/systems.json")
     parser.add_argument('-o', '--outputs', default="outputs")
     #add other options as they come up
     args = parser.parse_args()

@@ -44,7 +44,7 @@ def parse_output(output):
 
 def rmsre(true_vals, res_vals):
     total = sum([ (abs(true_vals[key] - res_vals[key])/true_vals[key])**2 for key in true_vals.keys() ])
-    return math.sqrt(total/len(true_vals))**(0.5)
+    return math.sqrt(total/len(true_vals))
 
 def compile_results(system, instance, bound, platform, csv_writer):
     res_file = "./test_files/"+ platform + "/outputs/{}.out".format(instance["name"]+"_"+str(bound))
@@ -161,8 +161,8 @@ def getArgs(args):
 if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d', '--data', default="./data")
-    parser.add_argument('-i', '--instances', default="input_files/all_instances.json")
-    parser.add_argument('-s', '--systems', default="input_files/all_systems.json")
+    parser.add_argument('-i', '--instances', default="input_files/instances.json")
+    parser.add_argument('-s', '--systems', default="input_files/systems.json")
     parser.add_argument('-o', '--outputs', default="outputs")
     #add other options as they come up
     args = parser.parse_args()

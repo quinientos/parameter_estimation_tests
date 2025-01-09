@@ -1,6 +1,6 @@
 push!(LOAD_PATH, "/home/soogo/ParameterEstimation.jl")
 using ModelingToolkit, DifferentialEquations
-using ParameterEstimation
+using ParameterEstimation, Distributions
 using JLD2, FileIO
 solver = Tsit5()
 
@@ -26,6 +26,14 @@ datasize = {{time_count}}
 
 data_sample = ParameterEstimation.sample_data(model, measured_quantities, convert(Array{Float64},time_interval),
                                               p_true, ic, datasize; solver = solver)
+
+n = Normal(0.0, 1e-7)
+for (key, value) in data_sample
+	if key == "t"
+		continue
+	end
+	# data_sample[key] = data_sample[key] .* (1. .+ rand(n, length(data_sample[key])))
+end
 
 ks = data_sample.keys
 dat_str = ""
