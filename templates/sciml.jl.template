@@ -36,31 +36,31 @@ sampling_times = range(time_interval[1], time_interval[2], length = datasize)
 data_sample = load("{{datadir}}/julia/{{name}}.jld2", "data")
 
 p_rand = rand(Uniform({{lower_bound}}, {{upper_bound}}), length(ic) + length(p_true)) # Random Parameters
-prob = ODEProblem{false}(model, ic, time_interval, p_rand)
+prob = ODEProblem(complete(model), ic, time_interval, p_true)
 sol = solve(remake(prob, u0 = p_rand[1:length(ic)]), solver,
             p = p_rand[(length(ic) + 1):end],
             saveat = sampling_times;
             abstol = 1e-13, reltol = 1e-13)
 
 function loss(p)
-    sol = solve(remake(prob; u0 = SVector{ {{num_states}} }(p[1:length(ic)])), Tsit5(), p = p[(length(ic) + 1):end],
+    sol = solve(remake(prob; u0 = p[1:length(ic)]), Tsit5(), p = p[(length(ic) + 1):end],
                 saveat = sampling_times;
                 abstol = 1e-13, reltol = 1e-13)
     data_true = [data_sample[v.rhs] for v in measured_quantities]
     data = [{{data_expr}}]
     if sol.retcode == ReturnCode.Success
         loss = sum(sum((data[i] .- data_true[i]) .^ 2) for i in eachindex(data))
-        return loss, sol
+        return loss
     else
-        return Inf, sol
+        return Inf
     end
 end
 
-callback = function (p, l, pred)
+callback = function (p, l)
     return false
 end
 
-adtype = Optimization.AutoForwardDiff()
+adtype = Optimization.AutoZygote()
 optf = Optimization.OptimizationFunction((x, p) -> loss(x), adtype)
 optprob = Optimization.OptimizationProblem(optf, p_rand, lb = {{lower_bound}}*ones({{num_states}}+{{num_parameters}}), ub = {{upper_bound}}*ones({{num_states}}+{{num_parameters}}))
 
