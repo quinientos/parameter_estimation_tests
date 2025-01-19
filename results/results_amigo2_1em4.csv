@@ -1,0 +1,37 @@
+,RMSRE mean,RMSRE median,RMSRE min
+"Searching in [0.0, 1.0]",,,
+biohydrogenation,N/A,N/A,N/A
+crauste,0.28295529118239443,0.28295529118239443,0.28295529118239443
+daisy-mamil3,inf,inf,inf
+daisy-mamil4,N/A,N/A,N/A
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,N/A,N/A,N/A
+hiv,N/A,N/A,N/A
+lotka-volterra,N/A,N/A,N/A
+seir,N/A,N/A,N/A
+vanderpol,N/A,N/A,N/A
+,,,
+"Searching in [0.0, 2.0]",,,
+biohydrogenation,N/A,N/A,N/A
+crauste,inf,inf,inf
+daisy-mamil3,N/A,N/A,N/A
+daisy-mamil4,N/A,N/A,N/A
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,N/A,N/A,N/A
+hiv,N/A,N/A,N/A
+lotka-volterra,N/A,N/A,N/A
+seir,N/A,N/A,N/A
+vanderpol,N/A,N/A,N/A
+,,,
+"Searching in [0.0, 3.0]",,,
+biohydrogenation,N/A,N/A,N/A
+crauste,N/A,N/A,N/A
+daisy-mamil3,N/A,N/A,N/A
+daisy-mamil4,N/A,N/A,N/A
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,N/A,N/A,N/A
+hiv,N/A,N/A,N/A
+lotka-volterra,N/A,N/A,N/A
+seir,N/A,N/A,N/A
+vanderpol,N/A,N/A,N/A
+,,,
