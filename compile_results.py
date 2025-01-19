@@ -18,12 +18,13 @@ from utils import *
 import argparse
 from tqdm.auto import tqdm
 from collections import defaultdict
+from statistics import median, mean
 
 #PLATFORMS = ["pe", "iqm", "sciml"]
-#PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
-PLATFORMS = ["amigo2"]
+PLATFORMS = ["pe", "amigo2", "iqm", "sciml"]
+#PLATFORMS = ["iqm"]
 # PLATFORMS = ["pe"]
-NUM_TESTS = 50
+NUM_TESTS = 10
 
 def parse_output(output, system, platform):
     if platform == "pe":
@@ -129,7 +130,7 @@ def compile_results(system, instance, bound, platform, csv_writer):
     csv_writer.writerow(rel_errs + ["", min_err] if min_ind != -1 else [""]*total_num_vars + ["", min_err])
     csv_writer.writerow(["" for i in range(1+len(system["parameter-variables"]) + len(system["state-variables"]))])
 
-    return
+    return [min_err]
 
 
 def main(args): 
@@ -144,6 +145,7 @@ def main(args):
     for instance in instances["instances"]:
         instances_by_name[instance["name"]] = instance
 
+    stats = {platform : {system["name"] : {bound : {i : [] for i in range(NUM_TESTS)} for bound in range(1,4)} for system in systems["systems"]} for platform in PLATFORMS}
     for system in systems["systems"]:
         print(system["name"])
         for platform in PLATFORMS:
@@ -157,7 +159,30 @@ def main(args):
                     for i in range(NUM_TESTS):
                         instance = instances_by_name[system["name"] + "_" + str(i)]
                         print(instance["name"])
-                        compile_results(system, instance, bound, platform, csvwriter)            
+                        try:
+                            stats[platform][system["name"]][bound][i] = compile_results(system, instance, bound, platform, csvwriter)            
+                        except:
+                            print(f'Fail: {system["name"]}')
+
+    for platform in PLATFORMS:
+        print(f"Compiling overall file for {platform}")
+        with open("table_files/"+"results_" + platform + ".csv", "w") as csv_file:
+            csvwriter = csv.writer(csv_file)
+            csvwriter.writerow([""] + ["RMSRE mean"] + ["RMSRE median"] + ["RMSRE min"])
+            for bound in range(1,4):
+                    csvwriter.writerow(["Searching in [0.0, {}.0]".format(str(bound))])
+                    for system in systems["systems"]:
+                        rmsres = [stats[platform][system["name"]][bound][i] for i in range(NUM_TESTS)]
+                        rmsres = filter(lambda x: len(x) > 0, rmsres)
+                        rmsres = [x[0] for x in rmsres]
+                        if len(rmsres) == 0:
+                            rmsre_mean, rmsre_median, rmsre_min = "N/A", "N/A", "N/A"
+                        else:
+                            rmsre_mean = mean(rmsres)
+                            rmsre_median = median(rmsres)
+                            rmsre_min = min(rmsres)
+                        csvwriter.writerow([system["name"]] + [rmsre_mean, rmsre_median, rmsre_min])
+                    csvwriter.writerow(["", "", "", ""])
 
     
 
