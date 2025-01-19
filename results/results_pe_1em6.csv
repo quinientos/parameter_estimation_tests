@@ -1,0 +1,37 @@
+,RMSRE mean,RMSRE median,RMSRE min
+"Searching in [0.0, 1.0]"
+biohydrogenation,inf,inf,inf
+crauste,inf,inf,inf
+daisy-mamil3,inf,inf,inf
+daisy-mamil4,inf,inf,inf
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,0.0001556661536409311,0.0,0.0
+hiv,inf,inf,0.2271546304905018
+lotka-volterra,inf,inf,inf
+seir,inf,inf,inf
+vanderpol,0.0011112603351384786,0.0,0.0
+,,,
+"Searching in [0.0, 2.0]"
+biohydrogenation,inf,inf,inf
+crauste,inf,inf,inf
+daisy-mamil3,inf,inf,0.5283559302411805
+daisy-mamil4,inf,inf,inf
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,0.0001556661536409311,0.0,0.0
+hiv,inf,inf,0.2271546304905018
+lotka-volterra,inf,inf,inf
+seir,inf,inf,inf
+vanderpol,0.0011112603351384786,0.0,0.0
+,,,
+"Searching in [0.0, 3.0]"
+biohydrogenation,inf,inf,inf
+crauste,inf,inf,inf
+daisy-mamil3,inf,inf,0.5283559302411805
+daisy-mamil4,inf,inf,inf
+fitzhugh-nagumo,N/A,N/A,N/A
+harmonic,0.0001556661536409311,0.0,0.0
+hiv,inf,inf,0.2271546304905018
+lotka-volterra,inf,inf,inf
+seir,inf,inf,inf
+vanderpol,0.0011112603351384786,0.0,0.0
+,,,
