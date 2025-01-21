@@ -6,7 +6,7 @@ using JLD2, FileIO
 
 solver = Tsit5()
 
-name = "lotka_volterra_0"
+name = "lotka-volterra_0"
 @parameters k1 k2 k3
 @variables t r(t) w(t) y1(t)
 D = Differential(t)
@@ -28,10 +28,10 @@ ic_constraints = Dict((r=>(0.0, 1.0)), (w=>(0.0, 1.0)))
 time_interval = [-0.5, 0.5]
 datasize = 21
 
-data_sample = load("/home/soogo/parameter_estimation_tests/data/julia/lotka_volterra_0.jld2", "data")
+# data_sample = load("/home/ad7760/parameter_estimation_tests/data/julia/lotka-volterra_0.jld2", "data")
 
-#data_sample = ParameterEstimation.sample_data(model, measured_quantities, convert(Array{Float64},time_interval),
-#                                              p_true, ic, datasize; solver = solver)
+data_sample = ParameterEstimation.sample_data(model, measured_quantities, convert(Array{Float64},time_interval),
+                                              p_true, ic, datasize; solver = solver)
 
 @time res = ParameterEstimation.estimate(model, measured_quantities, data_sample;
             solver = solver, interpolators = Dict("AAA" => ParameterEstimation.aaad), parameter_constraints = p_constraints, ic_constraints = ic_constraints)
