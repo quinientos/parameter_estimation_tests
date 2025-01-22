@@ -1,10 +1,10 @@
 ,RMSRE mean,RMSRE median,RMSRE min
 "Searching in [0.0, 1.0]",,,
 biohydrogenation,0.0,0.0,0.0
-crauste,inf,0.0,0.0
+crauste,0.0,0.0,0.0
 daisy-mamil3,0.0,0.0,0.0
 daisy-mamil4,0.0017564588791111424,0.0,0.0
-fitzhugh-nagumo,N/A,N/A,N/A
+fitzhugh-nagumo,0.0,0.0,0.0
 harmonic,0.0,0.0,0.0
 hiv,0.0,0.0,0.0
 lotka-volterra,0.0,0.0,0.0
@@ -16,7 +16,7 @@ biohydrogenation,0.0,0.0,0.0
 crauste,0.0,0.0,0.0
 daisy-mamil3,0.0,0.0,0.0
 daisy-mamil4,0.21869728215566908,0.0,0.0
-fitzhugh-nagumo,N/A,N/A,N/A
+fitzhugh-nagumo,0.0,0.0,0.0
 harmonic,0.0,0.0,0.0
 hiv,0.0,0.0,0.0
 lotka-volterra,0.0,0.0,0.0
@@ -28,7 +28,7 @@ biohydrogenation,0.0,0.0,0.0
 crauste,0.0,0.0,0.0
 daisy-mamil3,0.0,0.0,0.0
 daisy-mamil4,0.0017564588791111424,0.0,0.0
-fitzhugh-nagumo,N/A,N/A,N/A
+fitzhugh-nagumo,0.0,0.0,0.0
 harmonic,0.0,0.0,0.0
 hiv,0.0,0.0,0.0
 lotka-volterra,0.0,0.0,0.0
