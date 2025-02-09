@@ -1,5 +1,4 @@
-{
-	"instances": [
+{ "instances": [
 		{
 			"name": "biohydrogenation_0",
 			"system-name": "biohydrogenation",
@@ -14,7 +13,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x4": 0.45,  
@@ -37,197 +36,13 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x4": 0.116,  
                 "x5": 0.766,  
                 "x6": 0.723,  
                 "x7": 0.796 
-        }
-		},
-		{
-			"name": "biohydrogenation_2",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.883,  
-            "k6": 0.739,  
-            "k7": 0.469,  
-            "k8": 0.724,  
-            "k9": 0.195,  
-            "k10": 0.612 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.215,  
-                "x5": 0.856,  
-                "x6": 0.517,  
-                "x7": 0.432 
-        }
-		},
-		{
-			"name": "biohydrogenation_3",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.312,  
-            "k6": 0.719,  
-            "k7": 0.465,  
-            "k8": 0.555,  
-            "k9": 0.115,  
-            "k10": 0.594 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.59,  
-                "x5": 0.594,  
-                "x6": 0.855,  
-                "x7": 0.645 
-        }
-		},
-		{
-			"name": "biohydrogenation_4",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.388,  
-            "k6": 0.45,  
-            "k7": 0.658,  
-            "k8": 0.148,  
-            "k9": 0.633,  
-            "k10": 0.637 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.268,  
-                "x5": 0.203,  
-                "x6": 0.352,  
-                "x7": 0.391 
-        }
-		},
-		{
-			"name": "biohydrogenation_5",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.556,  
-            "k6": 0.451,  
-            "k7": 0.891,  
-            "k8": 0.182,  
-            "k9": 0.267,  
-            "k10": 0.229 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.622,  
-                "x5": 0.303,  
-                "x6": 0.473,  
-                "x7": 0.296 
-        }
-		},
-		{
-			"name": "biohydrogenation_6",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.227,  
-            "k6": 0.188,  
-            "k7": 0.625,  
-            "k8": 0.211,  
-            "k9": 0.257,  
-            "k10": 0.395 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.757,  
-                "x5": 0.178,  
-                "x6": 0.77,  
-                "x7": 0.177 
-        }
-		},
-		{
-			"name": "biohydrogenation_7",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.881,  
-            "k6": 0.475,  
-            "k7": 0.881,  
-            "k8": 0.584,  
-            "k9": 0.691,  
-            "k10": 0.131 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.326,  
-                "x5": 0.196,  
-                "x6": 0.337,  
-                "x7": 0.195 
-        }
-		},
-		{
-			"name": "biohydrogenation_8",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.354,  
-            "k6": 0.431,  
-            "k7": 0.151,  
-            "k8": 0.654,  
-            "k9": 0.553,  
-            "k10": 0.312 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.519,  
-                "x5": 0.175,  
-                "x6": 0.561,  
-                "x7": 0.843 
-        }
-		},
-		{
-			"name": "biohydrogenation_9",
-			"system-name": "biohydrogenation",
-			"parameters": {
-            "k5": 0.355,  
-            "k6": 0.634,  
-            "k7": 0.205,  
-            "k8": 0.673,  
-            "k9": 0.332,  
-            "k10": 0.247 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x4": 0.569,  
-                "x5": 0.116,  
-                "x6": 0.763,  
-                "x7": 0.104 
         }
 		},
 		{
@@ -251,7 +66,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "n": 0.84,  
@@ -282,7 +97,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "n": 0.719,  
@@ -293,256 +108,8 @@
         }
 		},
 		{
-			"name": "crauste_2",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.59,  
-            "muEE": 0.594,  
-            "muLE": 0.855,  
-            "muLL": 0.645,  
-            "muM": 0.388,  
-            "muP": 0.45,  
-            "muPE": 0.658,  
-            "muPL": 0.148,  
-            "deltaNE": 0.633,  
-            "deltaEL": 0.637,  
-            "deltaLM": 0.268,  
-            "rhoE": 0.203,  
-            "rhoP": 0.352 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.391,  
-                "e": 0.556,  
-                "s": 0.451,  
-                "m": 0.891,  
-                "p": 0.182 
-        }
-		},
-		{
-			"name": "crauste_3",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.267,  
-            "muEE": 0.229,  
-            "muLE": 0.622,  
-            "muLL": 0.303,  
-            "muM": 0.473,  
-            "muP": 0.296,  
-            "muPE": 0.227,  
-            "muPL": 0.188,  
-            "deltaNE": 0.625,  
-            "deltaEL": 0.211,  
-            "deltaLM": 0.257,  
-            "rhoE": 0.395,  
-            "rhoP": 0.757 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.178,  
-                "e": 0.77,  
-                "s": 0.177,  
-                "m": 0.881,  
-                "p": 0.475 
-        }
-		},
-		{
-			"name": "crauste_4",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.881,  
-            "muEE": 0.584,  
-            "muLE": 0.691,  
-            "muLL": 0.131,  
-            "muM": 0.326,  
-            "muP": 0.196,  
-            "muPE": 0.337,  
-            "muPL": 0.195,  
-            "deltaNE": 0.354,  
-            "deltaEL": 0.431,  
-            "deltaLM": 0.151,  
-            "rhoE": 0.654,  
-            "rhoP": 0.553 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.312,  
-                "e": 0.519,  
-                "s": 0.175,  
-                "m": 0.561,  
-                "p": 0.843 
-        }
-		},
-		{
-			"name": "crauste_5",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.355,  
-            "muEE": 0.634,  
-            "muLE": 0.205,  
-            "muLL": 0.673,  
-            "muM": 0.332,  
-            "muP": 0.247,  
-            "muPE": 0.569,  
-            "muPL": 0.116,  
-            "deltaNE": 0.763,  
-            "deltaEL": 0.104,  
-            "deltaLM": 0.642,  
-            "rhoE": 0.316,  
-            "rhoP": 0.688 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.87,  
-                "e": 0.299,  
-                "s": 0.561,  
-                "m": 0.574,  
-                "p": 0.558 
-        }
-		},
-		{
-			"name": "crauste_6",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.278,  
-            "muEE": 0.862,  
-            "muLE": 0.458,  
-            "muLL": 0.777,  
-            "muM": 0.66,  
-            "muP": 0.338,  
-            "muPE": 0.751,  
-            "muPL": 0.417,  
-            "deltaNE": 0.805,  
-            "deltaEL": 0.565,  
-            "deltaLM": 0.805,  
-            "rhoE": 0.654,  
-            "rhoP": 0.68 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.501,  
-                "e": 0.865,  
-                "s": 0.615,  
-                "m": 0.439,  
-                "p": 0.585 
-        }
-		},
-		{
-			"name": "crauste_7",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.115,  
-            "muEE": 0.341,  
-            "muLE": 0.628,  
-            "muLL": 0.332,  
-            "muM": 0.594,  
-            "muP": 0.443,  
-            "muPE": 0.208,  
-            "muPL": 0.339,  
-            "deltaNE": 0.556,  
-            "deltaEL": 0.573,  
-            "deltaLM": 0.559,  
-            "rhoE": 0.623,  
-            "rhoP": 0.622 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.445,  
-                "e": 0.817,  
-                "s": 0.394,  
-                "m": 0.449,  
-                "p": 0.814 
-        }
-		},
-		{
-			"name": "crauste_8",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.745,  
-            "muEE": 0.663,  
-            "muLE": 0.18,  
-            "muLL": 0.836,  
-            "muM": 0.671,  
-            "muP": 0.899,  
-            "muPE": 0.22,  
-            "muPL": 0.795,  
-            "deltaNE": 0.23,  
-            "deltaEL": 0.592,  
-            "deltaLM": 0.199,  
-            "rhoE": 0.778,  
-            "rhoP": 0.746 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.555,  
-                "e": 0.426,  
-                "s": 0.155,  
-                "m": 0.658,  
-                "p": 0.463 
-        }
-		},
-		{
-			"name": "crauste_9",
-			"system-name": "crauste",
-			"parameters": {
-            "muN": 0.678,  
-            "muEE": 0.793,  
-            "muLE": 0.88,  
-            "muLL": 0.785,  
-            "muM": 0.109,  
-            "muP": 0.388,  
-            "muPE": 0.684,  
-            "muPL": 0.237,  
-            "deltaNE": 0.517,  
-            "deltaEL": 0.143,  
-            "deltaLM": 0.26,  
-            "rhoE": 0.115,  
-            "rhoP": 0.735 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "n": 0.279,  
-                "e": 0.376,  
-                "s": 0.842,  
-                "m": 0.664,  
-                "p": 0.125 
-        }
-		},
-		{
-			"name": "daisy-mamil3_0",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_0",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.539,  
             "a13": 0.672,  
@@ -553,7 +120,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.617,  
@@ -562,8 +129,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_1",
-			"system-name": "daisy-mamil3",
+			"name": "daisy_mamil3_1",
+			"system-name": "daisy_mamil3",
 			"parameters": {
             "a12": 0.871,  
             "a13": 0.407,  
@@ -574,7 +141,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.84,  
@@ -583,176 +150,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil3_2",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.116,  
-            "a13": 0.766,  
-            "a21": 0.723,  
-            "a31": 0.796,  
-            "a01": 0.883 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.739,  
-                "x2": 0.469,  
-                "x3": 0.724 
-        }
-		},
-		{
-			"name": "daisy-mamil3_3",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.195,  
-            "a13": 0.612,  
-            "a21": 0.215,  
-            "a31": 0.856,  
-            "a01": 0.517 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.432,  
-                "x2": 0.312,  
-                "x3": 0.719 
-        }
-		},
-		{
-			"name": "daisy-mamil3_4",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.465,  
-            "a13": 0.555,  
-            "a21": 0.115,  
-            "a31": 0.594,  
-            "a01": 0.59 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.594,  
-                "x2": 0.855,  
-                "x3": 0.645 
-        }
-		},
-		{
-			"name": "daisy-mamil3_5",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.388,  
-            "a13": 0.45,  
-            "a21": 0.658,  
-            "a31": 0.148,  
-            "a01": 0.633 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.637,  
-                "x2": 0.268,  
-                "x3": 0.203 
-        }
-		},
-		{
-			"name": "daisy-mamil3_6",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.352,  
-            "a13": 0.391,  
-            "a21": 0.556,  
-            "a31": 0.451,  
-            "a01": 0.891 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.182,  
-                "x2": 0.267,  
-                "x3": 0.229 
-        }
-		},
-		{
-			"name": "daisy-mamil3_7",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.622,  
-            "a13": 0.303,  
-            "a21": 0.473,  
-            "a31": 0.296,  
-            "a01": 0.227 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.188,  
-                "x2": 0.625,  
-                "x3": 0.211 
-        }
-		},
-		{
-			"name": "daisy-mamil3_8",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.257,  
-            "a13": 0.395,  
-            "a21": 0.757,  
-            "a31": 0.178,  
-            "a01": 0.77 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.177,  
-                "x2": 0.881,  
-                "x3": 0.475 
-        }
-		},
-		{
-			"name": "daisy-mamil3_9",
-			"system-name": "daisy-mamil3",
-			"parameters": {
-            "a12": 0.881,  
-            "a13": 0.584,  
-            "a21": 0.691,  
-            "a31": 0.131,  
-            "a01": 0.326 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.196,  
-                "x2": 0.337,  
-                "x3": 0.195 
-        }
-		},
-		{
-			"name": "daisy-mamil4_0",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_0",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.539,  
             "k12": 0.672,  
@@ -765,7 +164,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.813,  
@@ -775,8 +174,8 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_1",
-			"system-name": "daisy-mamil4",
+			"name": "daisy_mamil4_1",
+			"system-name": "daisy_mamil4",
 			"parameters": {
             "k01": 0.523,  
             "k12": 0.554,  
@@ -789,7 +188,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.723,  
@@ -799,195 +198,39 @@
         }
 		},
 		{
-			"name": "daisy-mamil4_2",
-			"system-name": "daisy-mamil4",
+			"name": "fitzhugh_nagumo_0",
+			"system-name": "fitzhugh_nagumo",
 			"parameters": {
-            "k01": 0.469,  
-            "k12": 0.724,  
-            "k13": 0.195,  
-            "k14": 0.612,  
-            "k21": 0.215,  
-            "k31": 0.856,  
-            "k41": 0.517 
+            "g": 0.539,  
+            "a": 0.672,  
+            "b": 0.582 
         },
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
-                "x1": 0.432,  
-                "x2": 0.312,  
-                "x3": 0.719,  
-                "x4": 0.465 
+                "VV": 0.536,  
+                "R": 0.439 
         }
 		},
 		{
-			"name": "daisy-mamil4_3",
-			"system-name": "daisy-mamil4",
+			"name": "fitzhugh_nagumo_1",
+			"system-name": "fitzhugh_nagumo",
 			"parameters": {
-            "k01": 0.555,  
-            "k12": 0.115,  
-            "k13": 0.594,  
-            "k14": 0.59,  
-            "k21": 0.594,  
-            "k31": 0.855,  
-            "k41": 0.645 
+            "g": 0.617,  
+            "a": 0.45,  
+            "b": 0.813 
         },
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
-                "x1": 0.388,  
-                "x2": 0.45,  
-                "x3": 0.658,  
-                "x4": 0.148 
-        }
-		},
-		{
-			"name": "daisy-mamil4_4",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.633,  
-            "k12": 0.637,  
-            "k13": 0.268,  
-            "k14": 0.203,  
-            "k21": 0.352,  
-            "k31": 0.391,  
-            "k41": 0.556 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.451,  
-                "x2": 0.891,  
-                "x3": 0.182,  
-                "x4": 0.267 
-        }
-		},
-		{
-			"name": "daisy-mamil4_5",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.229,  
-            "k12": 0.622,  
-            "k13": 0.303,  
-            "k14": 0.473,  
-            "k21": 0.296,  
-            "k31": 0.227,  
-            "k41": 0.188 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.625,  
-                "x2": 0.211,  
-                "x3": 0.257,  
-                "x4": 0.395 
-        }
-		},
-		{
-			"name": "daisy-mamil4_6",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.757,  
-            "k12": 0.178,  
-            "k13": 0.77,  
-            "k14": 0.177,  
-            "k21": 0.881,  
-            "k31": 0.475,  
-            "k41": 0.881 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.584,  
-                "x2": 0.691,  
-                "x3": 0.131,  
-                "x4": 0.326 
-        }
-		},
-		{
-			"name": "daisy-mamil4_7",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.196,  
-            "k12": 0.337,  
-            "k13": 0.195,  
-            "k14": 0.354,  
-            "k21": 0.431,  
-            "k31": 0.151,  
-            "k41": 0.654 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.553,  
-                "x2": 0.312,  
-                "x3": 0.519,  
-                "x4": 0.175 
-        }
-		},
-		{
-			"name": "daisy-mamil4_8",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.561,  
-            "k12": 0.843,  
-            "k13": 0.355,  
-            "k14": 0.634,  
-            "k21": 0.205,  
-            "k31": 0.673,  
-            "k41": 0.332 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.247,  
-                "x2": 0.569,  
-                "x3": 0.116,  
-                "x4": 0.763 
-        }
-		},
-		{
-			"name": "daisy-mamil4_9",
-			"system-name": "daisy-mamil4",
-			"parameters": {
-            "k01": 0.104,  
-            "k12": 0.642,  
-            "k13": 0.316,  
-            "k14": 0.688,  
-            "k21": 0.87,  
-            "k31": 0.299,  
-            "k41": 0.561 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.574,  
-                "x2": 0.558,  
-                "x3": 0.278,  
-                "x4": 0.862 
+                "VV": 0.871,  
+                "R": 0.407 
         }
 		},
 		{
@@ -1000,7 +243,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.582,  
@@ -1017,147 +260,11 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.45,  
                 "x2": 0.813 
-        }
-		},
-		{
-			"name": "harmonic_2",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.871,  
-            "b": 0.407 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.733,  
-                "x2": 0.523 
-        }
-		},
-		{
-			"name": "harmonic_3",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.554,  
-            "b": 0.84 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.157,  
-                "x2": 0.17 
-        }
-		},
-		{
-			"name": "harmonic_4",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.116,  
-            "b": 0.766 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.723,  
-                "x2": 0.796 
-        }
-		},
-		{
-			"name": "harmonic_5",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.883,  
-            "b": 0.739 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.469,  
-                "x2": 0.724 
-        }
-		},
-		{
-			"name": "harmonic_6",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.195,  
-            "b": 0.612 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.215,  
-                "x2": 0.856 
-        }
-		},
-		{
-			"name": "harmonic_7",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.517,  
-            "b": 0.432 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.312,  
-                "x2": 0.719 
-        }
-		},
-		{
-			"name": "harmonic_8",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.465,  
-            "b": 0.555 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.115,  
-                "x2": 0.594 
-        }
-		},
-		{
-			"name": "harmonic_9",
-			"system-name": "harmonic",
-			"parameters": {
-            "a": 0.59,  
-            "b": 0.594 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.855,  
-                "x2": 0.645 
         }
 		},
 		{
@@ -1178,7 +285,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x": 0.733,  
@@ -1206,7 +313,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x": 0.612,  
@@ -1217,232 +324,8 @@
         }
 		},
 		{
-			"name": "hiv_2",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.312,  
-            "d": 0.719,  
-            "beta": 0.465,  
-            "a": 0.555,  
-            "k": 0.115,  
-            "uu": 0.594,  
-            "c": 0.59,  
-            "q": 0.594,  
-            "b": 0.855,  
-            "h": 0.645 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.388,  
-                "yy": 0.45,  
-                "vv": 0.658,  
-                "w": 0.148,  
-                "z": 0.633 
-        }
-		},
-		{
-			"name": "hiv_3",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.637,  
-            "d": 0.268,  
-            "beta": 0.203,  
-            "a": 0.352,  
-            "k": 0.391,  
-            "uu": 0.556,  
-            "c": 0.451,  
-            "q": 0.891,  
-            "b": 0.182,  
-            "h": 0.267 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.229,  
-                "yy": 0.622,  
-                "vv": 0.303,  
-                "w": 0.473,  
-                "z": 0.296 
-        }
-		},
-		{
-			"name": "hiv_4",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.227,  
-            "d": 0.188,  
-            "beta": 0.625,  
-            "a": 0.211,  
-            "k": 0.257,  
-            "uu": 0.395,  
-            "c": 0.757,  
-            "q": 0.178,  
-            "b": 0.77,  
-            "h": 0.177 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.881,  
-                "yy": 0.475,  
-                "vv": 0.881,  
-                "w": 0.584,  
-                "z": 0.691 
-        }
-		},
-		{
-			"name": "hiv_5",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.131,  
-            "d": 0.326,  
-            "beta": 0.196,  
-            "a": 0.337,  
-            "k": 0.195,  
-            "uu": 0.354,  
-            "c": 0.431,  
-            "q": 0.151,  
-            "b": 0.654,  
-            "h": 0.553 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.312,  
-                "yy": 0.519,  
-                "vv": 0.175,  
-                "w": 0.561,  
-                "z": 0.843 
-        }
-		},
-		{
-			"name": "hiv_6",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.355,  
-            "d": 0.634,  
-            "beta": 0.205,  
-            "a": 0.673,  
-            "k": 0.332,  
-            "uu": 0.247,  
-            "c": 0.569,  
-            "q": 0.116,  
-            "b": 0.763,  
-            "h": 0.104 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.642,  
-                "yy": 0.316,  
-                "vv": 0.688,  
-                "w": 0.87,  
-                "z": 0.299 
-        }
-		},
-		{
-			"name": "hiv_7",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.561,  
-            "d": 0.574,  
-            "beta": 0.558,  
-            "a": 0.278,  
-            "k": 0.862,  
-            "uu": 0.458,  
-            "c": 0.777,  
-            "q": 0.66,  
-            "b": 0.338,  
-            "h": 0.751 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.417,  
-                "yy": 0.805,  
-                "vv": 0.565,  
-                "w": 0.805,  
-                "z": 0.654 
-        }
-		},
-		{
-			"name": "hiv_8",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.68,  
-            "d": 0.501,  
-            "beta": 0.865,  
-            "a": 0.615,  
-            "k": 0.439,  
-            "uu": 0.585,  
-            "c": 0.115,  
-            "q": 0.341,  
-            "b": 0.628,  
-            "h": 0.332 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.594,  
-                "yy": 0.443,  
-                "vv": 0.208,  
-                "w": 0.339,  
-                "z": 0.556 
-        }
-		},
-		{
-			"name": "hiv_9",
-			"system-name": "hiv",
-			"parameters": {
-            "lm": 0.573,  
-            "d": 0.559,  
-            "beta": 0.623,  
-            "a": 0.622,  
-            "k": 0.445,  
-            "uu": 0.817,  
-            "c": 0.394,  
-            "q": 0.449,  
-            "b": 0.814,  
-            "h": 0.745 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x": 0.663,  
-                "yy": 0.18,  
-                "vv": 0.836,  
-                "w": 0.671,  
-                "z": 0.899 
-        }
-		},
-		{
-			"name": "lotka-volterra_0",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_0",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.539,  
             "k2": 0.672,  
@@ -1451,7 +334,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "r": 0.536,  
@@ -1459,8 +342,8 @@
         }
 		},
 		{
-			"name": "lotka-volterra_1",
-			"system-name": "lotka-volterra",
+			"name": "lotka_volterra_1",
+			"system-name": "lotka_volterra",
 			"parameters": {
             "k1": 0.617,  
             "k2": 0.45,  
@@ -1469,155 +352,11 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "r": 0.871,  
                 "w": 0.407 
-        }
-		},
-		{
-			"name": "lotka-volterra_2",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.733,  
-            "k2": 0.523,  
-            "k3": 0.554 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.84,  
-                "w": 0.157 
-        }
-		},
-		{
-			"name": "lotka-volterra_3",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.17,  
-            "k2": 0.116,  
-            "k3": 0.766 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.723,  
-                "w": 0.796 
-        }
-		},
-		{
-			"name": "lotka-volterra_4",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.883,  
-            "k2": 0.739,  
-            "k3": 0.469 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.724,  
-                "w": 0.195 
-        }
-		},
-		{
-			"name": "lotka-volterra_5",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.612,  
-            "k2": 0.215,  
-            "k3": 0.856 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.517,  
-                "w": 0.432 
-        }
-		},
-		{
-			"name": "lotka-volterra_6",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.312,  
-            "k2": 0.719,  
-            "k3": 0.465 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.555,  
-                "w": 0.115 
-        }
-		},
-		{
-			"name": "lotka-volterra_7",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.594,  
-            "k2": 0.59,  
-            "k3": 0.594 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.855,  
-                "w": 0.645 
-        }
-		},
-		{
-			"name": "lotka-volterra_8",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.388,  
-            "k2": 0.45,  
-            "k3": 0.658 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.148,  
-                "w": 0.633 
-        }
-		},
-		{
-			"name": "lotka-volterra_9",
-			"system-name": "lotka-volterra",
-			"parameters": {
-            "k1": 0.637,  
-            "k2": 0.268,  
-            "k3": 0.203 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "r": 0.352,  
-                "w": 0.391 
         }
 		},
 		{
@@ -1631,7 +370,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "S": 0.536,  
@@ -1651,173 +390,13 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "S": 0.733,  
                 "E": 0.523,  
                 "In": 0.554,  
                 "NN": 0.84 
-        }
-		},
-		{
-			"name": "seir_2",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.157,  
-            "b": 0.17,  
-            "nu": 0.116 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.766,  
-                "E": 0.723,  
-                "In": 0.796,  
-                "NN": 0.883 
-        }
-		},
-		{
-			"name": "seir_3",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.739,  
-            "b": 0.469,  
-            "nu": 0.724 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.195,  
-                "E": 0.612,  
-                "In": 0.215,  
-                "NN": 0.856 
-        }
-		},
-		{
-			"name": "seir_4",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.517,  
-            "b": 0.432,  
-            "nu": 0.312 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.719,  
-                "E": 0.465,  
-                "In": 0.555,  
-                "NN": 0.115 
-        }
-		},
-		{
-			"name": "seir_5",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.594,  
-            "b": 0.59,  
-            "nu": 0.594 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.855,  
-                "E": 0.645,  
-                "In": 0.388,  
-                "NN": 0.45 
-        }
-		},
-		{
-			"name": "seir_6",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.658,  
-            "b": 0.148,  
-            "nu": 0.633 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.637,  
-                "E": 0.268,  
-                "In": 0.203,  
-                "NN": 0.352 
-        }
-		},
-		{
-			"name": "seir_7",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.391,  
-            "b": 0.556,  
-            "nu": 0.451 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.891,  
-                "E": 0.182,  
-                "In": 0.267,  
-                "NN": 0.229 
-        }
-		},
-		{
-			"name": "seir_8",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.622,  
-            "b": 0.303,  
-            "nu": 0.473 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.296,  
-                "E": 0.227,  
-                "In": 0.188,  
-                "NN": 0.625 
-        }
-		},
-		{
-			"name": "seir_9",
-			"system-name": "seir",
-			"parameters": {
-            "a": 0.211,  
-            "b": 0.257,  
-            "nu": 0.395 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "S": 0.757,  
-                "E": 0.178,  
-                "In": 0.77,  
-                "NN": 0.177 
         }
 		},
 		{
@@ -1830,7 +409,7 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.582,  
@@ -1847,148 +426,12 @@
 			"time": {
 				"start": -0.5,
 				"end": 0.5,
-				"count": 21
+				"count": 1001
         },
 			"initial": {
                 "x1": 0.45,  
                 "x2": 0.813 
         }
-		},
-		{
-			"name": "vanderpol_2",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.871,  
-            "b": 0.407 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.733,  
-                "x2": 0.523 
-        }
-		},
-		{
-			"name": "vanderpol_3",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.554,  
-            "b": 0.84 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.157,  
-                "x2": 0.17 
-        }
-		},
-		{
-			"name": "vanderpol_4",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.116,  
-            "b": 0.766 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.723,  
-                "x2": 0.796 
-        }
-		},
-		{
-			"name": "vanderpol_5",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.883,  
-            "b": 0.739 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.469,  
-                "x2": 0.724 
-        }
-		},
-		{
-			"name": "vanderpol_6",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.195,  
-            "b": 0.612 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.215,  
-                "x2": 0.856 
-        }
-		},
-		{
-			"name": "vanderpol_7",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.517,  
-            "b": 0.432 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.312,  
-                "x2": 0.719 
-        }
-		},
-		{
-			"name": "vanderpol_8",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.465,  
-            "b": 0.555 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.115,  
-                "x2": 0.594 
-        }
-		},
-		{
-			"name": "vanderpol_9",
-			"system-name": "vanderpol",
-			"parameters": {
-            "a": 0.59,  
-            "b": 0.594 
-        },
-			"time": {
-				"start": -0.5,
-				"end": 0.5,
-				"count": 21
-        },
-			"initial": {
-                "x1": 0.855,  
-                "x2": 0.645 
-        }
-		},
-	]
+		}
+]
 }
