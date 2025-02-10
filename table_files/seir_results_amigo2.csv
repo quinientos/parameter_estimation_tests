@@ -1,0 +1,9 @@
+,a,b,nu,S,E,In,NN,,RMSRE
+"Searching in [0.0, 1.0]"
+seir_0,,,,,,,,,
+True Value
+Test Result
+,,,,,,,,inf
+,,,,,,,
+"Searching in [0.0, 2.0]"
+"Searching in [0.0, 3.0]"

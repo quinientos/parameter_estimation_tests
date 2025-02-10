@@ -1,0 +1,14 @@
+,a,b,x1,x2,,RMSRE
+"Searching in [0.0, 1.0]"
+vanderpol_0,,,,,,
+True Value,0.539,0.672,0.582,0.536
+Test Result,0.0,0.0,1.48109e-14,0.281207
+Rel Error,1.0,1.0,1.0,0.47536,,0.8980488851601021
+,,,,
+vanderpol_1,,,,,,
+True Value,0.439,0.617,0.45,0.813
+Test Result,0.439,0.617,0.45,0.813
+Rel Error,0.0,0.0,0.0,0.0,,0.0
+,,,,
+"Searching in [0.0, 2.0]"
+"Searching in [0.0, 3.0]"

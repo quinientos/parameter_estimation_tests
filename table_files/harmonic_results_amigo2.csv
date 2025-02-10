@@ -1,0 +1,14 @@
+,a,b,x1,x2,,RMSRE
+"Searching in [0.0, 1.0]"
+harmonic_0,,,,,,
+True Value,0.539,0.672,0.582,0.536
+Test Result,0.539,0.672,0.582,0.536
+Rel Error,0.0,0.0,0.0,0.0,,0.0
+,,,,
+harmonic_1,,,,,,
+True Value,0.439,0.617,0.45,0.813
+Test Result,0.439,0.617,0.45,0.813
+Rel Error,0.0,0.0,0.0,0.0,,0.0
+,,,,
+"Searching in [0.0, 2.0]"
+"Searching in [0.0, 3.0]"

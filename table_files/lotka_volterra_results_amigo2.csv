@@ -1,0 +1,14 @@
+,k1,k2,k3,r,w,,RMSRE
+"Searching in [0.0, 1.0]"
+lotka_volterra_0,,,,,,,
+True Value,0.539,0.672,0.582,0.536,0.439
+Test Result,0.539,0.672,0.582,0.536,0.439
+Rel Error,0.0,0.0,0.0,0.0,0.0,,0.0
+,,,,,
+lotka_volterra_1,,,,,,,
+True Value,0.617,0.45,0.813,0.871,0.407
+Test Result,0.617,0.45,0.813,0.871,0.407
+Rel Error,0.0,0.0,0.0,0.0,0.0,,0.0
+,,,,,
+"Searching in [0.0, 2.0]"
+"Searching in [0.0, 3.0]"
