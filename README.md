@@ -1,4 +1,4 @@
-Automated testing and orchestration framework for benchmarking parameter estimation solvers. Generates structured inputs, runs heterogeneous solvers, and compiles numerical results. 
+Automated testing and orchestration framework for benchmarking parameter estimation solvers. Generates structured inputs, runs the solvers, and compiles numerical results.
 
 # installation
 
